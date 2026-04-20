@@ -1,72 +1,121 @@
-bin/
-obj/
-out/
+# =========================
+
+# BUILD (all subprojects)
+
+# =========================
+
+**/bin/
+**/obj/
+**/out/
+
+# =========================
+
+# USER / IDE FILES
+
+# =========================
 
 .vs/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# Rider / JetBrains
+
+.idea/
+**/*.sln.iml
+
+# VS Code (allow shared config if you want)
 
 .vscode/*
 !.vscode/settings.json
+!.vscode/extensions.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json
 
-*.log
+# =========================
+
+# LOGS
+
+# =========================
+
+**/*.log
+
+# =========================
+
+# OS FILES
+
+# =========================
 
 .DS_Store
 Thumbs.db
 
-*.nupkg
-*.snupkg
-packages/
-*.nuget.props
-*.nuget.targets
-project.lock.json
-project.fragment.lock.json
-artifacts/
+# =========================
 
-project.assets.json
-*.runtimeconfig.dev.json
+# NUGET
 
-TestResults/
-*.trx
-*.coverage
-*.coveragexml
+# =========================
 
-publish/
-*.publish.xml
+**/*.nupkg
+**/*.snupkg
+**/packages/
+**/artifacts/
 
-_ReSharper*/
-*.DotSettings.user
+# =========================
 
-*.dotCover
+# TEST RESULTS
 
-*.azurePubxml
+# =========================
 
-/.vs/config/applicationhost.config
+**/TestResults/
+**/*.trx
+**/*.coverage
+**/*.coveragexml
 
-*.mdf
-*.ldf
+# =========================
 
-Migrations/*.Designer.cs
+# PUBLISH OUTPUT
 
-*.bak
-*.tmp
-*.temp
+# =========================
 
-Generated/
-*.g.cs
-*.g.i.cs
+**/publish/
 
-*.rsuser
+# =========================
 
-*.pdb
+# TEMP / BACKUP
 
-*.psess
-*.vsp
-*.vspx
+# =========================
 
-.history/
+**/*.bak
+**/*.tmp
+**/*.temp
+
+# =========================
+
+# GENERATED FILES
+
+# =========================
+
+**/*.g.cs
+**/*.g.i.cs
+
+# =========================
+
+# DEBUG / PROFILING
+
+# =========================
+
+**/*.pdb
+**/*.psess
+**/*.vsp
+**/*.vspx
+
+# =========================
+
+# OPTIONAL: keep solution structure clean
+
+# =========================
+
+# Uncomment if you DON'T want local solutions committed
+
+# *.sln
