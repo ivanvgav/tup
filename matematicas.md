@@ -116,10 +116,10 @@ Sin importar lo que sean esa proposiciones siempre va a dar verdadera.
 ## TP 2
 ### Simplificación de proposiciones
 
-2. a. 
-    
+2. a.
+
     $p  \lor [p \land (q \lor p)] \iff p$
-      
+
     $p \lor p \iff p$ Absorción total de la disyunción
 
     $p \iff p$ Idempotencia
@@ -128,7 +128,7 @@ Sin importar lo que sean esa proposiciones siempre va a dar verdadera.
 
     ---
 
-b. 
+b.
 
    $[(p \lor q) \lor (p \lor r)] \iff (p \lor q) \lor r$
 
@@ -137,12 +137,12 @@ b.
    $[p \lor p \lor q \lor r] \iff (p \lor q) \lor r$ Propiedad conmutativa
 
    $[p \lor q \lor r ] \iff (p \lor q) \lor r$ Idempotencia
-    
+
    $(p \lor q \lor r ) \iff (p \lor q \lor r)$ Propiedad asociativa
 
 ---
 
-c. 
+c.
 
    $\neg (\neg p \lor \neg q) \iff p \land q$
 
@@ -152,10 +152,10 @@ c.
 
 ---
 
-d. 
+d.
 
    $\neg [(r \lor p) \land \neg p] \iff \neg r \lor p$
-   
+
    $\neg [(r \land \neg p)] \iff \neg r \lor p$ Absorción parcial
 
    $(\neg r \lor \neg \neg p) \iff \neg r \lor p$ De Morgan
@@ -243,7 +243,7 @@ Por lo que toda la conjunción es verdadera.
 
 ##### 8. Simplificar
 
-a. $\neg (\neg p \lor \neg q) \implies p \land q$ por De Morgan e involución
+a. $\neg (\neg p \lor \neg q) \rightarrow p \land q$ por De Morgan e involución
 
 ---
 
@@ -278,3 +278,51 @@ $(p \lor q) \lor (q \land \neg p)$ De Morgan
 $(p \lor q \lor q) \land \neg p$ Asociativa
 
 $(p \lor q) \land \neg p$ Idempotencia
+
+---
+
+$(\neg \neg p \lor q) \lor \neg (q \rightarrow p)$ Def de implicacia
+
+$(p \lor q) \lor (q \land \neg p)$ Equivalencia de negación de implicancia
+
+$p \lor q \lor (\neg p \land q)$ Asociativa
+
+$p \lor [q \lor (\neg p \land q)]$ Asociativa
+
+$p \lor q$ Absorción total
+
+# 20160420
+
+8. d. $(p \rightarrow \neg q) \land \neg (\neg q \rightarrow p)$
+
+$(\neg p \lor \neg q) \land (\neg q \land \neg p)$ Equivalencia de la negación de implicacia
+
+$(\neg p \lor \neg q) \land \neg q \land \neg p$ Asociativa
+
+$[(\neg p \lor \neg q) \land \neg q] \land \neg p$ Asociativa
+
+$\neg q \land \neg p$ Absorción total
+
+$\neg p \land \neg q$ Conmutativa
+
+---
+
+## Circuitos lógicos
+
+La verdad de una propisición se puede asociar al paso de corriente en un
+circuito electrico. Si la proposición es $V$ entonces el circuito está cerrado y
+si es $F$ está abierto.
+
+La conjunción y la disyunción tienen asociada un circuito. Por lo que para
+trabajar con ellas hay que hacer transformaciones.
+
+La conjunción es un circuito en serie (una línea), se abre con solo con que una
+de las proposiciones sea $F$. La disyunción es un circuito en paralelo (dos
+líneas). No pasa corriente si las dos están $F$ ya que ambas están abiertas.
+Sino una va a estar cerrada y puede pasar corriente por ahí. Ni la implicancia,
+ni el bicondicional ni la disyunción exclusiva tienen circuitos asociados.
+Al diagramar los circuitos estos tienen que quedar abiertos.
+
+Para poder diagramar bien hay que tener en cuenta los alcances de las conjunciones y disyunciones.
+Hay que tener en cuenta de nombrar cada una de las puertas con las proposiciones que tienen.
+Siempre hay que tener en cuenta por donde hay que cerrar los circuitos.

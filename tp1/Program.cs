@@ -81,11 +81,9 @@ Console.WriteLine("Esto es el programa para resolver el TP1.\nTiene que desconme
 // } else if (NumeroAleatorio >= 10 && NumeroAleatorio < 100)
 // {
 //     Console.WriteLine("Número aleatorio: 00" + NumeroAleatorio);
-    
 // } else if (NumeroAleatorio >= 100 && NumeroAleatorio < 1000)
 // {
 //     Console.WriteLine("Número aleatorio: 0" + NumeroAleatorio);
-    
 // } else
 // {
 //     Console.WriteLine("Número aleatorio: " + NumeroAleatorio);
