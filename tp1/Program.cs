@@ -528,101 +528,101 @@ Console.WriteLine("Esto es el programa para resolver el TP1.\nTiene que desconme
 // Console.WriteLine("El perímetro del polígono es de: " + perimetro);
 
 // TP 1.44
-const int PartidoGanado = 3;
-const int PartidoEmpatado = 1;
-const int PartidoPerdido = 0l
+// const int PartidoGanado = 3;
+// const int PartidoEmpatado = 1;
+// const int PartidoPerdido = 0l
 
-Console.WriteLine("Ingrese la cantidad de partidos ganados: ");
-int PartidosGanados = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de partidos ganados: ");
+// int PartidosGanados = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Ingrese la cantidad de partidos empatados: ");
-int PartidosEmpatados = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de partidos empatados: ");
+// int PartidosEmpatados = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Ingrese la cantidad de partidos perdidos: ");
-int PartidosPerdidos = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de partidos perdidos: ");
+// int PartidosPerdidos = int.Parse(Console.ReadLine());
 
-int PuntosTotales = (PartidosGanados * PartidoGanado) + (PartidosEmpatados * PartidoEmpatadp) + (PartidosPerdidos * PartidoPerdido);
-Console.WriteLine("La cantidad de puntos del equipo son de: " + PuntosTotales);
+// int PuntosTotales = (PartidosGanados * PartidoGanado) + (PartidosEmpatados * PartidoEmpatadp) + (PartidosPerdidos * PartidoPerdido);
+// Console.WriteLine("La cantidad de puntos del equipo son de: " + PuntosTotales);
 
-int PartidosJugados = PartidosGanados + PartidosEmpatados + PartidosPerdidos;
-float Promedio = PuntosTotales / PartidosJugados;
-Console.WriteLine("El promedio del equipo es de: " + Promedio);
+// int PartidosJugados = PartidosGanados + PartidosEmpatados + PartidosPerdidos;
+// float Promedio = PuntosTotales / PartidosJugados;
+// Console.WriteLine("El promedio del equipo es de: " + Promedio);
 
 // TP 1.46
-const int Billete2 = 2;
-const int Billete5 = 5;
-const int Billete10 = 10;
-const int Billete20 = 20;
-const int Billete50 = 50;
-const int Billete100 = 100;
+// const int Billete2 = 2;
+// const int Billete5 = 5;
+// const int Billete10 = 10;
+// const int Billete20 = 20;
+// const int Billete50 = 50;
+// const int Billete100 = 100;
 
-Console.WriteLine("Ingrese la cantidad de billetes de $2: ");
-int CantidadDeBillete2 = int.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese la cantidad de billetes de $5: ");
-int CantidadDeBillete5 = int.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese la cantidad de billetes de $10: ");
-int CantidadDeBillete10 = int.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese la cantidad de billetes de $20: ");
-int CantidadDeBillete20 = int.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese la cantidad de billetes de $50: ");
-int CantidadDeBillete50 = int.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese la cantidad de billetes de $100: ");
-int CantidadDeBillete100 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de billetes de $2: ");
+// int CantidadDeBillete2 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de billetes de $5: ");
+// int CantidadDeBillete5 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de billetes de $10: ");
+// int CantidadDeBillete10 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de billetes de $20: ");
+// int CantidadDeBillete20 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de billetes de $50: ");
+// int CantidadDeBillete50 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la cantidad de billetes de $100: ");
+// int CantidadDeBillete100 = int.Parse(Console.ReadLine());
 
-int TotalRecaudado = (Billete2 * CantidadDeBillete2) + (Billete5 * CantidadDeBillete5) + (Billete10 * CantidadDeBillete10) + (Billete20 * CantidadDeBillete20) + (Billete50 * CantidadDeBillete50) + (Billete100 * CantidadDeBillete100);
-Console.WriteLine("El monto total recaudado es de: $" + TotalRecaudado);
+// int TotalRecaudado = (Billete2 * CantidadDeBillete2) + (Billete5 * CantidadDeBillete5) + (Billete10 * CantidadDeBillete10) + (Billete20 * CantidadDeBillete20) + (Billete50 * CantidadDeBillete50) + (Billete100 * CantidadDeBillete100);
+// Console.WriteLine("El monto total recaudado es de: $" + TotalRecaudado);
 
 // TP 1.47
-const int DistanciaDeFicha = 100;
+// const int DistanciaDeFicha = 100;
 
-Console.WriteLine("Ingrese la bajada de línea del taxi: ");
-int BajadaDeBandera = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la bajada de línea del taxi: ");
+// int BajadaDeBandera = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Ingrese el valor de la ficha cada cien metros: ");
-int ValorDeFichaCienMetros = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese el valor de la ficha cada cien metros: ");
+// int ValorDeFichaCienMetros = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Ingrese la distancia recorrida en metros: ");
-int DistanciaRecorrida = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese la distancia recorrida en metros: ");
+// int DistanciaRecorrida = int.Parse(Console.ReadLine());
 
-float CantidadDeFichas = DistanciaRecorrida / DistanciaDeFicha;
-float CostoTotalViaje = BajadaDeBandera + (ValorDeFichaCienMetros * CantidadDeFichas);
-Console.WriteLine("La cantidad de fichas usadas en el viaje es de: " + CantidadDeFichas);
-Console.WriteLine("El valor total del viaje es de: " + CostoTotalViaje);
+// float CantidadDeFichas = DistanciaRecorrida / DistanciaDeFicha;
+// float CostoTotalViaje = BajadaDeBandera + (ValorDeFichaCienMetros * CantidadDeFichas);
+// Console.WriteLine("La cantidad de fichas usadas en el viaje es de: " + CantidadDeFichas);
+// Console.WriteLine("El valor total del viaje es de: " + CostoTotalViaje);
 
 // TP 1.48
-Random random = new Random();
-int NumeroDeTresCifras = random.Next(100, 1000);
-Console.WriteLine("El número es de: " + NumeroDeTresCifras);
+// Random random = new Random();
+// int NumeroDeTresCifras = random.Next(100, 1000);
+// Console.WriteLine("El número es de: " + NumeroDeTresCifras);
 
-string Centena = NumeroDeTresCifras.toString()[0];
-Console.WriteLine("La Centena del número es de: " + Cetena + "00");
-string Decena = NumeroDeTresCifras.toString()[1];
-Console.WriteLine("La Decena del número es de: " + Decena + "0");
-string Unidad = NumeroDeTresCifras.toString()[2];
-Console.WriteLine("La unidad del número es de: " + Unidad);
+// string Centena = NumeroDeTresCifras.toString()[0];
+// Console.WriteLine("La Centena del número es de: " + Cetena + "00");
+// string Decena = NumeroDeTresCifras.toString()[1];
+// Console.WriteLine("La Decena del número es de: " + Decena + "0");
+// string Unidad = NumeroDeTresCifras.toString()[2];
+// Console.WriteLine("La unidad del número es de: " + Unidad);
 
 // TP 1.49
-Console.WriteLine("Ingrese el nombre del producto: ");
-string NombreDelProducto = Console.ReadLine();
+// Console.WriteLine("Ingrese el nombre del producto: ");
+// string NombreDelProducto = Console.ReadLine();
 
-Console.WriteLine("Ingrese precio unitario producto: ");
-float PrecioUnitario = float.Parse(Console.ReadLine()); // TODO(ivan): Verificar esto
+// Console.WriteLine("Ingrese precio unitario producto: ");
+// float PrecioUnitario = float.Parse(Console.ReadLine()); // TODO(ivan): Verificar esto
 
-Console.WriteLine("Ingrese cantidad que va a comprar del producto: ");
-int CantidadDelProducto = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingrese cantidad que va a comprar del producto: ");
+// int CantidadDelProducto = int.Parse(Console.ReadLine());
 
-float MontoTotal = PrecioUnitario * CantidadDelProducto;
-Console.WriteLine("Para poder llevar a cabo la compra de " + CantidadDelProducto + " unidades de " + NombreDelProducto + " a " + PrecioUnitario + "cada una debe disponer de $" + MontoTotal);
+// float MontoTotal = PrecioUnitario * CantidadDelProducto;
+// Console.WriteLine("Para poder llevar a cabo la compra de " + CantidadDelProducto + " unidades de " + NombreDelProducto + " a " + PrecioUnitario + "cada una debe disponer de $" + MontoTotal);
 
 // TP 1.50
-const float Interes = 0.08F;
-const int Cuotas = 6;
+// const float Interes = 0.08F;
+// const int Cuotas = 6;
 
-Console.WriteLine("Esta por realizar una compra con tarjeta de crédito a 6 cuotas.");
-Console.WriteLine("Ingrese el monto de la compra: ");
-int MontoCompra = int.Parse(Console.ReadLine());
+// Console.WriteLine("Esta por realizar una compra con tarjeta de crédito a 6 cuotas.");
+// Console.WriteLine("Ingrese el monto de la compra: ");
+// int MontoCompra = int.Parse(Console.ReadLine());
 
-float ValorCuota = (MontoCompra / Cuotas);
-float ValorInteres = (MontoCompra / Cuotas) * Interes;
-float ValorTotal = ValorCuota + ValorInteres;
-Console.WriteLine("El valor de la cuota serä de: " + ValorTotal);
+// float ValorCuota = (MontoCompra / Cuotas);
+// float ValorInteres = (MontoCompra / Cuotas) * Interes;
+// float ValorTotal = ValorCuota + ValorInteres;
+// Console.WriteLine("El valor de la cuota será de: " + ValorTotal);

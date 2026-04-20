@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SAMSUNG\\Desktop\\politi1\\politi1.csproj",
+      "projectUniqueName": "C:\\Users\\SAMSUNG\\Desktop\\tup\\politi1\\politi1.csproj",
       "projectName": "politi1",
-      "projectPath": "C:\\Users\\SAMSUNG\\Desktop\\politi1\\politi1.csproj",
+      "projectPath": "C:\\Users\\SAMSUNG\\Desktop\\tup\\politi1\\politi1.csproj",
       "packagesPath": "C:\\Users\\SAMSUNG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SAMSUNG\\Desktop\\politi1\\obj\\",
+      "outputPath": "C:\\Users\\SAMSUNG\\Desktop\\tup\\politi1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

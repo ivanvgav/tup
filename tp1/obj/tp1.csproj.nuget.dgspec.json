@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SAMSUNG\\Desktop\\tp1\\tp1.csproj": {}
+    "C:\\Users\\SAMSUNG\\Desktop\\tup\\tp1\\tp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SAMSUNG\\Desktop\\tp1\\tp1.csproj": {
+    "C:\\Users\\SAMSUNG\\Desktop\\tup\\tp1\\tp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SAMSUNG\\Desktop\\tp1\\tp1.csproj",
+        "projectUniqueName": "C:\\Users\\SAMSUNG\\Desktop\\tup\\tp1\\tp1.csproj",
         "projectName": "tp1",
-        "projectPath": "C:\\Users\\SAMSUNG\\Desktop\\tp1\\tp1.csproj",
+        "projectPath": "C:\\Users\\SAMSUNG\\Desktop\\tup\\tp1\\tp1.csproj",
         "packagesPath": "C:\\Users\\SAMSUNG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SAMSUNG\\Desktop\\tp1\\obj\\",
+        "outputPath": "C:\\Users\\SAMSUNG\\Desktop\\tup\\tp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
