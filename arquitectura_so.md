@@ -200,3 +200,79 @@ En una carta redactada hay un total 8600 B o caracteres ¿Cuantos kb ocupan de e
 
 8.3984375
 
+# 20260421
+
+## TP Unidad 2
+
+### Problema 2
+$2GB = (2 * 1024)MB = 2048MB$
+
+Cantidad de fotos: $2048/2 = 1024$ fotos
+
+### Problema 3
+
+
+### Problema 5
+
+450 bytes en MB
+
+$(450/1024)/1024 = 0.0004291534423828125$ MB
+
+### Problema 6
+
+88276,80MB = $86.2078125$ GB
+
+10.7GB
+
+1048.231 Kb = $0.0009996709823608398$ GB
+
+3045760996 Bytes = $2.836585972458124$ GB
+
+$10.7 + 2.836585972458124 + 0.0009996709823608398$ = $13.537585643440485$ GB ocupados
+
+$86.2078125 - 13.537585643440485$ = $72.67022685655952$ GB libres
+
+### Problema 7
+2715kb
+
+$1$ GB = $1048576$ kb
+
+Cantidad de imágenes: $1048576 / 2715$ = $386$ 
+### Problema 8
+
+4.7GB en MB
+CD de 700 MB
+
+$4.7 * 1024 = 4812.8$ MB
+
+Cantidad de CDs: $4812.8 / 700 = 6.8754285714285714$ casi 7 CDs
+
+### Problema 9
+64 GB a Bytes
+
+$64 * 1024 * 1024 * 1024 = 68719476736$ Bytes
+
+### Problema 10
+
+100 temas de 3072 kb
+Mp3 de 512MB
+
+$3072/1024$ = 3 MBs
+
+$3 * 100 = 300$ MBS
+
+Si entran
+
+### Problema 11
+`Juliana.doc` 1034 kb $\rightarrow$ $1034/1024 = 1.009765625$ MB
+
+`Carlos.RTF` 2048 Bytes $\rightarrow$ $2048/(1024*2) = 1$ MB
+
+`Guia_de_clientes` 5120 kb $\rightarrow$ $5120/1024 = 5$ MB
+
+Suma total: $1.009765625 + 1 + 5 = 7.009765625$ MB
+
+DVD 48128 MB
+
+Se necesita 1.
+

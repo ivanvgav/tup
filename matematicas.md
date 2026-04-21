@@ -326,3 +326,16 @@ Al diagramar los circuitos estos tienen que quedar abiertos.
 Para poder diagramar bien hay que tener en cuenta los alcances de las conjunciones y disyunciones.
 Hay que tener en cuenta de nombrar cada una de las puertas con las proposiciones que tienen.
 Siempre hay que tener en cuenta por donde hay que cerrar los circuitos.
+
+### Ejercicios de circuitos lógicos (electrónicos)
+<!-- TODO(ivan): Agregar las fotos. Para eso crear una carpeta con las imágenes -->
+<!-- TODO(ivan): Modificar los últimos puntos porque no están bien todos -->
+<!-- TODO(ivan): Verificar en el 11 donde se puede hacer el gráfico inicial -->
+
+# 20260421
+
+Se realizo los ejercicios 10b y 10e; 11a, 11b; 12a, 12d de circuitos eléctricos
+En 11b se da con que las disyunciones van a irse y luego quedaría $\top$
+porque siempre va a ser verdadera la disyunción.
+En 11d se puede seguir, hacer inversa de la distribución y luego opuesto de conjunción
+quedaría ($q \lor \bot$) y luego elemento neutro quedando $q$.
