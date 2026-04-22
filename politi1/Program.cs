@@ -1,5 +1,4 @@
-﻿
-// class Program1
+﻿// class Program1
 {
     // static void Main(string[] args)
     {
@@ -81,3 +80,46 @@
 // Console.WriteLine("El area es de: " + area);
 // Console.WriteLine("El perimetro es de: " + perimetro);
 
+////////////////////////////////////////////////////////////
+
+// Interpolación - Template string
+
+// Arrays - Arreglos o vector
+// Conjunto de tipos de datos
+// int edades = {18, 45, 33};
+// Console.WriteLine(5+5); // Muestra pero no guarda el diez
+
+// Definición de variables
+string nombre;
+string apellido;
+int edad;
+bool estudioso;
+string mensaje;
+
+// Inicializo
+nombre = "";
+apellido = "";
+edad = 0;
+estudioso = false;
+mensaje = "";
+
+// Set valores
+nombre = "Matías";
+apellido = "Fiori";
+edad = 19;
+estudioso = true;
+
+// if (estudioso == true)
+// {
+//     mensaje = "Soy un estudiante aplicado";
+// } else
+// {
+//     mensaje = "No soy un estudiante aplicado";
+// }
+
+mensaje = estudioso == true ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado"; // Ternario 
+
+Console.WriteLine("Hola, me llamo " + nombre + " " + apellido + " tengo " + edad + " años" + " y " + mensaje); // Sin interpolación
+// La interpolación es una forma más sencilla de concatenar varias variables
+Console.WriteLine($"Hola, me llamo {nombre} {apellido} tengo {edad} años y {mensaje}"); // Más simple y conciso
+Console.WriteLine($"Hola, me llamo {nombre} {apellido} tengo {edad} años y {(estudioso ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado")}"); // Uso de ternario dentro de una interpolación

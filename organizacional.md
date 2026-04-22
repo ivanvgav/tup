@@ -74,7 +74,7 @@ Puede ser varias maneras:
 
 Sistema de información contable: esto se encarga del sector contabilidad Esto es
 un proceso de comunicación de datos cuantificables (datos mensurables) tiene el
-caracter irreemplazable y única (no se puede tener más de un mismo remito, por
+carácter irreemplazable y única (no se puede tener más de un mismo remito, por
 ejemplo). Quienes usan esta información son la parte gerencial, la parte
 financiera. Pueden ser los propietarios, acreedores, accionistas.
 
@@ -118,7 +118,7 @@ Monotributo:
 ## Sistema de costos
 
 Lo que cuesta producir a uno antes de vender el bien o servicio. No son gastos
-Hay costos fijos (se mantiene independientemente de la venta) costos variables (varian segun las ventas)
+Hay costos fijos (se mantiene independientemente de la venta) costos variables (varian según las ventas)
 
 ## Ejercicio económico
 
@@ -135,31 +135,31 @@ Los cortes no son año a año. Sino que son doce meses pero no corresponden nece
 
 ## Como contribuyente
 
-Puede ser una perona fisica o juridica
+Puede ser una persona física o jurídica
     - se inscribe como RI o como monotributista
-    - RI: Iva ganacias, bienes personales y remuneración
+    - RI: Iva ganancias, bienes personales y remuneración
             - Debe llevar iva venta y compras y remuneraciones
             - Emite factura A y B
     - Monotributista:
-        - La categoria depeden de ganancias anuales, energia consumida y espacio del negocio
+        - La categoría dependen de ganancias anuales, energía consumida y espacio del negocio
         - La cuota en que se inscribe es fija mensual
-            - Correponde a iva y ganancias, obra social y jubilaciones
+            - Corresponde a iva y ganancias, obra social y jubilaciones
             - Si tiene un trabajo no paga obra social ni jubilaciones
             - Solo lleva registro de remuneraciones si es empleador
 
 RPC
 - Libro diario, mayor, balance, iva venta y compra y registro de remuneraciones
 
-Personas Juridicas
+Personas Jurídicas
      - Centro de jubilados, vecinales y fundaciones
-     - Se encuentran excentas de IVA
-     - Deben llevaar un libro de actos, inventario y balance y caja ingreso y egreso
+     - Se encuentran exentas de IVA
+     - Deben llevar un libro de actos, inventario y balance y caja ingreso y egreso
 
 Cooperativas y mutuales
     - Se inscriben en el IPACYM
     - Diario mayor, balance, registro de remuneraciones
 
-Todas estas se inscriben en IVA Ganancia y remeneración en caso de empleador
+Todas estas se inscriben en IVA Ganancia y remuneración en caso de empleador
 
 ## Impuestos provinciales
 Todos se deben inscribir en el impuesto sobre los ingresos brutos
@@ -167,35 +167,35 @@ y en el impuesto para la salud publica en caso de ser empleador
 
 # Contabilidad como sistema
 
-Segun el *ambiente*:
+Según el *ambiente*:
 Abierto o cerrado
 
-Segun su *naturaleza*:
-Fisico o Abstracto
+Según su *naturaleza*:
+Físico o Abstracto
 
 Org *con* fines o *sin* fines de lucro
 
-## La empresa y sus funciones basicas
+## La empresa y sus funciones básicas
 
-- Tecnica -> Produce un bien
+- Técnica -> Produce un bien
 - Comercial -> Compra y venta
 - Financiera -> Prestamos
 - Seguridad -> Cuidados de las personas y empresas
-- Contable -> Registrar los hechos economicos
+- Contable -> Registrar los hechos económicos
 
 ## Tipos de empresa
 
-Segun su actividad:
-Primaria Secundaaria Terciaria
+Según su actividad:
+Primaria Secundaria Terciaria
 
-Segun su fin:
+Según su fin:
 Publica o privada o mixta
 
 ## Sistemas y empresas (p 17)
 
 Informes de uso interno y externo
 
-Interno: Presupuesto y analisis de costos
+Interno: Presupuesto y análisis de costos
 Externo: Balances
 
 ## Ciclo operativo
@@ -204,7 +204,7 @@ Externo: Balances
 
 ## Sistema de información
 
-Sistema de información: registro de hechos economicos para tomar la mejores decisiones
+Sistema de información: registro de hechos económicos para tomar la mejores decisiones
     - Uso interno por los gerentes
     - Uso externo por el estado y entidades que controlan las empresas
 
@@ -213,19 +213,54 @@ Sistema de información: registro de hechos economicos para tomar la mejores dec
 Que es un doc comercial
 Para que sea comprobante debe estar lleno con los datos necesarios.
 
-### Tipo de documetos:
+### Tipo de documentos:
 
 Negociables no negociables
 Informativos o De soporte
 
-## Ejercicio economico
+## Ejercicio económico
 
-Momento economico: compuesto de dos instante de tiempo que corresponde a doce meses.
-Los instante de tiempo son corte para determinar el inicio o fin de un ejercicio economico
+Momento económico: compuesto de dos instante de tiempo que corresponde a doce meses.
+Los instante de tiempo son corte para determinar el inicio o fin de un ejercicio económico
 
 ## Facturas
 
-A con leyenda: quien compra hace una retencion del 50% del IVA y 3% de ganancias
-M: quien compra hace una retencion del 100% del IVA y 6% de ganancias
+A con leyenda: quien compra hace una retención del 50% del IVA y 3% de ganancias
+M: quien compra hace una retención del 100% del IVA y 6% de ganancias
 
 
+# 20260422
+
+***Primer parcial: 8 de mayo 10 a 12*** Los viernes se cambian de 10 a 12 desde el 8 de mayo
+
+En teoría se llegamos hasta manual de cuentas
+
+## Estructura de los recursos
+
+Estos recursos son para cuando uno inicia la empresa.
+
+$Recursos = Fuentes\ 3^{ros} + Fuentes\ propias$
+
+Fuentes propias
+
+DI Decisión de inversión DF decisión de financiación
+
+Las decisiones de inversión dinerarias se puede usar para lo que es
+más conveniente para el negocio.
+En ese sentido es que son independiente de las decisiones de financiación
+
+Las decisiones de inversión en especie están atadas a las decisiones
+de financiación. Esos aportes no son para que se transformen en dinero
+en última instancia sino porque se los necesitan para llevar a cabo
+el objetivo de la empresa
+
+Reinversión es cuando en ves de sacar las utilidades se pone dicho dinero
+en algo para la empresa
+
+Fuentes de terceros:
+
+Prestación de fuente de terceros: Prestamos
+
+Contraprestación: rodado con un crédito prendario (tiene deudas)
+
+Resolución del TP
