@@ -237,7 +237,7 @@ $86.2078125 - 13.537585643440485$ = $72.67022685655952$ GB libres
 
 $1$ GB = $1048576$ kb
 
-Cantidad de imágenes: $1048576 / 2715$ = $386$ 
+Cantidad de imágenes: $1048576 / 2715$ = $386$
 ### Problema 8
 
 4.7GB en MB
@@ -276,3 +276,29 @@ DVD 48128 MB
 
 Se necesita 1.
 
+# 20260423
+
+- SO integrados - microprocesadores (arduino, electrodomesticos)
+- SO distribuidos - muchas computadoras en una sola
+- SO tiempo real - para errores totalmente mínimos (aviones)
+- SO cluster - administra grupo de computadoras que permite realizar un tarea en base a varias computadoras
+- SO popular - Para uso cotidiano y personales
+
+Mainframe:
+  - Computadora de uso empresarial, de uso potente
+  - Se usa en los bancos o ciertas áreas de gobiernos
+
+Tipos de arquitectura de SO
+  - Núcleo monolítico
+    - La mayoría de los procesos trabaja en modo kernel
+  - A diferencia del micro kernel
+    - La mayoría es en modo usuario
+  - Híbrido
+    - Ofrece un equilibrio entre rendimiento y modularidad
+
+## Procesos
+
+Los programas en realidad son procesos.
+El proceso no solo implica el código, sino todo lo necesario para poder trabajar
+
+Parcial: Semana del 19/5 o 21/5

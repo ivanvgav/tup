@@ -166,3 +166,16 @@ EL dato `nombre_del_dia` tiene un valor `viernes`.
             };
           }
           ```
+
+# 20260423
+
+## Operadores
+
+Simbolos para poder realizar distintas operaciones (matemáticas, lógicas, de asignación)
+Estos operadores actuan sobre variables y valores
+
+- Aritmetica: Suma, resta, división y multiplicación, modulo
+    - La Suma sirve para anexar algo (concatenar)
+- Relacionales: Igualdad (==), Diferencia (!=), Mayor a (>), menor a (<), mayor o igual a (>=), menor o igual a (<=)
+- Lógica: Y Conjunción (&&), O Disyunción (||), negación (!)
+- Asignaciones: =
