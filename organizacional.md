@@ -263,4 +263,20 @@ Prestación de fuente de terceros: Prestamos
 
 Contraprestación: rodado con un crédito prendario (tiene deudas)
 
-Resolución del TP
+Resolución del TP 15 15 bis
+
+# 20260424
+
+RI - Unipersonales:
+- Impuestos nacionales: IVA, ganancias, bienes personales, F. 901 (si es empleador), Autónomo (para jubilación)
+
+La contabilidad de las cooperativas y mutuales son diferentes a las de las demás RI.
+
+Ingresos Brutos sale de las ventas (del IVA Ventas)
+El impuesto a la salud pública tiene su base imponible del registro de remuneraciones
+
+Las cuentas de activos en el inicio siempre tienen saldo deudor.
+
+Se vio el tema plan de cuenta, armado de un plan de cuentas por medio de codificación mnemotécnica
+
+El parcial será hasta manual de cuentas

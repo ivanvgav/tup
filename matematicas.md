@@ -339,3 +339,110 @@ En 11b se da con que las disyunciones van a irse y luego quedaría $\top$
 porque siempre va a ser verdadera la disyunción.
 En 11d se puede seguir, hacer inversa de la distribución y luego opuesto de conjunción
 quedaría ($q \lor \bot$) y luego elemento neutro quedando $q$.
+
+# 20260427
+
+## Conjuntos
+
+Definición de Conjunto: Colección bien definida de objetos distintos,
+denominados elementos que pueden compartir alguna características o propiedad común,
+sin orden y sin repetirse.
+
+Los nombres de los conjuntos se escriben con Mayusculas. EJ: $A$ y los elementos con minusculas.
+Ej: $A = \{a, b, c\}$.
+Siempre llevan las llaves y el igual.
+Si un elemento pertence o no al conjunto se usa $\in$. Ej: $b \in A$ o $d \notin A$.
+
+Un conjunto se puede definir por extensión o por compresión (intención).
+Por extensión se nominan los elementos. EJ: $B = \{1, 2, 3, 4\}$
+Mientras que por comprensión se enuncia una característica común de todos los elementos
+EJ: $V = \{x : x\ sea\ una\ vocal\}$ o $A = \forall x / x \in \Z \land x^2 = 1$,
+$B = \{\forall x / x \in abecedario\ \land x = vocal \}$.
+
+Conjunto Vacío: Conjunto que carece de elementos.
+A = {$\emptyset$}.
+Nota: Las llaves si van en este caso por más que se pueda entender que
+es un conjunto con un solo elemento (el vacío).
+
+Inclusión: Se da entre conjuntos. Un conjunto está incluido en otro cuando
+todos los conjuntos del primer conjuntos pertenecen al segundo conjunto.
+
+Ej: $A \subset B$. $A \subset B \iff \forall x \in A \Rightarrow x \in B$
+
+$B \supset A$ es decir que en $B$ incluye a $A$
+
+Un conjunto es igual a otro cuando los elementos de uno tienen los mismo elementos.
+Por lo que $A = B / A \subset B \land B \subset A$
+
+Complemento:
+
+$A^C = x / x \in U \land x \notin A$ donde $U$ es el conjunto Universal.
+
+***Primer parcial:*** 18 de Mayo
+
+### TP 3
+
+#### 1
+1. $F$
+2. $V$
+3. $F$
+4. $V$
+5. $V$
+6. $F$
+7. $F$
+8. $V$
+9. $F$
+
+#### 2
+1. $H = \{\forall x / x \in \N \land 2 \le x \le 10 \land x \% 2 = 0\}$
+   1'. $H = \{x / x \in \N : 2 \le x \le 10 \land x \% 2 = 0\}$
+2. $K = \{\forall x / x \in \N : 1 \le x \le 19 \land x\ es\ impar\}$
+3. $E = \{\forall x / x \in \Z : -5 \le x \le 5 \}$
+
+#### 3
+1. $S = \{2, 4, 8, 16, 32\}$
+2. $T = \{10, 15, 20, 25, 30, 35, 40, 45, 50, \dots, \infty \} $
+3. $U = \{-94, -84, -74, -64, -54, -44, -34, -24, -14, 94, 84, 74, 64, 54, 44, 34, 24, 14 \}$
+
+#### 4
+1. $F$
+2. $V$
+3. $F$
+4. $F$
+5. $V$
+6. $F$
+
+#### 5
+1. $A = \{1, 0, 2\}$
+2. $B = \{i, u\}$
+3. $C = \{20, 5\}$
+4. $D = \{\emptyset\}$
+5. $E = \{a\}$
+6. $F = \{3, 4\}$
+
+#### 6
+
+$C = \{2, 4, 6\}$
+
+1. $F$
+2. $F$
+3. $F$
+4. $V$
+5. $F$
+6. $V$
+
+#### 7
+Opción $d$
+
+#### 8
+$a = 3 o -3$
+$b = 18$
+
+#### 9
+
+Intersección = $\{3\}$
+Unión = $\{1,2,3,4,5\}$
+
+#### 10
+$A - B = \{2, 10\}$
+$B - A = \{2, 10\}$

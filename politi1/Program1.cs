@@ -1,90 +1,6 @@
 // Saludo inicial
-using System;
+Console.WriteLine("Esto es el programa para resolver el TP1.\nTiene que desconmentar cada bloque para ver cada uno de los ejercicios.\n");
 
-
-
-//T.1
-
-//class Program
-//{
-// static void Main()
-//{
-// Console.Clear();
-
-//Console.WriteLine("Hola Mundo!");
-
-//Console.WriteLine("Presione una tecla para finalizar...");
-//Console.ReadKey();
-
-//Console.WriteLine("Fin del programa");
-// }
-//}
-//T.2    
-
-//class Program
-//{
-//static void Main()
-//{
-//Console.Clear();
-
-//Console.Write("Ingrese su nombre: ");
-//string nombre = Console.ReadLine();
-
-//Console.WriteLine("Hola, " + nombre + ".");
-//Console.WriteLine("Presione una tecla para finalizar...");
-//Console.ReadKey();
-
-//Console.WriteLine("Fin del programa");
-
-//}
-//}
-//T.3
-
-
-/*class Program
-{
-    static void Main()
-    {
-        Console.Clear();
-
-        Console.Write("Ingrese el primer número: ");
-        int num1 = int.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese el segundo número: ");
-        int num2 = int.Parse(Console.ReadLine());
-
-        int suma = num1 + num2;
-
-        Console.WriteLine("La suma es: " + suma);
-        Console.WriteLine("Presione una tecla para finalizar...");
-        Console.ReadKey();
-        Console.WriteLine("Fin del programa");
-        
-    }
-}*/
-//T.4
-
-/*class Program
-{
-    static void Main()
-    {
-        Console.Clear();
-
-        Console.Write("Ingrese cotización del dólar: ");
-        double cotizacion = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese pesos disponibles: ");
-        double pesos = double.Parse(Console.ReadLine());
-
-        double dolares = pesos / cotizacion;
-
-        Console.WriteLine("Puede comprar: " + dolares + " dólares");
-        Console.WriteLine("Presione una tecla para finalizar...");
-        Console.ReadKey();
-        Console.WriteLine("Fin del programa");
-        
-    }
-}*/
 //T1.5
 // int precio_del_boleto;
 // int boleto_de_salida;
@@ -408,38 +324,8 @@ using System;
 // Console.WriteLine("El área del casquete es de: " + area);
 // Console.WriteLine("El volumen del casquete es de: " + volumen);
 
-//T.25
+// TODO: Ver el tema de el punto 25
 
-/* 
-class Program
-{
-    static void Main()
-    {
-        Console.Clear();
-
-        // Ingreso de datos
-        Console.Write("Ingrese radio mayor (R): ");
-        double R = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese radio menor (r): ");
-        double r = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese altura (h): ");
-        double h = double.Parse(Console.ReadLine());
-
-        // Cálculos
-        double area = 2 * Math.PI * R * h;
-        double volumen = (Math.PI * h * (Math.Pow(h, 2) + 3 * Math.Pow(R, 2) + 3 * Math.Pow(r, 2))) / 6;
-
-        // Resultados
-        Console.WriteLine("\nResultados:");
-        Console.WriteLine("Área = " + area);
-        Console.WriteLine("Volumen = " + volumen);
-
-        Console.WriteLine("\nFin del programa. Presione una tecla para salir...");
-        Console.ReadKey();
-    }
-} */
 // TP 1.26
 // int lado;
 // double area;
@@ -808,69 +694,6 @@ class Program
 // Promedio = PuntosTotales / PartidosJugados;
 // Console.WriteLine("El promedio del equipo es de: " + Promedio);
 
-//1.45
-
-
-
-/* 
-class Program
-{
-    static void Main()
-    {
-        Console.Clear();
-
-        
-        Console.Write("Ingrese a1: ");
-        double a1 = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese b1: ");
-        double b1 = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese c1: ");
-        double c1 = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese a2: ");
-        double a2 = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese b2: ");
-        double b2 = double.Parse(Console.ReadLine());
-
-        Console.Write("Ingrese c2: ");
-        double c2 = double.Parse(Console.ReadLine());
-
-      
-        double det = (a1 * b2) - (a2 * b1);
-
-        if (det == 0)
-        {
-            Console.WriteLine("El sistema no tiene solución única.");
-        }
-        else
-        {
-           
-            double x = (c1 * b2 - c2 * b1) / det;
-            double y = (a1 * c2 - a2 * c1) / det;
-
-            
-            Console.WriteLine("\nSistema ingresado:");
-            Console.WriteLine(a1 + "x + " + b1 + "y = " + c1);
-            Console.WriteLine(a2 + "x + " + b2 + "y = " + c2);
-
-            Console.WriteLine("\nResultado:");
-            Console.WriteLine("X = " + x);
-            Console.WriteLine("Y = " + y);
-
-           
-            Console.WriteLine("\nComprobación:");
-            Console.WriteLine(a1 + "*" + x + " + " + b1 + "*" + y + " = " + (a1 * x + b1 * y));
-            Console.WriteLine(a2 + "*" + x + " + " + b2 + "*" + y + " = " + (a2 * x + b2 * y));
-        }
-
-        Console.WriteLine("\nFin del programa. Presione una tecla para salir...");
-        Console.ReadKey();
-    }
-}*/
-
 // TP 1.46
 // const int Billete2 = 2;
 // const int Billete5 = 5;
@@ -950,7 +773,7 @@ class Program
 // NombreDelProducto = Console.ReadLine();
 
 // Console.WriteLine("Ingrese precio unitario producto: ");
-// PrecioUnitario = float.Parse(Console.ReadLine());
+// PrecioUnitario = float.Parse(Console.ReadLine()); // TODO(ivan): Verificar esto
 
 // Console.WriteLine("Ingrese cantidad que va a comprar del producto: ");
 // CantidadDelProducto = int.Parse(Console.ReadLine());
