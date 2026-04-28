@@ -302,3 +302,46 @@ Los programas en realidad son procesos.
 El proceso no solo implica el código, sino todo lo necesario para poder trabajar
 
 Parcial: Semana del 19/5 o 21/5
+
+# 20260428
+
+## Algoritmos de procesos
+
+Un proceso es una entidad activa, incluye los recursos asignados y los estados asociados en cada momento.
+El proceso incluye:
+- Código
+- Estado actual
+- Datos para su ejecuación (en memoria)
+- Recursos asignados (CPU)
+
+### Ciclo de vida
+1. Nuevo
+2. Listo (ready) -> Espera la ejecución
+3. Activo (en ejecución)
+4. Bloqueado (espera a un evento)
+
+Luego se termina el proceso cuando finaliza su proceso
+
+PCB (Process control  block)
+- Identificador de procesos
+- Estado actual
+- Recursos asignados
+
+### Procesos vs hilos
+Los hilos comparten misma memoria de un proceso padre
+Un error de un hilo afectan a todos los demás.
+Se usan para tareas paralelas de una misma aplicación.
+Son más eficientes que un proceso en si mismo
+
+## TP 3
+1. a. Primero: Nuevo - Listo
+      Segundo: Activo
+      Cuarto: Bloqueado (espera información)
+      Quito: Ejecución
+      Sexto: Proceso terminado
+   b. El nuevo es provocado por la apertura del navegador. (no interviene la CPU)
+      El proceso es seleccionado por el planificador del SO (interviene la CPU)
+      Se bloquea ante la solicitud de recursos por parte del proceso (no interviene la CPU
+      Al tener nuevos recursos disponibles se vuelve a cambiar el estado del proceso para mostrarlo (interviene la CPU)
+      Se termina el proceso una vez cerrado (no interviene la CPU)
+2. 

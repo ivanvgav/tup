@@ -440,9 +440,46 @@ $b = 18$
 
 #### 9
 
-Intersección = $\{3\}$
-Unión = $\{1,2,3,4,5\}$
+$A \cap B = \{3\}$
+
+$A \cup B = \{1,2,3,4,5\}$
 
 #### 10
 $A - B = \{2, 10\}$
-$B - A = \{2, 10\}$
+$B - A = \{\emptyset\}$
+
+# 20260428
+
+## Intersección de conjuntos
+Intersección es asimilable a la conjunción de los conjuntos.
+Elementos comunes de todos los conjuntos.
+
+$A \cap B = \{\forall x \in U / x \in A \land x \in B\}$
+
+> [!NOTE]
+> Tener en cuenta que al momento de diagramar en el universo hay
+> que poner algunos de los elementos del universo
+
+## Unión de conjuntos
+
+$A \cup B = \{\forall x \in U / x \in A \lor x \in B\}$
+
+Se sombrea todos los elementos de ambos conjuntos.
+
+## Complemento
+
+$A - B = \{\forall x / x \in A \land x \notin B\}$
+
+## Diferencia simétrica
+
+$A\ \triangle\ B = (A - B) \cup (B - A)$
+
+Serían la unión de los elementos de ambos conjuntos que no están en la intersección de $A$ y $B$.
+
+## Conjuntos Disjuntos
+
+Son los conjuntos que no tienen elementos en común
+
+$A \cap B = {\emptyset}$
+
+$A \cap B = \nexists$
