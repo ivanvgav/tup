@@ -90,24 +90,24 @@
 // Console.WriteLine(5+5); // Muestra pero no guarda el diez
 
 // Definición de variables
-string nombre;
-string apellido;
-int edad;
-bool estudioso;
-string mensaje;
+// string nombre;
+// string apellido;
+// int edad;
+// bool estudioso;
+// string mensaje;
 
 // Inicializo
-nombre = "";
-apellido = "";
-edad = 0;
-estudioso = false;
-mensaje = "";
+// nombre = "";
+// apellido = "";
+// edad = 0;
+// estudioso = false;
+// mensaje = "";
 
 // Set valores
-nombre = "Matías";
-apellido = "Fiori";
-edad = 19;
-estudioso = true;
+// nombre = "Matías";
+// apellido = "Fiori";
+// edad = 19;
+// estudioso = true;
 
 // if (estudioso == true)
 // {
@@ -117,9 +117,107 @@ estudioso = true;
 //     mensaje = "No soy un estudiante aplicado";
 // }
 
-mensaje = estudioso == true ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado"; // Ternario 
+// mensaje = estudioso == true ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado"; // Ternario 
 
-Console.WriteLine("Hola, me llamo " + nombre + " " + apellido + " tengo " + edad + " años" + " y " + mensaje); // Sin interpolación
+// Console.WriteLine("Hola, me llamo " + nombre + " " + apellido + " tengo " + edad + " años" + " y " + mensaje); // Sin interpolación
 // La interpolación es una forma más sencilla de concatenar varias variables
-Console.WriteLine($"Hola, me llamo {nombre} {apellido} tengo {edad} años y {mensaje}"); // Más simple y conciso
-Console.WriteLine($"Hola, me llamo {nombre} {apellido} tengo {edad} años y {(estudioso ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado")}"); // Uso de ternario dentro de una interpolación
+// Console.WriteLine($"Hola, me llamo {nombre} {apellido} tengo {edad} años y {mensaje}"); // Más simple y conciso
+// Console.WriteLine($"Hola, me llamo {nombre} {apellido} tengo {edad} años y {(estudioso ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado")}"); // Uso de ternario dentro de una interpolación
+
+////////////////////////////////////////////////////////////
+
+// Parcial semana del 20 de mayo
+// Hacer programa unicamente con switch
+// Carta de un bar
+// Mostrar las opciones en formato de catálogo
+// Tienen que listar los menus y los precios
+// Tiene que tener entradas, plato principales
+
+// definicion de variable
+int opcion;
+int opcion_bebida;
+
+// inicialización de variables
+opcion = 0;
+opcion_bebida = 0;
+
+// Imprimir presentación
+Console.WriteLine("Bienvenidos al Bar Momentos");
+Console.WriteLine("A continuación le pedimos que ingrese un número para ver el menu:");
+Console.WriteLine("(1) Entrada, (2) Plato Principal, (3) Bebidas y (4) Postres");
+
+opcion = int.Parse(Console.ReadLine());
+
+
+// imprimir menu
+switch (opcion)
+{
+    case 1:
+        Console.WriteLine("Entradas:");
+        Console.WriteLine("Empanadas de carne (por unidad) 1000");
+        Console.WriteLine("Empanadas de pollo (por unidad) 900");
+        Console.WriteLine("Sfijas ------------------------ 1000");
+        Console.WriteLine("Rabas  ------------------------ 10000");
+    break;
+
+    case 2:
+        Console.WriteLine("Plato principal:");
+        Console.WriteLine("Milanesas napolitana con papas españolas 18000");
+        Console.WriteLine("Matambre al verdeo con papas españolas - 20000");
+        Console.WriteLine("Pizza muzarella ------------------------ 12000");
+        Console.WriteLine("Pizza de ternera ----------------------- 15000");
+        Console.WriteLine("Ravioles de ricota y verduras ---------- 12000");
+        Console.WriteLine("Canelones de verduras (2 unidades) ----- 70000");
+    break;
+
+    case 3:
+       Console.WriteLine("Elija el tipo de bebida: (1) Con Alcohol, (2) Sin Alcohol");
+       opcion_bebida = int.Parse(Console.ReadLine());
+       switch (opcion_bebida)
+       {
+        case 1:
+            Console.WriteLine("Bebidas con alcohol:");
+            Console.WriteLine("Vino Valentino ------------------------- 3500");
+            Console.WriteLine("Vino Cordero con Piel de Lobo ---------- 7000");
+            Console.WriteLine("Vino Torrentes Echart Privado ---------- 9000");
+            Console.WriteLine("Cerveza Heineken ----------------------- 8000");
+            Console.WriteLine("Cerveza Corona ------------------------- 5000");
+            Console.WriteLine("Cerveza Quilmes ------------------------ 5000");
+        break;
+        
+        case 2:
+            Console.WriteLine("Bebidas sin alcohol:");
+            Console.WriteLine("Agua sin gas (500ml) ------------------------- 2000");
+            Console.WriteLine("Agua con gas (500ml) ------------------------- 1800");
+            Console.WriteLine("Jarra de Limonada ---------------------------- 5000");
+            Console.WriteLine("Coca Cola (1,5l) ----------------------------- 5000");
+            Console.WriteLine("Fanta (1,5l) --------------------------------- 5000");
+            Console.WriteLine("Sprite (1,5l) -------------------------------- 5000");
+            Console.WriteLine("Agua Saborizada (1,5l) (Linea Fresh) --------- 3500");
+        break;
+
+        default:
+            Console.WriteLine("No ingreso un número válido");
+        break;
+       } 
+    break;
+
+    case 4:
+        Console.WriteLine("Postres:");
+        Console.WriteLine("Tiramisú ---------------- 5000");
+        Console.WriteLine("Flan -------------------- 3000");
+        Console.WriteLine("Budin de pan ------------ 3000");
+        Console.WriteLine("Ensalada de Frutas ------ 3500");
+        Console.WriteLine("Brownie c/bocha de helado 8000");
+        Console.WriteLine("Helado (2 bochas) ------- 4000");
+    break;
+
+    default:
+        Console.WriteLine("No ingreso un número válido");
+    break;
+}
+
+// switch principal
+
+
+// output

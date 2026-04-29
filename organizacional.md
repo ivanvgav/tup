@@ -280,3 +280,94 @@ Las cuentas de activos en el inicio siempre tienen saldo deudor.
 Se vio el tema plan de cuenta, armado de un plan de cuentas por medio de codificación mnemotécnica
 
 El parcial será hasta manual de cuentas
+
+# 20260429
+
+## Modificación de facturación de RI
+*Ya no se da más la factura M*. Solo queda la A y la A con leyenda
+(siempre que tenga el patrimonio para sostener)
+La A con leyenda se da cuando no cumple con los pagos
+100% retención de IVA y el 6% de ganancias.
+**A con pago mediante CBU**: no reúnen los requisitos patrimoniales,
+pero tienen que abrir una cuenta donde se tiene que pagar
+
+## Repaso
+Ante las personas físicas para poder inscribirse necesitan CUIT y Clave fiscal
+
+Para personas físicas como RI se inscribe en:
+- IVA
+- Ganancias
+- Autónomo -> Lo paga aunque esté en relación de dependencia (puede no inscribirse)
+- F 901 (En caso de ser empleador)
+
+- Libros que debe llevar:
+    - IVA compra/IVA Venta
+    - Registro de remuneraciones (en caso de ser empleador)
+
+SI desea ser monotributista, se debe fijar en los siguientes parámetros para determinar su categoría:
+- Ingreso Brutos anuales
+- Energía consumida Anual
+- Superficie ocupada
+- Alquileres (opcional)
+
+Debe tributar:
+- IVA y ganancias
+- Aportes jubilatorios
+- Obra social
+    - Si está en relación de dependencia no paga aportes jubilatorios y obra social
+
+Los libros que lleva son el registro de remuneración en caso de tener empleados.
+Por lo que tiene que presentar F. 901
+
+### Personas jurídicas (o existencia ideal)
+
+Antes del ir al ARCA va a dependiendo de que hacen van a ir inscribirse en:
+
+#### RPC
+- SA, SRL, SAS
+- Libros:
+    - Diario, Mayor, Balance, IVA Compra/IVA Venta, Reg. de Remuneración
+- Se inscribe:
+    - IVA
+    - Ganancias
+    - Bienes Personales (para los socios)
+    - Si es empleador debe llenar el F. 901
+
+#### Persona jurídica
+- Fundaciones, Centro vecinales, Centro de jubilados
+- Libros:
+    - Libros de Actas, Caja Ingreso y Egreso, Inventario y Balance
+
+### IPACYM
+- Cooperativas y Mutuales
+- Los libros son los mismo de los que se inscriben en el RPC
+- Sus estados contables son distintos a los que realizan las sociedad comerciales
+
+## Impuestos provinciales
+
+### DGR (Rentas)
+- Impuesto sobre los ingresos brutos
+    - Impuesto sobre la actividad económica
+    - Alícuota: 3,5%
+- Impuesto para la Salud pública (de ser empleador)
+
+## Recursos
+
+$R = F3ros + F P$
+
+Fuentes propias:
+    - Aportes:
+        - Dinero
+        - En especie
+            - Decisión de inversión *vinculada* a la decisión financiera
+    - Reinversión: Utilidades que no se retiran sino que se invierten
+
+Fuentes de terceros:
+    - Prestaciones
+        - Prestamos bancario: Decisión de inversión *independiente* a la decisión financiera
+    - Contraprestaciones
+        - Decisión de inversión *vinculada* a la decisión financiera
+        - Cuando lo que se compra tienen cierta deuda
+            - Un inmueble con garantía hipotecaria
+            - Un rodado con garantía prendaria
+            - Mercadería al fiada
