@@ -333,15 +333,89 @@ Un error de un hilo afectan a todos los demás.
 Se usan para tareas paralelas de una misma aplicación.
 Son más eficientes que un proceso en si mismo
 
+IPC - Mecanismos para que los procesos "hablen" entre sí
+La creación de procesos siempre necesita de memoria nueva para cada proceso
+
 ## TP 3
 1. a. Primero: Nuevo - Listo
-      Segundo: Activo
-      Cuarto: Bloqueado (espera información)
-      Quito: Ejecución
-      Sexto: Proceso terminado
+        Segundo: Activo
+        Cuarto: Bloqueado (espera información)
+        Quinto: Listo a disposición para seleccionar
+        Sexto: Ejecución
+        Séptimo: Proceso terminado
    b. El nuevo es provocado por la apertura del navegador. (no interviene la CPU)
       El proceso es seleccionado por el planificador del SO (interviene la CPU)
       Se bloquea ante la solicitud de recursos por parte del proceso (no interviene la CPU
       Al tener nuevos recursos disponibles se vuelve a cambiar el estado del proceso para mostrarlo (interviene la CPU)
       Se termina el proceso una vez cerrado (no interviene la CPU)
 2. 
+
+
+# 20260430
+
+PCB:
+
+- Bloque de control de procesos: Tabla de los datos del proceso. Cuales son los que se están usando, bloqueados y en espera.
+
+Servicio del SO
+
+- Planificación del CPU: Bloque de control de procesos (PCB)
+- Comunicación (IPC): Permite el intercambio de procesos (semáforos, memoria compartida)
+- Sincronización: Coordina el acceso de múltiples procesos
+
+Los programas son pasivos, los procesos activos
+
+EL SO coordina todo mediante servicios
+
+TP 3
+
+2. Si se accede de manera concurrente puede producir errores porque genera ambigüedades.
+
+## Algoritmos de planificación
+
+- Semáforo: Funciona como un semáforo
+- Mutex: Tiene una llave que se realiza cuando se devuelve la llave
+
+Suponiendo dos procesos: $p_1$ $p_2$ $p_3$
+
+El orden es:
+
+1. $p_1$ su duración es de 8 
+1. $p_2$ su duración es de 4 
+1. $p_3$ su duración es de 2
+
+First Call First Server (FCFS - FIFO): Primero que entra primero que sale
+
+0 - 8 (p1) - 8 - 12 (p2) 8 - 14 (p3)
+
+Short Job First (Primer trabajo primero): LLeva menor tiempo de espera entre los procesos
+
+0 - 2 (p3) - 2 - 6 (p2)  6 - 14 (p1)
+
+Round Robin: Utiliza *quatum* (tiempo fijo)
+Lo que hay que hacer es encontrar un *quatum* más adecuado.
+El programador le asigna uno. EJ: 2.
+A los 2 libera el CPU para que ejecute otro proceso e intercala cada uno de los procesos
+Se ve cuantas interrupciones ha tenido cada uno de los procesos.
+
+0 - 2 - 4 - 6 - 8 - 10 -14
+- p1 - p2 - 
+- 6 seg
+
+TP 3 punto 3
+0 - 6 -(p1)
+6 - 8 -(p2)
+8 - 12 (p3)
+
+SJF:
+0 - 2 -(p2)
+2 - 6 -(p3)
+6 - 12 (p1)
+
+Reduce el SJF porque permite tener dos procesos terminados cuando al mismo tiempo
+
+0 - 2  (p1) quedan 4
+4 - 6  (p2)
+6 - 8  (p3) quedan 2
+8 - 10 (p1) queda 2
+10 - 12 (p2)

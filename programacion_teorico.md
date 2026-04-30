@@ -224,3 +224,104 @@ Estos operadores actúan sobre variables y valores
 29. $V$ o $F$
 30. Esta mal diagramado
 31. Inicio; Leer el número; ¿El número es mayor a 0?; Mostrar "Es positivo"; Fin. 
+
+# 20260430
+
+***Parcial: Semana del 15 de Mayo (semana posible de examen)***
+
+## Estructuras de datos
+
+*Estructura secuencial*: Se va paso a paso en cada una de las tareas.
+Hasta que no se termina una no se empieza la otra.
+
+*Estructura condicional*: Sucede cuando hay algo que comparar o evaluar.
+Se tiene dos posibles ramas de evaluación (condición verdadera o condición falsa).
+Dependiendo de cuando se hace cada una de ellas, dependiendo el caso
+se vuelve al flujo de información.
+
+# TP Estructura secuencial condicional
+
+1. Es un tipo de estructura donde las intrucciones se realizan una después de la otra
+2. Es una estructura que va paso a paso para llevar a cabo su objetivo
+3. Calentar agua
+4. Estructura que permite tomar decisiones dependiendo si se cumple o no
+5. El `if` sirve para evaluar una condición comparandola y ejecutar una acción
+6. Se diferencia porque el `if else` permite comparar alternativas mientras que el `if` solo permite evaluar *una* condición
+7. Comprobar si la condición es verdadera $V$ o $F$
+8. Operadores relacionales: Igual (==), Distinto (!=), Menor (<), Mayor (>), Menor o igual (<=), Mayor o igual (>=)
+9. `if else if else` permite evaluar dos condiciones distintas. En la primera evalua una condición, por ejemplo (si un numero mayor) y realiza una acción si es verdadero,
+si es 
+10. Se evaluan booleanos (`bool`)
+11. $F$
+12. $V$
+13. $V$
+14. $V$
+15. Una estructura secuencial. Evalúa una condición. El bloque else.
+16. Inicio
+     Leer numero
+     resultado = numero * 2
+     Imprimir resultado
+     Fin
+17. Inicio
+     Leer edad
+     Si edad >= 18
+        Entonces
+          Imprimir "Eres mayor de edad"
+     Sino
+          Imprimir "Eres menor de edad"
+     Fin
+18. Es mayor
+19. Inicio
+     Leer numero
+     Si numero > 0 Entonces
+        Imprimir "Es positivo"
+     Sino
+          Imprimir "Es negativo"
+     Fin
+20. Inicio
+     Leer numero1, numero2
+     Si numero1 > numero2 Entonces
+        Imprimir "El número mayor es", numero1
+     Si numero1 == numero2 Entonces
+          Imprimir "Los números son iguales"
+     Fin
+
+1. Realice un algoritmo para determinar si un número es positivo o negativo
+   Realice el diagrama de flujo de datos, pseudocódigo y prueba de escritorio
+2. Realice un algoritmo para determinar cuánto se debe pagar por x cantidad de
+   lápices considerando que si son 1000 o más el costo es de $\$600$ c/u; de lo
+   contrario el precio es de $\$900$ c/u. Realice un diagrama de flujo de datos,
+   pseudocódigo y prueba de escritorio
+
+```
+Inicio
+Leer numero
+Si numero >= 0 Entonces
+  Imprimir "Es positivo"
+Sino
+  Imprimir "Es negativo"
+Fin
+```
+
+| variable | valor | resultado |
+| --------- | ----- | ----------- |
+| numero   | 1     | Es positivo | 
+| numero   | 0     | Es positivo | 
+| numero   | -1     | Es negativo |
+
+
+2.
+
+Inicio
+Leer cantidad_de_lapices
+Si cantidad_de_lapices >= 1000
+  Imprimir "El precio es de \$600"
+Sino
+  Imprimir "El precio es de \$900"
+Fin
+
+| variable | valor | resultado |
+| --------- | ----- | ----------- |
+| cantidad_de_lapices   | 1000     | El precio es de \$600 | 
+| cantidad_de_lapices   | 500     | El precio es de \$900 | 
+| cantidad_de_lapices   | 1200     | El precio es de \$600 |

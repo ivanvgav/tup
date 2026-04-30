@@ -309,8 +309,8 @@ $\neg p \land \neg q$ Conmutativa
 
 ## Circuitos lógicos
 
-La verdad de una propisición se puede asociar al paso de corriente en un
-circuito electrico. Si la proposición es $V$ entonces el circuito está cerrado y
+La verdad de una proposición se puede asociar al paso de corriente en un
+circuito eléctrico. Si la proposición es $V$ entonces el circuito está cerrado y
 si es $F$ está abierto.
 
 La conjunción y la disyunción tienen asociada un circuito. Por lo que para
@@ -348,10 +348,10 @@ Definición de Conjunto: Colección bien definida de objetos distintos,
 denominados elementos que pueden compartir alguna características o propiedad común,
 sin orden y sin repetirse.
 
-Los nombres de los conjuntos se escriben con Mayusculas. EJ: $A$ y los elementos con minusculas.
+Los nombres de los conjuntos se escriben con Mayúsculas. EJ: $A$ y los elementos con minúsculas.
 Ej: $A = \{a, b, c\}$.
 Siempre llevan las llaves y el igual.
-Si un elemento pertence o no al conjunto se usa $\in$. Ej: $b \in A$ o $d \notin A$.
+Si un elemento pertenece o no al conjunto se usa $\in$. Ej: $b \in A$ o $d \notin A$.
 
 Un conjunto se puede definir por extensión o por compresión (intención).
 Por extensión se nominan los elementos. EJ: $B = \{1, 2, 3, 4\}$
