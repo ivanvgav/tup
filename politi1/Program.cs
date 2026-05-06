@@ -427,7 +427,7 @@ for (int i = 0; i <= 12; ++i)
     Console.WriteLine($"Esto es {num} * {i} = {num*i}");
 }
 */
-
+/*
 int acumulador = 0;
 
 for (int i = 0; i <= 100; ++i)
@@ -435,3 +435,4 @@ for (int i = 0; i <= 100; ++i)
     acumulador = acumulador + i;
     Console.WriteLine(acumulador);
 }
+*/
