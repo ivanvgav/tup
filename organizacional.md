@@ -100,7 +100,7 @@ Tipos de facturas A:
 Las facturas va a depender de como el ARCA autoriza
 
 - A
-  - Se da otro responsable inscripto y según el ARCA también se da al monotributista
+  - Se da otro responsable inscrito y según el ARCA también se da al monotributista
 - A con leyendas: se hace retención porque no cumple con los bienes patrimoniales
 - M si no se ha tenido un buen comportamiento
 - E para exportación
@@ -111,9 +111,9 @@ Monotributo:
 
 ## Docs comerciales
 
-| --------------- | O. de compra | Remito | Factura | N. de Debito | N. de Credito | Recibo |
-| Quien emite     | Comprador    | Vend   | Vend    | Vendedor (-) | Vendedor (+)  | Quien recibe por pago de dinero |
-| Se contabiliza  | No           | No     | Si      | Si           | Si            | |
+| --------------- | O. de compra | Remito   | Factura  | N. de Débito | N. de Crédito | Recibo |
+| Quien emite     | Comprador    | Vendedor | Vendedor | Vendedor (-) | Vendedor (+)  | Quien recibe por pago de dinero |
+| Se contabiliza  | No           | No       | Si       | Si           | Si            | No |
 
 ## Sistema de costos
 

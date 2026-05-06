@@ -1,11 +1,11 @@
 ﻿// class Program1
-{
-    // static void Main(string[] args)
-    {
-        // Console.ReadLine(); // Permite ingresar caracteres
-        // Console.ReadKey(); // Permite ingresar teclas
-    }
-}
+// {
+// static void Main(string[] args)
+// {
+// Console.ReadLine(); // Permite ingresar caracteres
+// Console.ReadKey(); // Permite ingresar teclas
+// }
+// }
 
 // Tipos de datos
 // int (integer)
@@ -117,7 +117,7 @@
 //     mensaje = "No soy un estudiante aplicado";
 // }
 
-// mensaje = estudioso == true ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado"; // Ternario 
+// mensaje = estudioso == true ? "Soy un estudiante aplicado" : "No soy un estudiante aplicado"; // Ternario
 
 // Console.WriteLine("Hola, me llamo " + nombre + " " + apellido + " tengo " + edad + " años" + " y " + mensaje); // Sin interpolación
 // La interpolación es una forma más sencilla de concatenar varias variables
@@ -133,7 +133,8 @@
 // Tienen que listar los menus y los precios
 // Tiene que tener entradas, plato principales
 
-// definicion de variable
+/*
+// definición de variable
 int opcion;
 int opcion_bebida;
 
@@ -184,7 +185,7 @@ switch (opcion)
             Console.WriteLine("Cerveza Corona ------------------------- 5000");
             Console.WriteLine("Cerveza Quilmes ------------------------ 5000");
         break;
-        
+
         case 2:
             Console.WriteLine("Bebidas sin alcohol:");
             Console.WriteLine("Agua sin gas (500ml) ------------------------- 2000");
@@ -199,7 +200,7 @@ switch (opcion)
         default:
             Console.WriteLine("No ingreso un número válido");
         break;
-       } 
+       }
     break;
 
     case 4:
@@ -216,8 +217,125 @@ switch (opcion)
         Console.WriteLine("No ingreso un número válido");
     break;
 }
+*/
+// 20260504 - Ciclos repetitivos (while, do while)
 
-// switch principal
+// Console.WriteLine("Ciclos repetitivos!");
+// Console.WriteLine("While - Do While - For - For Each");
+
+// While - Do While - For - For Each
+/*
+ * 1. While (Mientras)
+ *  Mientras suceda algo, yo voy a estar en el bucle
+ * 2. Do (hacer mientras)
+ *  Hace al menos una vez el bucle
+ * 3. for (para)
+ * 4. foreach (para cada uno)(por cada uno)
+ *
+ * Necesitamos ciertas variable para los ciclos repetitivos
+ *  Contador: Permite contar cosas
+ *  Acumulador: Permite sumar, acumular cosas
+*/
+
+// While
+// Se usan los contadores para que puedan hacer algo
+// El while depende de una condición que el programador da para poder salir del bucle
+
+/*
+int contador = 0;
+
+while (contador < 3)
+{
+    Console.WriteLine("Eres menor de edad");
+    contador++;
+    //contador = contador + 1;
+}
+*/
+
+// Do while
+// Entra una sola vez al menos, ya que primero hace la acción y
+// luego compara la condición para poder realizar e bloque o no
+/*
+do
+{
+    Console.WriteLine("Eres menor de edad en el do while");
+}
+while (contador > 3);
+
+// Datos en la base de datos
+string Usuario1Pass = "1234";
+string Usuario1Mail = "pepe@gmail.com";
+
+string mail = "";
+string pass = "";
+
+int ContadorPass = 0;
+//do
+//{
+//    Console.WriteLine("Ingrese el mail");
+//    mail = Console.ReadLine();
+//    Console.WriteLine("Ingrese la contraseña");
+//    pass = Console.ReadLine();
+
+//    ++ContadorPass;
+//    Console.WriteLine($"Contador: {ContadorPass}");
+//} while (ContadorPass < 3);
+*/
+
+/*
+while (ContadorPass  < 3)
+{
+    Console.WriteLine($"Vuelta: {ContadorPass + 1}"); // La vuelta en realidad empieza en 0
+    Console.WriteLine("Ingrese el mail:");
+    mail = Console.ReadLine();
+    Console.WriteLine("Ingrese la contraseña:");
+    pass = Console.ReadLine();
+
+    if (mail == Usuario1Mail && pass == Usuario1Pass)
+    {
+        Console.WriteLine("Bienvenido Jefe!");
+        break; // Si hace lo que quiero, entonces corte el while
+    }
+    else
+    {
+        Console.WriteLine("Ingresaste algún dato del mail o contraseña erróneo");
+        ++ContadorPass;
+        Console.WriteLine($"Tienes {3 - ContadorPass} intentos más antes que se bloquee");
+    }
+
+    Console.WriteLine($"Contador: {ContadorPass}");
+}
 
 
-// output
+
+if (mail == Usuario1Mail && pass == Usuario1Pass)
+{
+    Console.WriteLine("Bienvenido Jefe!");
+}
+else
+{
+    Console.WriteLine("Ingresaste algún dato del mail o contraseña erróneo");
+}
+
+Console.WriteLine($"Tu email es {mail} y tu contraseña es {pass}");
+*/
+
+// Ingresar 3 notas y calcular el promedio con while
+/*
+int cuenta = 0;
+int nota;
+int acumulador_total_notas = 0;
+double promedio = 0;
+
+while (cuenta < 3)
+{
+    Console.WriteLine($"Ingrese la nota {cuenta + 1}:");
+    nota = int.Parse(Console.ReadLine());
+    ++cuenta; // Esto es el contador, siempre tiene que estar dentro del bucle para que pueda salir
+    acumulador_total_notas += nota; //Esto es el acumulador
+}
+Console.WriteLine($"El acumulador es: {acumulador_total_notas}");
+
+promedio = acumulador_total_notas / 3;
+Console.WriteLine($"El promedio final es {promedio}");
+*/

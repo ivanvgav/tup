@@ -95,7 +95,7 @@
 | $F$ | $T$ | $T$ | $T$        | $F$                | $F$      | $T$      | $T$                    | $T$                                                |
 | $F$ | $T$ | $F$ | $F$        | $T$                | $F$      | $T$      | $T$                    | $T$                                                |
 | $F$ | $F$ | $T$ | $T$        | $F$                | $T$      | $T$      | $T$                    | $T$                                                |
-| $F$ | $F$ | $F$ | $F$        | $T$                | $T$      | $T$      | $T$                    | $T$                                                |---
+| $F$ | $F$ | $F$ | $F$        | $T$                | $T$      | $T$      | $T$                    | $T$                                                |
 
 Esto es una tautología
 
@@ -299,7 +299,7 @@ $(\neg p \lor \neg q) \land (\neg q \land \neg p)$ Equivalencia de la negación 
 
 $(\neg p \lor \neg q) \land \neg q \land \neg p$ Asociativa
 
-$[(\neg p \lor \neg q) \land \neg q] \land \neg p$ Asociativa
+$\[(\neg p \lor \neg q) \land \neg q\] \land \neg p$ Asociativa
 
 $\neg q \land \neg p$ Absorción total
 
@@ -483,3 +483,88 @@ Son los conjuntos que no tienen elementos en común
 $A \cap B = {\emptyset}$
 
 $A \cap B = \nexists$
+
+# 20260504
+
+Se ejercitó el TP 4 de Conjuntos
+
+#### 3
+
+# 20260505
+
+Seguimos con el TP de Conjuntos.
+
+Ahora vamos a ver álgebra de conjuntos
+La profesora agregó las leyes de absorción total y parcial
+
+## Leyes del álgebra de conjuntos
+1. Idempotencia con la unión y la intersección
+2. Ley asociativa con la unión y la intersección
+3. Ley conmutativa con la unión y la intersección
+4. Ley distributiva con la unión y la intersección
+4. Ley identidad y absorción con la unión y la intersección
+  - $A$ con vacío en unión da el conjunto $A$
+  - $A$ con Universo en unión da el conjunto $U$
+  - $A$ intersección con U da $A$
+  - $A$ intersección con vacío da vacío
+5. El complemento del complemento es igual al conjunto
+6. $A$ unión complemento de $A$ va a ser todo el Universo
+  - EL complemento del universo es el vacío
+  - $A$ intersección complemento de $A$ es vacío
+  - El complemento del vacío es el Universo $U$
+7. Leyes de absorción total y parcial
+  - Absorción total: $(A \cap B) \cup A \equiv A$
+  - Absorción total: $(A \cup B) \cap A \equiv A$
+  - Absorción parcial: $(A^{C} \cap B) \cup A \equiv A \cup B$
+  - Absorción parcial: $(A^{C} \cup B) \cap A \equiv A \cap B$
+
+## Ejercicios TP
+1.
+  1.
+    - Idempotencia
+    - Absorción total
+    - QED
+  2.
+    - De Morgan
+    - Complemento del complemento (involución)
+    - Idempotencia
+    - QED
+  3.
+    - Definición de diferencia de conjuntos
+    - Asociativa
+    - Ley complementario
+    - Ley de absorción
+    - QED
+  4.
+    - Asociativa
+    - Idempotencia de $B$
+    - Definición de diferencia de conjuntos
+    - De Morgan
+    - Asociativa con $A$ y $A^C$
+    - Ley del complementario
+    - Ley de absorción
+    - QED
+  5.
+    - Definición de diferencia de conjuntos
+    - Definición de diferencia de conjuntos
+    - Asociativa
+    - De Morgan
+    - Definición de la diferencia de conjuntos
+    - QED
+  6. En el punto 6 las últimas C son complementos
+    - Definición de la diferencia de conjuntos
+    - Asociativa
+    - Ley del complementario
+    - Absorción
+    - Absorción
+    - QED
+  7.
+    - Definición de diferencia de conjuntos
+    - De Morgan
+    - Absorción parcial
+    - Asociativa
+    - Distributiva
+    - Ley de complementario (para darme el universal)
+    - Ley de identidad (del universal)
+    - Absorción parcial
+    - QED

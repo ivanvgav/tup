@@ -348,8 +348,6 @@ La creación de procesos siempre necesita de memoria nueva para cada proceso
       Se bloquea ante la solicitud de recursos por parte del proceso (no interviene la CPU
       Al tener nuevos recursos disponibles se vuelve a cambiar el estado del proceso para mostrarlo (interviene la CPU)
       Se termina el proceso una vez cerrado (no interviene la CPU)
-2. 
-
 
 # 20260430
 
@@ -414,8 +412,14 @@ SJF:
 
 Reduce el SJF porque permite tener dos procesos terminados cuando al mismo tiempo
 
-0 - 2  (p1) quedan 4
-4 - 6  (p2)
-6 - 8  (p3) quedan 2
-8 - 10 (p1) queda 2
-10 - 12 (p2)
+0 - 2  -- (p1) quedan 4
+4 - 6  -- (p2)
+6 - 8  -- (p3) quedan 2
+8 - 10 -- (p1) queda 2
+10 - 12 - (p2)
+12 - 14 - (p1)
+14 - 16 - (p1)
+
+5.
+
+Ver 6.3
