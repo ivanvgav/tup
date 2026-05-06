@@ -339,3 +339,99 @@ Console.WriteLine($"El acumulador es: {acumulador_total_notas}");
 promedio = acumulador_total_notas / 3;
 Console.WriteLine($"El promedio final es {promedio}");
 */
+
+// 20260506
+// Primer parcial: 20/05
+// Temas hasta el for
+
+/*
+// TODO(ivan): Necesito indicarle pistas al jugador para que se aproxime al número aleatorio
+// Generar número aleatorio y tratar de pegarle
+int num_a_ingresar = 0;
+int intentos = 0;
+
+//Genración de un número aleatorio
+Random numero = new Random();
+int NumeroAleatorio = numero.Next(1, 10); //Doy el rango del número
+Console.WriteLine($"El número aleatorio es: {NumeroAleatorio}");
+
+while (intentos < 10)
+{
+    Console.WriteLine("Ingrese el número a adivinar");
+    num_a_ingresar = int.Parse(Console.ReadLine());
+
+    if (NumeroAleatorio == num_a_ingresar)
+    {
+        Console.WriteLine("Ganaste! Le Pegaste!");
+        break;
+    } else
+    {
+        ++intentos;
+        Console.WriteLine("Segui participando");
+        Console.WriteLine($"Te quedan {10 - intentos} intentos");
+    }
+}
+*/
+
+/* Ciclos repetitivos (for, foreach)
+ *
+ * Proceso de ejecución:
+ * while -> Condicion -> acción
+ * do while acción -> condición
+ * for, foreach igual al while
+ *
+ * El for tiene inicio y final
+ * el foreach se lo hace para arrays
+ *
+ * FOR
+ * for(inicialización de varibale; final del ciclo, iterador)
+ * {
+ *
+ * }
+ * for(int iterador = 0; iterador < 100, iterador = iterador +1)
+ * {
+ *
+ * }
+ *
+ * Si necesito correr todo necesito un for
+ * Si necesito tener un corte necesito un while
+ */
+
+/*for(int iterador = 0; iterador < 100; iterador = iterador + 1)
+{
+    Console.WriteLine(iterador);
+}
+*/
+/*for(int i = 0; i < 100; ++i)
+{
+
+}*/
+
+// Calculadora de 8
+/*for (int i = 0; i <= 12; ++i)
+{
+    Console.WriteLine($"Esto es 8 * {i} = {8*i}");
+}
+*/
+
+// TODO(ivan): Hacer que solo se pueda hacer del 1 al 12 y que si no es ese número volver a preguntar
+//             Hacerlo con una bandera (booleano que permita mantener el while)
+// Tabla multiplicadora
+/*
+int num = 0;
+
+Console.WriteLine("Ingrese el número");
+num = int.Parse(Console.ReadLine());
+for (int i = 0; i <= 12; ++i)
+{
+    Console.WriteLine($"Esto es {num} * {i} = {num*i}");
+}
+*/
+
+int acumulador = 0;
+
+for (int i = 0; i <= 100; ++i)
+{
+    acumulador = acumulador + i;
+    Console.WriteLine(acumulador);
+}
