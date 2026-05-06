@@ -345,27 +345,62 @@ Console.WriteLine($"El promedio final es {promedio}");
 // Temas hasta el for
 
 /*
-// TODO(ivan): Necesito indicarle pistas al jugador para que se aproxime al número aleatorio
-// Generar número aleatorio y tratar de pegarle
-int num_a_ingresar = 0;
+int NumeroAIngresar = 0;
 int intentos = 0;
 
-//Genración de un número aleatorio
+//Generación de un número aleatorio
 Random numero = new Random();
-int NumeroAleatorio = numero.Next(1, 10); //Doy el rango del número
+int NumeroAleatorio = numero.Next(1, 100); //Doy el rango del número
 Console.WriteLine($"El número aleatorio es: {NumeroAleatorio}");
+
+int UnidadIngresada = 0;
+int UnidadAleatorio = 0;
+int DecenaIngresada = 0;
+int DecenaAleatoria = 0;
 
 while (intentos < 10)
 {
     Console.WriteLine("Ingrese el número a adivinar");
-    num_a_ingresar = int.Parse(Console.ReadLine());
+    NumeroAIngresar = int.Parse(Console.ReadLine());
 
-    if (NumeroAleatorio == num_a_ingresar)
+    // DONE(ivan): Necesito indicarle pistas al jugador para que se aproxime al número aleatorio
+
+    if (NumeroAleatorio == NumeroAIngresar)
     {
         Console.WriteLine("Ganaste! Le Pegaste!");
         break;
     } else
     {
+        UnidadIngresada = NumeroAIngresar % 10;
+        UnidadAleatorio = NumeroAleatorio % 10;
+        if (UnidadIngresada < UnidadAleatorio)
+        {
+            Console.WriteLine($"La unidad del número aleatorio es mayor. La unidad que pusiste es {UnidadIngresada}");
+        } else if (UnidadIngresada == UnidadAleatorio)
+        {
+            Console.WriteLine("Le pegaste al número de la unidad del número aleatorio");
+        } else
+        {
+            Console.WriteLine($"La unidad del número aleatorio es menor. La unidad que pusiste es {UnidadIngresada}");
+        }
+
+        if (NumeroAleatorio >= 10)
+        {
+            DecenaIngresada = (NumeroAIngresar / 10) % 10;
+            DecenaAleatoria = (NumeroAleatorio / 10) % 10;
+            if (DecenaIngresada < DecenaAleatoria)
+            {
+                Console.WriteLine($"La decena del número aleatorio es mayor. La decena que pusiste es {DecenaIngresada}");
+            } else if (DecenaIngresada == DecenaAleatoria)
+            {
+                Console.WriteLine("Le pegaste al número de la decena del número aleatorio");
+            } else
+            {
+                Console.WriteLine($"La decena del número aleatorio es menor. La decena que pusiste es {DecenaIngresada}");
+            }
+        }
+
+        // Aumento los intentos
         ++intentos;
         Console.WriteLine("Segui participando");
         Console.WriteLine($"Te quedan {10 - intentos} intentos");
@@ -414,19 +449,32 @@ while (intentos < 10)
 }
 */
 
-// TODO(ivan): Hacer que solo se pueda hacer del 1 al 12 y que si no es ese número volver a preguntar
+// DONE(ivan): Hacer que solo se pueda hacer del 1 al 12 y que si no es ese número volver a preguntar
 //             Hacerlo con una bandera (booleano que permita mantener el while)
 // Tabla multiplicadora
-/*
-int num = 0;
 
-Console.WriteLine("Ingrese el número");
-num = int.Parse(Console.ReadLine());
-for (int i = 0; i <= 12; ++i)
+int num = 0;
+bool NumerosImposiblesAIngresar = true;
+
+while (NumerosImposiblesAIngresar)
 {
-    Console.WriteLine($"Esto es {num} * {i} = {num*i}");
+    Console.WriteLine("Ingrese el número");
+    num = int.Parse(Console.ReadLine());
+    if (num > 0 && num < 12)
+    {
+        for (int i = 0; i <= 12; ++i)
+        {
+            Console.WriteLine($"Esto es {num} * {i} = {num*i}");
+        }
+        NumerosImposiblesAIngresar = false;
+    } else
+    {
+        Console.WriteLine("Debe ingresar un número del 0 al 12");
+    }
+
 }
 */
+
 /*
 int acumulador = 0;
 
