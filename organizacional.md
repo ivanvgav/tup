@@ -108,7 +108,6 @@ Las facturas va a depender de como el ARCA autoriza
 
 Monotributo:
 
-
 ## Docs comerciales
 
 | --------------- | O. de compra | Remito   | Factura  | N. de Débito | N. de Crédito | Recibo |
@@ -268,7 +267,7 @@ Resolución del TP 15 15 bis
 # 20260424
 
 RI - Unipersonales:
-- Impuestos nacionales: IVA, ganancias, bienes personales, F. 901 (si es empleador), Autónomo (para jubilación)
+- Impuestos nacionales: IVA, ganancias, bienes personales, F. 931 (si es empleador), Autónomo (para jubilación)
 
 La contabilidad de las cooperativas y mutuales son diferentes a las de las demás RI.
 
@@ -281,7 +280,7 @@ Se vio el tema plan de cuenta, armado de un plan de cuentas por medio de codific
 
 El parcial será hasta manual de cuentas
 
-# 20260429
+# 2026042
 
 ## Modificación de facturación de RI
 *Ya no se da más la factura M*. Solo queda la A y la A con leyenda
@@ -298,7 +297,7 @@ Para personas físicas como RI se inscribe en:
 - IVA
 - Ganancias
 - Autónomo -> Lo paga aunque esté en relación de dependencia (puede no inscribirse)
-- F 901 (En caso de ser empleador)
+- F 931 (En caso de ser empleador)
 
 - Libros que debe llevar:
     - IVA compra/IVA Venta
@@ -317,7 +316,7 @@ Debe tributar:
     - Si está en relación de dependencia no paga aportes jubilatorios y obra social
 
 Los libros que lleva son el registro de remuneración en caso de tener empleados.
-Por lo que tiene que presentar F. 901
+Por lo que tiene que presentar F. 931
 
 ### Personas jurídicas (o existencia ideal)
 
@@ -331,7 +330,7 @@ Antes del ir al ARCA va a dependiendo de que hacen van a ir inscribirse en:
     - IVA
     - Ganancias
     - Bienes Personales (para los socios)
-    - Si es empleador debe llenar el F. 901
+    - Si es empleador debe llenar el F. 931
 
 #### Persona jurídica
 - Fundaciones, Centro vecinales, Centro de jubilados
@@ -371,3 +370,64 @@ Fuentes de terceros:
             - Un inmueble con garantía hipotecaria
             - Un rodado con garantía prendaria
             - Mercadería al fiada
+
+# 20260506
+## Repaso
+- Exento de IVA solo no paga IVA, el resto si o si paga impuestos
+- El excento en IVA realiza facturas C
+- La orden de pago no sale de la empresa. Es un documento interno de la empresa
+- Facturas
+    - A:
+        - A con leyenda: cuando hay alguna irregularidad (100% de iVa y 6% de Ganancias)
+        - A mediante pago con CBU:
+            - Cuando no cumple con los requisitos de bienes (inmuebles o autos) registrados
+- La factura que tiene una "X" es un presupuesto *no es una factura*
+    - No es registrable
+- El stock es lo que entra y sale de mercadería
+    - Las fichas de stock permiten controlar la entrada y salida de la mercadería
+
+### Temas que van
+- La empresa y sus funciones básicas (p.8)
+- Recursos y Fuentes
+    - Tipos de fuentes
+    - Clasificación de los recursos
+    - Hojas apartes que dio el profesor
+- Documentos comerciales
+    - Ver *bien* la nota de débito y la crédito
+- Monotributo
+
+## Manual de cuentas
+### Activo
+Todo activo se inicia con un débito
+Siempre van a a tener saldo deudor, o a lo sumo nulo
+
+**Cuentas:**
+- Caja
+    - Movimientos de dinero en efectivo
+
+- Deudores por ventas
+- Rodados
+- Instalaciones
+- Muebles y útiles
+
+### Pasivo
+Se inicia con un crédito
+Siempre tiene que tener saldo acreedor
+
+**Cuentas:**
+- Proveedores
+    - Compra de mercadería a cuenta corriente
+- Documentos a Pagar
+- Anticipos de clientes
+    - Entrega de dinero y todavía no se ha dado la mercancía
+- Sueldos y Jornadas a pagar
+    - Sueldos de los empleados
+
+### Ingreso
+Siempre van al haber
+
+**Cuentas:**
+- Servicios Cobrados
+
+### Egresos
+Siempre van al debe

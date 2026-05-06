@@ -1,4 +1,4 @@
-﻿// class Program1
+// class Program1
 // {
 // static void Main(string[] args)
 // {
@@ -226,15 +226,15 @@ switch (opcion)
 // While - Do While - For - For Each
 /*
  * 1. While (Mientras)
- *  Mientras suceda algo, yo voy a estar en el bucle
+ *     Mientras suceda algo, yo voy a estar en el bucle
  * 2. Do (hacer mientras)
- *  Hace al menos una vez el bucle
+ *     Hace al menos una vez el bucle
  * 3. for (para)
  * 4. foreach (para cada uno)(por cada uno)
  *
  * Necesitamos ciertas variable para los ciclos repetitivos
- *  Contador: Permite contar cosas
- *  Acumulador: Permite sumar, acumular cosas
+ *   - Contador: Permite contar cosas
+ *   - Acumulador: Permite sumar, acumular cosas
 */
 
 // While
