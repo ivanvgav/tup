@@ -301,7 +301,7 @@ Tipos de arquitectura de SO
 Los programas en realidad son procesos.
 El proceso no solo implica el código, sino todo lo necesario para poder trabajar
 
-Parcial: Semana del 19/5 o 21/5
+Parcial: 19/5
 
 # 20260428
 
@@ -378,8 +378,8 @@ Suponiendo dos procesos: $p_1$ $p_2$ $p_3$
 
 El orden es:
 
-1. $p_1$ su duración es de 8 
-1. $p_2$ su duración es de 4 
+1. $p_1$ su duración es de 8
+1. $p_2$ su duración es de 4
 1. $p_3$ su duración es de 2
 
 First Call First Server (FCFS - FIFO): Primero que entra primero que sale
@@ -397,7 +397,7 @@ A los 2 libera el CPU para que ejecute otro proceso e intercala cada uno de los 
 Se ve cuantas interrupciones ha tenido cada uno de los procesos.
 
 0 - 2 - 4 - 6 - 8 - 10 -14
-- p1 - p2 - 
+- p1 - p2 -
 - 6 seg
 
 TP 3 punto 3
@@ -423,3 +423,33 @@ Reduce el SJF porque permite tener dos procesos terminados cuando al mismo tiemp
 5.
 
 Ver 6.3
+
+# 20260507
+
+TODO(ivan): Leer todo el pdf y ver 
+
+## Gestión de memoria (Unidad 4)
+
+| PC |
+| Almacenamiento | HDD/SSD/CD-DVD (Mécanica/Electrónica/Laser) -> Permanente
+| Memoria | RAM/Caché/ROM/Virtual (Memoria trabajo(temporaria intermediaria entre el almacenamiento y la CPU)/Memoria inmediata (tiene los archivos más frecuentes para no tener que usar la RAM)/Memoria de arranque (firmware y lo necesario para que la computadora arranque, es de solo lectura y permanente/Usar parte del almacenamiento para ampliar la memoria RAM))
+
+### TP Memoria
+
+1. - Escritorio: RAM -> Permite poder trabajar de manera amplia
+   - Apuntes: Caché -> Tiene los conceptos más frecuentes y usados
+   - Biblioteca: Almacenamiento -> Permite guardar conocimientos que necesitamos eventualmente
+   - Manual: ROM -> Sin esto no se puede trabajar
+   - Piso: Virtual -> Solo se usa cuando todo el escritorio está lleno
+
+   3. El elemento más rápido es la de los apuntes (caché).
+      La biblioteca tiene más capacidad.
+      Si el escritorio se llena, se hace uso de otros muebles para continuar trabajando
+
+2. | Concepto | Función | Tipo | Velocidad (1 a 5 de más a menos) |
+   | -------- | ------- | ---- | -------------------------------- |
+   | RAM | Permite que los programas se ejecuten | Volatil | 2 |
+   | Caché | Hace de intermediario entre CPU y RAM | Volatil | 1 |
+   | SSD/HDD | Almacena datos | Permanente | 4 |
+   | ROM | Permite el arranque de la computadora | Permanente | 3 |
+   | Memoria Virtual | Amplia la RAM se llena | Volatil | 5 |

@@ -293,6 +293,7 @@ si es
    contrario el precio es de $\$900$ c/u. Realice un diagrama de flujo de datos,
    pseudocódigo y prueba de escritorio
 
+
 ```
 Inicio
 Leer numero
@@ -312,6 +313,7 @@ Fin
 
 2.
 
+```
 Inicio
 Leer cantidad_de_lapices
 Si cantidad_de_lapices >= 1000
@@ -319,9 +321,89 @@ Si cantidad_de_lapices >= 1000
 Sino
   Imprimir "El precio es de \$900"
 Fin
+```
 
 | variable | valor | resultado |
 | --------- | ----- | ----------- |
 | cantidad_de_lapices   | 1000     | El precio es de \$600 | 
 | cantidad_de_lapices   | 500     | El precio es de \$900 | 
 | cantidad_de_lapices   | 1200     | El precio es de \$600 |
+
+# 20260507
+
+**Primer parcial: 28 de Mayo**
+
+## Estructuras repetitivas
+
+Pseudocode `while`
+
+```
+Mientras condicion
+  Ejecución
+FinMientras
+```
+
+Pseudocode `do while`
+
+```
+Repite
+  Ejecución
+HastaQue condicion
+```
+
+Pseudocode `for`
+```
+Desde valor inicial Hasta valor final
+  Ejecución
+FinDesde
+```
+## TP Estructuras de bucles
+
+1. b
+2. c
+3. a
+4. b
+5. b
+6. $V$
+7. `for`
+8. | Tipo de estructura | Característica                                           | Diferencia                       |
+   | ------------------ | -------------------------------------------------------- | -------------------------------- |
+   | `while`            | Ejecuta en tanto se cumpla la condición                  | -                                |
+   | `do while`         | Ejecuta primero y luego comprueba la condición del bucle | La condición es evaluada después |
+   | `for`              | Ejecuta un número finito y determinado de veces          | Tiene un inicio y fin explícitos |
+9. I. b
+   II. `for`
+   III. `while`
+
+1. El negocio "Loren" tiene una promoción: a todos los trajes que tienen un precio superior a $25000
+   se les aplicará un descuento de 15%, a todos los demás se les aplicará un 8%.
+   Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar un traje
+   y de cuánto es el descuento que obtendrá.
+   Representarlo mediante diagrama de flujo y pseudocódigo.
+
+```
+Inicio
+  descuento_de_15;
+  descuento_de_8;
+  precio_de_traje;
+  subtotal;
+  precio_total;
+
+  descuento_de_15 = 0.15;
+  descuento_de_8  = 0.08;
+
+  
+  Imprimir "Ingrese el monto del traje";
+  Leer precio_de_traje
+
+  Si precio_de_traje > 25000 entonces
+    subtotal = precio_de_traje * descuento_de_15
+    precio_total = precio_de_traje - subtotal
+  Sino
+    subtotal = precio_de_traje * descuento_de_8
+    precio_total = precio_de_traje - subtotal
+  FinSi
+
+  Imprimir "El precio total del traje es de: ", precio_total
+Fin
+```

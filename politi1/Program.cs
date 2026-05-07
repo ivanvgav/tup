@@ -452,7 +452,7 @@ while (intentos < 10)
 // DONE(ivan): Hacer que solo se pueda hacer del 1 al 12 y que si no es ese número volver a preguntar
 //             Hacerlo con una bandera (booleano que permita mantener el while)
 // Tabla multiplicadora
-
+/*
 int num = 0;
 bool NumerosImposiblesAIngresar = true;
 
