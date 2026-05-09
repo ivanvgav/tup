@@ -420,9 +420,20 @@ Reduce el SJF porque permite tener dos procesos terminados cuando al mismo tiemp
 12 - 14 - (p1)
 14 - 16 - (p1)
 
-5.
+P1 se interrumpe 4 veces, P2 no se interrumpe y P3 se interrumpe 2
 
-Ver 6.3
+5. Esta usando el modelo de memoria compartida.
+   Esto quiere decir que hay un espacio de memoria el cual permite que los
+   procesos puedan leer y escribir dentro de ese espacio de memoria. Uno de los
+   problema que tiene este modelo puede suceder si el proceso B lee antes de
+   tiempo la memoria entonces no va a poder realizar bien su tarea o va a
+   incurrir en errores debido a que no ha terminado el proceso A ha termino su tarea.
+   La manera de solucionar es tomar otro modelo de comunicación entre procesos: el piping.
+   La idea de usar el output de un proceso como el input del otro proceso.
+   Esto asegura que una vez terminado el proceso A recien pueda empezar el proceso B
+   y se asegure que sea la entrada para el proceso B entonces ese proceso no pueda
+   leer antes en la memoria.
+
 
 # 20260507
 

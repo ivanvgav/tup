@@ -386,7 +386,7 @@ Inicio
   descuento_de_15;
   descuento_de_8;
   precio_de_traje;
-  subtotal;
+  monto_del_descuento;
   precio_total;
 
   descuento_de_15 = 0.15;
@@ -397,13 +397,86 @@ Inicio
   Leer precio_de_traje
 
   Si precio_de_traje > 25000 entonces
-    subtotal = precio_de_traje * descuento_de_15
-    precio_total = precio_de_traje - subtotal
+    monto_del_descuento = precio_de_traje * descuento_de_15
+    precio_total = precio_de_traje - monto_del_descuento
   Sino
-    subtotal = precio_de_traje * descuento_de_8
-    precio_total = precio_de_traje - subtotal
+    monto_del_descuento = precio_de_traje * descuento_de_8
+    precio_total = precio_de_traje - monto_del_descuento
   FinSi
 
   Imprimir "El precio total del traje es de: ", precio_total
 Fin
 ```
+
+# 202060508
+
+1. Se requiere algún algortimo para obetener la suma de diez cantidades mediante
+   la realización de un ciclo `while`. Realice el diagrama de flujo, el pesudocódigo
+   y prueba de escritorio.
+    - Debe ingresar hasta 10 números y sumarlos. No olvidar tener también un contador.
+
+    ```
+    Inicio
+        numero;
+        contador;
+        suma;
+        contador = 0;
+        numero = 0;
+        suma = 0;
+
+        Imprimir "Ingrese un número";
+        Leer numero;
+        
+        Mientras contador < 10
+            suma += numero;
+            contador++;
+        FinMientras
+    Fin
+    ```
+
+    Prueba de escritorio
+
+    | variable | valor | resultado |
+    | -------- | ----- | --------- |
+    | numero | 100 | 100 |
+    | contador | 0 | 1 |
+    | suma | 0 | 100 |
+    | numero | 200 | 100 | 200 |
+    | contador | 1 | 2 |
+    | suma | 100 | 300 |
+    | numero | 50 | 200 | 50 |
+    | contador | 2 | 3 |
+    | suma | 300 | 350 |
+    | numero | 200 | 50 | 200 |
+    | contador | 3 | 4 |
+    | suma | 350 | 550 |
+    | numero | 200 | 100 | 100 |
+    | contador | 4 | 5 |
+    | suma | 550 | 650 |
+
+2. Elabore un algoritmo que imprima los números del 1 al 100
+
+    ```
+    Inicio
+        i;
+
+        Para i = 1 hasta que i <= 100
+            Imprimir "El número es: ", i;
+        FinPara
+    Fin
+    ```
+
+    Prueba de escritorio
+
+    | variable | valor | resultado |
+    | -------- | ----- | --------- |
+    | i | 1 | El número es: 1 |
+    | i | 2 | El número es: 2 |
+    | i | 3 | El número es: 3 |
+    | i | 4 | El número es: 4 |
+    | i | 5 | El número es: 5 |
+    | i | 6 | El número es: 6 |
+    | i | 7 | El número es: 7 |
+    | i | 8 | El número es: 8 |
+    | i | 9 | El número es: 9 |
+    | i | 10 | El número es: 10 |

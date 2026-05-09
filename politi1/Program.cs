@@ -248,7 +248,7 @@ while (contador < 3)
 {
     Console.WriteLine("Eres menor de edad");
     contador++;
-    //contador = contador + 1;
+    //contador = contador + 1; // También se puede aplicar esto para aumentar el contador
 }
 */
 

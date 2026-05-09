@@ -111,6 +111,7 @@ Monotributo:
 ## Docs comerciales
 
 | --------------- | O. de compra | Remito   | Factura  | N. de Débito | N. de Crédito | Recibo |
+| --------------- | ------------ | -------  | -------- | ------------ | ------------- | ------ |
 | Quien emite     | Comprador    | Vendedor | Vendedor | Vendedor (-) | Vendedor (+)  | Quien recibe por pago de dinero |
 | Se contabiliza  | No           | No       | Si       | Si           | Si            | No |
 
@@ -242,7 +243,8 @@ $Recursos = Fuentes\ 3^{ros} + Fuentes\ propias$
 
 Fuentes propias
 
-DI Decisión de inversión DF decisión de financiación
+- DI: Decisión de inversión 
+- DF: Decisión de financiación
 
 Las decisiones de inversión dinerarias se puede usar para lo que es
 más conveniente para el negocio.
@@ -369,7 +371,7 @@ Fuentes de terceros:
         - Cuando lo que se compra tienen cierta deuda
             - Un inmueble con garantía hipotecaria
             - Un rodado con garantía prendaria
-            - Mercadería al fiada
+            - Mercadería al fiado
 
 # 20260506
 ## Repaso
@@ -395,6 +397,8 @@ Fuentes de terceros:
 - Documentos comerciales
     - Ver *bien* la nota de débito y la crédito
 - Monotributo
+
+<!-- Hasta aquí Primer Parcial -->
 
 ## Manual de cuentas
 ### Activo
