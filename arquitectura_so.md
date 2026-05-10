@@ -434,10 +434,9 @@ P1 se interrumpe 4 veces, P2 no se interrumpe y P3 se interrumpe 2
    y se asegure que sea la entrada para el proceso B entonces ese proceso no pueda
    leer antes en la memoria.
 
+<!-- TODO: Armar el TP 3 y subirlo al classroom -->
 
 # 20260507
-
-TODO(ivan): Leer todo el pdf y ver 
 
 ## Gestión de memoria (Unidad 4)
 
