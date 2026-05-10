@@ -1,5 +1,5 @@
 // Saludo inicial
-Console.WriteLine("Esto es el programa para resolver el TP1.\nTiene que desconmentar cada bloque para ver cada uno de los ejercicios.\n");
+//Console.WriteLine("Esto es el programa para resolver el TP1.\nTiene que desconmentar cada bloque para ver cada uno de los ejercicios.\n");
 
 //T1.5
 // int precio_del_boleto;

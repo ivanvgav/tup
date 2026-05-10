@@ -574,7 +574,7 @@ while (encendido)
                     Console.WriteLine("No puede extraer el monto ingresado, por favor vea su balance.");
                 } else
                 {
-                    deposito_inicial = numero_extraccion - deposito_inicial;
+                    deposito_inicial = deposito_inicial - numero_extraccion;
                     Console.WriteLine("Reciba el dinero por favor...");
                     Console.WriteLine($"Su Balance es de: {deposito_inicial}");
                 }
@@ -610,9 +610,9 @@ multiplication accumulators
 validation
 */
 
-
+/*
 int number;
-int factorial;
+long factorial;
 
 number = 0;
 factorial = 1;
