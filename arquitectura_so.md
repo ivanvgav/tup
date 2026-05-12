@@ -463,3 +463,84 @@ P1 se interrumpe 4 veces, P2 no se interrumpe y P3 se interrumpe 2
    | SSD/HDD | Almacena datos | Permanente | 4 |
    | ROM | Permite el arranque de la computadora | Permanente | 3 |
    | Memoria Virtual | Amplia la RAM se llena | Volatil | 5 |
+
+# 20260512
+
+¿Cómo se pueden abrir tantas aplicaciones a la vez en una pc?
+
+**Gestión de memoria**: Repartir la memoria entre procesos para que el procesador
+esté ocioso el menor tiempo posible
+
+La gestión de memoria:
+  - implica -> Re-ubicación
+  - implica -> Protección -> Poner bayas para que no usen los mismos espacios de memoria
+  - implica -> Compartición -> Manejo de los espacios comunes de memoria
+  - implica -> Organización -> Traducción entre los que los programas creen que utilizan y lo que realmente utilizan
+
+## Primer intento de solución a la Organización
+### Particiones simples
+- Dividir la memoria en espacios de igual tamaño, los cuales se asignan a los
+  diferentes procesos
+    - Se tiene un problema en cuanto a la distribución.
+      Se puede desperdiciar espacios sea porque el proceso es muy grande o pequeño.
+      Por lo que se produce una fragmentación interna (dentro de la partición)
+      y externa (entre particiones)
+
+### Compactación
+Soluciona la fragmentación.
+Por medio de fuerza bruta se compactan todos los pedazos de procesos.
+El problema es que es bastante costoso en tiempo para el procesador.
+
+¿Y si un programa no necesitara estar en único trozo de memoria?
+
+1. Paginación:
+  - División de la memoria que son fijos y pequeños
+  - La memoria se divide en marcos y los procesos se dividen en páginas (de igual tamaño).
+    Entonces para cada una de las páginas se asignan marcos que no necesariamente
+    tienen que estar uno al lado del otro.
+  - Se tiene que llevar a cabo un proceso de traducción ya que la dirección
+    lógica del proceso no es la misma que la dirección física de la RAM
+
+Ilustración:
+```
+Procesos                Memoria
+
+|------|                |------|
+|  P1  |                |  P1  |
+|------|                |//////|
+|  P2  |   Traducción   |//////|
+|------|      MMU       |------|
+|  P3  |                |  P3  |
+|------|                |------|
+                        |  P2  |
+                        |------|
+```
+
+2. Segmentación:
+- Se usan espacios de memoria variable dependiendo del proceso que se vaya a usar
+- Divide el programa en fragmentos lógicos de diferentes tipos
+  (código, variables, pila) y se alojan en segmentos no continuos de la memoria
+- Fallo de segmentación/paginación
+  - Un programa quiere acceder a una dirección de memoria que no le corresponde
+    EL programa piensa que toda la memoria es suya y el fallo se produce cuando
+    la dirección no esta asignada bien al programa
+
+### Traducción de direcciones
+**MMU** (Management Memory Unit):
+- Unidad de gestión de Memoria
+- Hace la traducción de la dirección lógica (la que manejan los programas) a la
+  dirección física (dirección real en la RAM)
+
+## TP Gestión de memoria
+1. d ✅
+2. c ✅
+3. d ✅
+4. a ✅
+5. b ✅
+6. b ✅
+7. c ✅
+8. c ✅
+9. a ✅
+10. a ✅
+
+<!---TODO(ivan): Ver las otras preguntas para tenerlas en cuenta para el parcial--->
