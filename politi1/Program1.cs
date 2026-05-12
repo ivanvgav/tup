@@ -633,12 +633,11 @@ for (int i = 1; i <= number; ++i)
 
 Console.WriteLine($"El factorial del número {number} es de {factorial}");
 
-
 /*
+
 10. Student Grades
 Ask how many students there are.
-For each student:
-Enter a grade from 0 to 100
+For each student: Enter a grade from 0 to 100
 
 At the end print:
 Average grade
@@ -646,8 +645,556 @@ Highest grade
 Lowest grade
 Number of students that passed (>= 60)
 
-Concepts:
-loops
-comparisons
-accumulators
+Concepts: loops comparisons accumulators
 */
+
+/*
+11. Pattern Triangle
+Ask the user for a number.
+Print a triangle using *.
+
+Example for 5:
+*
+**
+***
+****
+*****
+
+Extra:
+Print the inverted triangle too
+
+Concepts: nested loops
+*/
+
+/*
+string star = "*";
+string pyramid = "";
+
+for (int i = 1; i <= 5 ;++i)
+{
+    pyramid = pyramid + star;
+    Console.WriteLine($"{pyramid}");
+}
+
+for (int i = 5; i >= 1; --i)
+{
+    pyramid = "";
+
+    for (int j = 1; j <= i; ++j)
+    {
+        pyramid = pyramid + star;
+    }
+    Console.WriteLine($"{pyramid}");
+}
+*/
+
+/*
+15. Mini Casino Game
+The player starts with $100.
+
+Each round:
+Bet an amount
+Guess a number from 1 to 5
+Random number is generated
+
+Rules:
+Correct guess -> win double
+Wrong guess -> lose the bet
+Game ends if balance reaches 0 or player exits
+
+Concepts: loops random numbers conditionals game state
+*/
+/*
+int deposito_inicial = 100;
+int numero_ingresado = 100; // Número grande para que no salte el while y tenga un valor no basura
+int monto_a_apostar;
+
+Random numero = new Random();
+int NumeroAleatorio = numero.Next(1, 5); //Doy el rango del número
+Console.WriteLine($"El número aleatorio es: {NumeroAleatorio}");
+
+while (deposito_inicial == 0 || numero_ingresado != 0)
+{
+    if (deposito_inicial == 0)
+    {
+        Console.WriteLine("Te has quedado sin dinero");
+        Environment.Exit(0);
+    }
+
+    Console.WriteLine("Ingrese el monto a apostar");
+    monto_a_apostar = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Ingrese un número del 1 al 5");
+    numero_ingresado = int.Parse(Console.ReadLine());
+
+    if (numero_ingresado == NumeroAleatorio)
+    {
+        Console.WriteLine("Has ganado el doble!");
+        deposito_inicial += monto_a_apostar;
+        Console.WriteLine($"Tu monto total ahora es de: {deposito_inicial}");
+    } else
+    {
+        Console.WriteLine("Le has errado a la apuesta!");
+        deposito_inicial -= monto_a_apostar;
+        Console.WriteLine($"Tu monto total ahora es de: {deposito_inicial}");
+    }
+}
+*/
+
+
+// ======================================================
+// 1. Fibonacci Sequence
+// ======================================================
+//
+// Ask the user for a number N.
+//
+// Print the first N Fibonacci numbers.
+//
+// Example:
+// How many numbers? 7
+//
+// 0
+// 1
+// 1
+// 2
+// 3
+// 5
+// 8
+//
+// Concepts:
+// - loops
+// - temporary variables
+// ======================================================
+/*
+int fibonacci;
+int previous = 0;
+int current = 1;
+
+Console.WriteLine("Ingrese un número para saber su secuencia fibonacci: ");
+fibonacci = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < fibonacci; ++i)
+{
+    Console.Write($"{previous}\n");
+
+    int next = previous + current;
+    previous = current;
+    current = next;
+}
+*/
+// ======================================================
+// 2. Reverse a Number
+// ======================================================
+//
+// Ask the user for a number.
+//
+// Print the number reversed.
+//
+// Example:
+// Input: 12345
+// Output: 54321
+//
+// Extra:
+// - Determine whether the number is a palindrome
+//
+// Concepts:
+// - %
+// - /
+// - loops
+// ======================================================
+/*
+int number;
+int digit;
+int cantidad_de_loop;
+int number_for_loop;
+int initial_number;
+string reverse_number;
+
+reverse_number = "";
+cantidad_de_loop = 0;
+
+Console.WriteLine("Inserte el numero que quiere revertir: ");
+number = int.Parse(Console.ReadLine());
+
+// La pregunta es: se podría usar dos funciones para que no se tenga que almacenar dos veces el número?
+number_for_loop = number;
+initial_number = number;
+
+// este while me permite saber la cantidad de veces que va a tener que hacer el bucle
+// dadas sus cantidad de números
+while(number % 10 != 0)
+{
+    ++cantidad_de_loop;
+    number = number / 10;
+}
+
+// aca la idea es la de tener que sacar el ultimo digito
+// luego eliminarlo para agregarlo a un string vacio
+for (int i = 0; i < cantidad_de_loop; ++i)
+{
+    digit = number_for_loop % 10; // Con esta operación consigo el último número
+    number_for_loop = number_for_loop / 10; // Con esta operación saco el último número
+    reverse_number = reverse_number + digit.ToString();
+}
+
+Console.WriteLine(reverse_number);
+if (initial_number == int.Parse(reverse_number))
+{
+    Console.WriteLine("Son números palindromos");
+}
+*/
+
+// ======================================================
+// 3. Digit Counter
+// ======================================================
+//
+// Ask the user for a number.
+//
+// Count how many digits it has.
+//
+// Example:
+// 9321 -> 4 digits
+//
+// Extra:
+// - Count even digits and odd digits separately
+// ======================================================
+
+/*
+int number;
+int digit;
+int odd_count;
+int even_count;
+int resto;
+
+digit = 0;
+odd_count = 0;
+even_count = 0;
+resto = 0;
+
+Console.WriteLine("Ingrese el número que desea modificar");
+number = int.Parse(Console.ReadLine());
+
+while (number % 10 != 0)
+{
+    resto = number % 10;
+    if (resto % 2 == 0)
+    {
+        ++odd_count;
+    }
+    if (resto % 2 != 0)
+    {
+        ++even_count;
+    }
+
+    ++digit;
+    number = number / 10;
+}
+
+Console.WriteLine($"El número tiene {digit} dígitos. El número tiene {odd_count} dígitos pares y {even_count} dígitos impares");
+*/
+
+// ======================================================
+// 4. Sum of Digits
+// ======================================================
+//
+// Ask the user for a number.
+//
+// Calculate the sum of all digits.
+//
+// Example:
+// 1234 -> 10
+//
+// Concepts:
+// - %
+// - integer division
+// ======================================================
+
+
+
+// ======================================================
+// 5. Perfect Number Checker
+// ======================================================
+//
+// A perfect number is equal to the sum of its divisors.
+//
+// Example:
+// 6 = 1 + 2 + 3
+//
+// Ask the user for a number and determine
+// whether it is perfect.
+//
+// Concepts:
+// - loops
+// - divisibility
+// - accumulators
+// ======================================================
+
+
+
+// ======================================================
+// 6. Number Pyramid
+// ======================================================
+//
+// Ask the user for a height.
+//
+// Print:
+//
+// Example for 5:
+//
+// 1
+// 12
+// 123
+// 1234
+// 12345
+//
+// Extra:
+// - Print the inverted version too
+//
+// Concepts:
+// - nested loops
+// ======================================================
+
+
+
+// ======================================================
+// 7. Shopping Cart Simulator
+// ======================================================
+//
+// Repeatedly ask:
+// - product price
+// - quantity
+//
+// Stop when price is 0.
+//
+// Print:
+// - total items
+// - total cost
+// - most expensive product
+//
+// Concepts:
+// - sentinel loops
+// - accumulators
+// - comparisons
+// ======================================================
+
+
+
+// ======================================================
+// 8. Rock Paper Scissors
+// ======================================================
+//
+// User vs computer.
+//
+// Rules:
+// - Rock beats scissors
+// - Scissors beats paper
+// - Paper beats rock
+//
+// Play until the user exits.
+//
+// Keep score:
+// - wins
+// - losses
+// - draws
+//
+// Concepts:
+// - switch
+// - random
+// - loops
+// ======================================================
+
+
+
+// ======================================================
+// 9. Bank Loan Validator
+// ======================================================
+//
+// Ask:
+// - salary
+// - monthly expenses
+// - requested loan
+//
+// Rules:
+// loan approved only if:
+//
+// salary - expenses >= loan * 0.30
+//
+// Print approved or rejected.
+//
+// Extra:
+// - Allow multiple clients
+//
+// Concepts:
+// - conditionals
+// - loops
+// ======================================================
+
+
+
+// ======================================================
+// 10. Mini Voting System
+// ======================================================
+//
+// Candidates:
+//
+// 1 - Alice
+// 2 - Bob
+// 3 - Charlie
+// 4 - Blank vote
+// 0 - End voting
+//
+// Count votes.
+//
+// At the end print:
+// - total votes
+// - winner
+// - blank votes
+//
+// Extra:
+// - Handle ties
+//
+// Concepts:
+// - counters
+// - loops
+// - comparisons
+// ======================================================
+
+
+
+// ======================================================
+// 11. Temperature Analyzer
+// ======================================================
+//
+// Ask how many temperatures will be entered.
+//
+// For each temperature:
+//
+// Determine if:
+// - cold (<10)
+// - warm (10-25)
+// - hot (>25)
+//
+// At the end print:
+// - average temperature
+// - hottest
+// - coldest
+// - count per category
+// ======================================================
+
+
+
+// ======================================================
+// 12. PIN Code System
+// ======================================================
+//
+// Correct PIN:
+//
+// 4321
+//
+// Rules:
+// - 3 attempts max
+//
+// If successful:
+// show a menu:
+//
+// 1 - Balance
+// 2 - Deposit
+// 3 - Exit
+//
+// Concepts:
+// - nested loops
+// - authentication
+// - menus
+// ======================================================
+
+
+
+// ======================================================
+// 13. ASCII Rectangle
+// ======================================================
+//
+// Ask:
+// - width
+// - height
+//
+// Print a rectangle using *
+//
+// Example:
+//
+// *****
+// *****
+// *****
+//
+// Extra:
+// - Print only the borders
+//
+// Example:
+//
+// *****
+// *   *
+// *   *
+// *****
+//
+// Concepts:
+// - nested loops
+// - conditions inside loops
+// ======================================================
+
+
+
+// ======================================================
+// 14. Multiplication Quiz Game
+// ======================================================
+//
+// Generate random multiplications.
+//
+// Example:
+//
+// 7 * 3 = ?
+//
+// The player answers.
+//
+// After 10 questions print:
+// - score
+// - correct answers
+// - incorrect answers
+//
+// Extra:
+// - Add difficulty levels
+//
+// Concepts:
+// - random
+// - loops
+// - counters
+// ======================================================
+
+
+
+// ======================================================
+// 15. Mini Text Menu RPG
+// ======================================================
+//
+// Player starts with:
+//
+// Health: 100
+// Potions: 3
+//
+// Menu:
+//
+// 1 - Fight
+// 2 - Drink potion
+// 3 - Rest
+// 4 - Exit
+//
+// Rules:
+// - Fight causes random damage
+// - Potion heals
+// - Rest restores small health
+// - Game ends at 0 health
+//
+// Concepts:
+// - game loop
+// - state management
+// - random
+// - conditionals
+// ======================================================
