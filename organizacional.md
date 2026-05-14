@@ -243,7 +243,7 @@ $Recursos = Fuentes\ 3^{ros} + Fuentes\ propias$
 
 Fuentes propias
 
-- DI: Decisión de inversión 
+- DI: Decisión de inversión
 - DF: Decisión de financiación
 
 Las decisiones de inversión dinerarias se puede usar para lo que es
@@ -435,3 +435,44 @@ Siempre van al haber
 
 ### Egresos
 Siempre van al debe
+
+# 202060513
+$R = F^{3eros} + F^{P}$ Fórmula de fuentes
+$R = D^{3eros} + D^{P}$ Fórmula de derechos
+$A = P + PN + (I - E)$ Partida doble
+
+Ahora se va a el manual de cuentas para cada una de las cuentas y donde
+tienen que ir cada una de ellas.
+
+## Activo
+Cuentas de activos con saldo deudor o neutro (nulo)
+
+### Caja
+Se debita cuando empezamos el ejercicio económico
+y por ingresos de dinero durante todo el ejercicio
+Se acredita por egreso de dinero (pagos a acreedores, ej)
+y por cancelación de la cuenta al fin del ejercicio
+
+### Banco
+Fondos que tiene la empresa en la cuenta corriente en un banco
+
+## Pasivo
+Cuentas de pasivo con saldo acreedor o nulo
+
+## Patrimonio Neto
+Siempre tienen saldo acreedor
+
+### Capital social
+Valor legal de la empresa. Esta dado por los aportes de los socios.
+
+### Reserva
+Son u porcentaje de reserva dado por el capital social
+
+## Cuentas de resultado
+No tienen saldo al ejercicio siguiente. Se reinician todos de los resultados
+
+### Ingreso
+Tienen saldo acreedor
+
+### Egreso
+Tienen saldo deudor
