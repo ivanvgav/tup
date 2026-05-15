@@ -459,6 +459,8 @@ Fondos que tiene la empresa en la cuenta corriente en un banco
 ## Pasivo
 Cuentas de pasivo con saldo acreedor o nulo
 
+### Proveedores
+
 ## Patrimonio Neto
 Siempre tienen saldo acreedor
 
@@ -473,6 +475,64 @@ No tienen saldo al ejercicio siguiente. Se reinician todos de los resultados
 
 ### Ingreso
 Tienen saldo acreedor
+Nunca van a estar en el debe. *Unicamente* al final del ejercicio económico
 
 ### Egreso
 Tienen saldo deudor
+
+Ej: Costo de mercadería vendida
+
+# 20260515
+Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio neto
+
+## Cuentas de la ecuación:
+
+**Cuentas activo**
+    - Caja
+    - Banco
+    - Mercadería
+    - Rodados
+    - Deudores por ventas
+    - Documentos a cobrar
+    - Deposito a plazo fijo
+    - Inmuebles
+    - Instalaciones
+    - Muebles y útiles
+
+**Cuentas pasivo**:
+    - Proveedores
+    - Acredores varios
+    - Documentos a pagar
+    - IVA debito fiscal
+    - IVA a pagar
+    - Impuestos a la ganancias a pagar
+    - Ingresos brutos a pagar
+    - Sueldos a pagar
+    - SAC a pagar
+    - SUSS a pagar (aportes dados por el F 931)
+    - Documentos a pagar bancario
+
+**Cuentas patrimonio neto**:
+    - Capital social $\rightarrow$ Es igual al patrimonio net en el inicio de la empresa, luego cambia
+    - Reserva legal
+    - Reserva estatutaria
+    - Reserva para futuro aumento de capital
+        - Estas reservas solo se pueden asignar si es que tengo ganancia en el ejercicio
+    - Resultados acumulados (no asignados)
+        - Los resultados de los años anteriores
+          (saldo de los ejercicios anteriores, dependiendo de las ganancia y las perdidas de cada ejercicio)
+    - Resultado del ejercicio
+        - Se realiza a partir de los ingresos (I) y egresos (E)
+            - Ingresos (saldo acreedor)
+                - Ventas
+                - Alquileres
+                - Intereses cobrados
+                - Descuentos obtenidos
+            - Egresos (saldo deudor)
+                - Costo de mercaderia vendida
+                - Alquileres
+                - Luz y telefono
+                - Agua
+                - Fletes
+                - Descuentos concedidos
+    -

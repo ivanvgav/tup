@@ -9,3 +9,7 @@ Recomendaciones de lectura:
 - Libros de derecho de Haack - evidence matters -
 
 Link de la charla: <https://www.youtube.com/live/qh6d9YmPjJw?si=sI4WE4Nb495QfFEp>
+
+---
+
+Segundo parcial organizacional: 19 o 24 de Junio

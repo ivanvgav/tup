@@ -7,7 +7,7 @@ author: Gavriloff, Ivan Vladimir
 # 20260416
 
 Características de los algoritmos:
- 
+
 1. Secuencial
     - Se da un paso a paso
 1. Lleva un orden lógico
@@ -124,7 +124,7 @@ EL dato `nombre_del_dia` tiene un valor `viernes`.
         - `bool es_valido = true;` tiene tamaño de 1 byte
     - Punteros (pointer)
         - Almacenan direcciones de memoria
-        - `int* ptr = &edad;` su tamaño va a depender de la arquitectura 
+        - `int* ptr = &edad;` su tamaño va a depender de la arquitectura
           (4 bytes para sistemas de 32 bits).
 - Compuestos
     - Estructuras que combinan múltiples valores
@@ -136,7 +136,7 @@ EL dato `nombre_del_dia` tiene un valor `viernes`.
         - Su tamaño en memoria depende del número de elementos
     - Estructuras (struct)
         - Agrupan datos de diferentes tipo bajo una misma denominación
-        - Ej: 
+        - Ej:
           ```c
           struct Persona
           {
@@ -223,7 +223,7 @@ Estos operadores actúan sobre variables y valores
 28. Siempre debe terminar en uno solo
 29. $V$ o $F$
 30. Esta mal diagramado
-31. Inicio; Leer el número; ¿El número es mayor a 0?; Mostrar "Es positivo"; Fin. 
+31. Inicio; Leer el número; ¿El número es mayor a 0?; Mostrar "Es positivo"; Fin.
 
 # 20260430
 
@@ -250,7 +250,7 @@ se vuelve al flujo de información.
 7. Comprobar si la condición es verdadera $V$ o $F$
 8. Operadores relacionales: Igual (==), Distinto (!=), Menor (<), Mayor (>), Menor o igual (<=), Mayor o igual (>=)
 9. `if else if else` permite evaluar dos condiciones distintas. En la primera evalua una condición, por ejemplo (si un numero mayor) y realiza una acción si es verdadero,
-si es 
+si es
 10. Se evaluan booleanos (`bool`)
 11. $F$
 12. $V$
@@ -306,8 +306,8 @@ Fin
 
 | variable | valor | resultado |
 | --------- | ----- | ----------- |
-| numero   | 1     | Es positivo | 
-| numero   | 0     | Es positivo | 
+| numero   | 1     | Es positivo |
+| numero   | 0     | Es positivo |
 | numero   | -1     | Es negativo |
 
 
@@ -323,10 +323,10 @@ Sino
 Fin
 ```
 
-| variable | valor | resultado |
+| variable  | valor | resultado |
 | --------- | ----- | ----------- |
-| cantidad_de_lapices   | 1000     | El precio es de \$600 | 
-| cantidad_de_lapices   | 500     | El precio es de \$900 | 
+| cantidad_de_lapices   | 1000     | El precio es de \$600 |
+| cantidad_de_lapices   | 500      | El precio es de \$900 |
 | cantidad_de_lapices   | 1200     | El precio es de \$600 |
 
 # 20260507
@@ -392,7 +392,7 @@ Inicio
   descuento_de_15 = 0.15;
   descuento_de_8  = 0.08;
 
-  
+
   Imprimir "Ingrese el monto del traje";
   Leer precio_de_traje
 
@@ -410,55 +410,55 @@ Fin
 
 # 202060508
 
-1. Se requiere algún algortimo para obetener la suma de diez cantidades mediante
+1. Se requiere algún algortimo para obtener la suma de diez cantidades mediante
    la realización de un ciclo `while`. Realice el diagrama de flujo, el pesudocódigo
    y prueba de escritorio.
     - Debe ingresar hasta 10 números y sumarlos. No olvidar tener también un contador.
 
     ```
     Inicio
-        numero;
-        contador;
-        suma;
+        Definir numero entero;
+        Definir contador entero;
+        Definir suma entero;
         contador = 0;
         numero = 0;
         suma = 0;
 
         Imprimir "Ingrese un número";
         Leer numero;
-        
+
         Mientras contador < 10
-            suma += numero;
-            contador++;
+            suma += numero; // suma = suma + numero;
+            contador++; // contador = contador + 1;
         FinMientras
     Fin
     ```
 
-    Prueba de escritorio
+    **Prueba de escritorio**
 
     | variable | valor | resultado |
     | -------- | ----- | --------- |
-    | numero | 100 | 100 |
-    | contador | 0 | 1 |
-    | suma | 0 | 100 |
-    | numero | 200 | 100 | 200 |
-    | contador | 1 | 2 |
-    | suma | 100 | 300 |
-    | numero | 50 | 200 | 50 |
-    | contador | 2 | 3 |
-    | suma | 300 | 350 |
-    | numero | 200 | 50 | 200 |
-    | contador | 3 | 4 |
-    | suma | 350 | 550 |
-    | numero | 200 | 100 | 100 |
-    | contador | 4 | 5 |
-    | suma | 550 | 650 |
+    | numero   | 100   | 100       |
+    | contador | 0     | 1         |
+    | suma     | 0     | 100       |
+    | numero   | 200   | 100       | 200 |
+    | contador | 1     | 2         |
+    | suma     | 100   | 300       |
+    | numero   | 50    | 200       | 50 |
+    | contador | 2     | 3         |
+    | suma     | 300   | 350       |
+    | numero   | 200   | 50        | 200 |
+    | contador | 3     | 4         |
+    | suma     | 350   | 550       |
+    | numero   | 200   | 100       | 100 |
+    | contador | 4     | 5         |
+    | suma     | 550   | 650       |
 
 2. Elabore un algoritmo que imprima los números del 1 al 100
 
     ```
     Inicio
-        i;
+        entero i;
 
         Para i = 1 hasta que i <= 100
             Imprimir "El número es: ", i;
@@ -466,17 +466,50 @@ Fin
     Fin
     ```
 
-    Prueba de escritorio
+    **Prueba de escritorio**
 
-    | variable | valor | resultado |
-    | -------- | ----- | --------- |
-    | i | 1 | El número es: 1 |
-    | i | 2 | El número es: 2 |
-    | i | 3 | El número es: 3 |
-    | i | 4 | El número es: 4 |
-    | i | 5 | El número es: 5 |
-    | i | 6 | El número es: 6 |
-    | i | 7 | El número es: 7 |
-    | i | 8 | El número es: 8 |
-    | i | 9 | El número es: 9 |
-    | i | 10 | El número es: 10 |
+    | variable | valor | resultado       |
+    | -------- | ----- | ---------       |
+    | i        | 1     | El número es: 1 |
+    | i        | 2     | El número es: 2 |
+    | i        | 3     | El número es: 3 |
+    | i        | 4     | El número es: 4 |
+    | i        | 5     | El número es: 5 |
+    | i        | 6     | El número es: 6 |
+    | i        | 7     | El número es: 7 |
+    | i        | 8     | El número es: 8 |
+    | i        | 9     | El número es: 9 |
+    | i        | 10    | El número es: 10 |
+
+# 20260514
+
+1. A. No hay un contador inicializado ni hay dentro del mientras la introducción
+      del aumento del contador
+   B. No incluye el 10
+      ```
+      Inicio
+        definir suma como entero;
+        definir i como entero;
+
+        Para i = 1 hasta i <= 10
+          suma = suma + i
+        FinPara
+
+        Imprimir suma;
+      Fin
+      ```
+   C. Esta bien
+       ```
+      Inicio
+        definir numero como entero;
+
+        Mientras numero != 0
+          Escribir "Ingrese un número: ";
+          Leer numero;
+          Escribir numero;
+        FinMientras
+      Fin
+      ```
+   D. Para que quede más claro deberia tener una variable promedio para guardar la operación de la suma yla división en 3
+   E. El problema está en la variable factorial. Como inicializa en 0 toda multiplicación dentro del para va a ser 0 .
+      Dentro del para tendria que tener una operacion que al numero le reste el i y luego lo multiplique al factorial.

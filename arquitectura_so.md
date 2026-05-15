@@ -544,3 +544,20 @@ Procesos                Memoria
 10. a ✅
 
 <!---TODO(ivan): Ver las otras preguntas para tenerlas en cuenta para el parcial--->
+
+# 20250514
+*Puntos para el parcial (hasta la unidad 4, 20 preguntas de multiple choice)*
+
+Estos son los temas que se agregan al programa:
+
+**Unidad 1:**
+  - Evolución de las computadoras, generaciones
+  - *NO* van las distantas autores
+**Unidad 2:**
+  - Codigo binario
+  - Cambio de unidad de almacenamiento
+**Unidad 3:**
+  - Algoritmos (FIFO, SJF, Round Robin)
+**Unidad 4:**
+  - Tipos de memoria
+  - Diferencia entre los enfoques de cómo trabaja la memoria
