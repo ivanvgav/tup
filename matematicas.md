@@ -518,7 +518,7 @@ La profesora agregó las leyes de absorción total y parcial
   - Absorción parcial: $(A^{C} \cap B) \cup A \equiv A \cup B$
   - Absorción parcial: $(A^{C} \cup B) \cap A \equiv A \cap B$
 
-## Ejercicios TP
+## Ejercicios TP 4
 1.
   1.
     - Idempotencia
@@ -568,3 +568,39 @@ La profesora agregó las leyes de absorción total y parcial
     - Ley de identidad (del universal)
     - Absorción parcial
     - QED
+
+# 20260518
+Posibles ejercicios para el parcial:
+- Dar valores de verdad de alguna proposición y determinar la verdad de esa proposición
+- Simplificación y su circuito asociado
+- Operaciones de conjuntos por extensión
+- Algebra de conjuntos
+- Tabla de verdad
+- Grafica y determinar el conjunto
+Para promocionar:
+- Ver el tema de la teoría
+
+## TP 2
+8.
+
+i)  $[\neg (p \rightarrow q) \rightarrow \neg (q \rightarrow p)] \land (p \lor q)$
+
+    $[(p \rightarrow \neg q) \rightarrow (q \rightarrow p)] \land (p \lor q)$ (negación de implicancia)
+
+    $\neg (p \land \neg q) \lor (q \land \neg p) \land (p \lor q)$ implicancia
+
+    $(\neg p \lor \neg \neg q) \lor (q \lan \neg p) \land (p \lor q)$
+
+    $[(\neg p \lor q) \lor (q \land \neg p)] \land (p \lor q)$
+
+    $[\neg p \lor q \lor q (q \land \neg p)] \land (p \lor q)$
+
+    $[\neg p \lor (q \lor (q \land \neg p)) ] \land (p \lor q)$
+
+    $(\neg p \lor q) \land (p \lor q)$
+
+    $q \lor (p \land \neg p)$
+
+    $q \lor F$
+
+    $q$
