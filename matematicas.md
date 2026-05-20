@@ -604,3 +604,65 @@ i)  $[\neg (p \rightarrow q) \rightarrow \neg (q \rightarrow p)] \land (p \lor q
     $q \lor F$
 
     $q$
+
+# 202605019
+## Matrices
+El vector es una estructura (desde la programación)
+
+El vector es unidimensional tiene varias columnas y una sola fila
+
+```
+| | | | | | | | | Lugares del vector
+|1|2|3|4|5|6|7|8| Posiciones del vector
+```
+
+Si añadimos más filas los vectores se llaman *matrices*
+
+En programación las matrices serían espacios de memoria
+
+La matriz se cierran entre paréntesis grandes y generalizado con una letra sub
+indice i y j que idican cuantas filas y columnas tiene la matriz
+Para poder acceder a un número de la matriz tenemos que saber la posición dentro de la matriz
+$a_{ij}$ donde $i$ y $j$ son las posiciones de la fila y columna respectivamente
+El orden siempre es ese: fila primero y columna después
+Todo elemento de una matriz siempre va a subíndices $a_{ij}$
+<!-- TODO: Ver como escribir una matriz en latex-->
+El orden de la matriz me va a decir la cantidad de filas y de columnas que tiene una matriz
+CUando solo decimos, por ejemplo Orden 3, tiene 3 filas y 3 columnas.
+Si no es una matriz cuadrada (mismo orden de filas y columnas) es una matriz rectangular.
+
+Toda matriz tiene un nombre y se lo va a escribir con mayúscula.
+
+### La matriz nula
+Todos los elementos de la matriz son cero.
+Es decir $\forall a : a_{ij} = 0$
+
+### Matriz identidad
+Es la que tiene elementos en su diagonal principal el número uno y todos los demás elementos tiene cero.
+La diagonal principal consiste en los elementos que conforman una diagonal central en la matriz.
+La diagonal secundaria es la diagonal espejo de la diagonal principal.
+
+### Matriz escalar
+La matriz escalar es como una matriz identidad pero en vez de su diagonal en 1,
+tiene otro número igual en todos los elementos de la diagonal principal
+
+Un escalar es distinto de la matriz escalar.
+Un escalar es cualquier valor numérico ($R$) que se multiplica con una matriz
+
+### Matriz diagonal
+La matriz diagonal tiene elementos diferentes dentro de su diagonal principal y
+el resto 0
+
+> [!NOTE]
+> Para que una matriz tenga diagonal principal tiene que ser una diagonal
+> cuadrada
+
+## Matriz transpuesta
+Es convertir de matriz de horizontal a vertical.
+Pasar de columna a fila cada elemento
+También se puede hacer al revés
+Se pasa de $a_{ij}$ a $a_{ji}$ cada uno de los elementos de la matriz
+
+> **Traza de la matriz**: Suma de los elementos de la diagonal principal
+
+## Matriz simétrica
