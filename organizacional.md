@@ -501,9 +501,9 @@ Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio net
 
 **Cuentas pasivo**:
     - Proveedores
-    - Acredores varios
+    - Acreedores varios
     - Documentos a pagar
-    - IVA debito fiscal
+    - IVA débito fiscal
     - IVA a pagar
     - Impuestos a la ganancias a pagar
     - Ingresos brutos a pagar
@@ -511,16 +511,18 @@ Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio net
     - SAC a pagar
     - SUSS a pagar (aportes dados por el F 931)
     - Documentos a pagar bancario
+    - Anticipos de clientes
 
 **Cuentas patrimonio neto**:
-    - Capital social $\rightarrow$ Es igual al patrimonio net en el inicio de la empresa, luego cambia
+    - Capital social $\rightarrow$ Es igual al patrimonio neto en el inicio de la empresa, luego cambia
     - Reserva legal
     - Reserva estatutaria
     - Reserva para futuro aumento de capital
         - Estas reservas solo se pueden asignar si es que tengo ganancia en el ejercicio
     - Resultados acumulados (no asignados)
         - Los resultados de los años anteriores
-          (saldo de los ejercicios anteriores, dependiendo de las ganancia y las perdidas de cada ejercicio)
+          (saldo de los ejercicios anteriores,
+          dependiendo de las ganancia y las perdidas de cada ejercicio)
     - Resultado del ejercicio
         - Se realiza a partir de los ingresos (I) y egresos (E)
             - Ingresos (saldo acreedor)
@@ -531,8 +533,24 @@ Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio net
             - Egresos (saldo deudor)
                 - Costo de mercaderia vendida
                 - Alquileres
-                - Luz y telefono
+                - Luz y teléfono
                 - Agua
                 - Fletes
                 - Descuentos concedidos
     -
+
+# 20260520
+**Segundo Parcial**: 24 de Junio
+
+Ingreso *siempre* va a ir al haber
+Egreso *siempre* va a ir al debe
+
+Al final del ejercicio las ventas se hace al debe y el CMV y el resultado del
+ejercicio para que las cuentas se cancelen (Asiento de refundición de cuentas)
+
+Registrar por percibir: se hace el asiento cuando se cobra o se paga.
+Registrar por devengado: aunque no cobre o no pague se genera un asiento,
+se genera el derecho por el mero paso del tiempo.
+El sistema de *devengado* es el que se usa en la contabilidad cotidiana
+
+En la contabilidad se utiliza el método de *partida doble*, no el simple.
