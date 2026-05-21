@@ -1198,3 +1198,244 @@ Console.WriteLine($"El número tiene {digit} dígitos. El número tiene {odd_cou
 // - random
 // - conditionals
 // ======================================================
+
+// Usando un for, mostrar por pantalla los números del 1 al 10.
+
+/*for (int i = 1; i < 11; ++i)
+{
+    Console.WriteLine($"El numero es {i}");
+}
+*/
+
+/*int numero;
+
+Console.WriteLine("Ingrese el numero");
+numero = int.Parse(Console.ReadLine());
+if (numero < 0)
+{
+    Console.WriteLine("Ingrese un numero positivo");
+} else
+{
+for(int i = 0; i <= numero; ++i)
+{
+    if (i % 2 == 0)
+    {
+        Console.WriteLine(i);
+    }
+}
+}
+*/
+// Tabla de multiplicar
+/*
+int num = 0;
+//bool NumerosImposiblesAIngresar = true;
+
+//while (NumerosImposiblesAIngresar)
+//{
+    Console.WriteLine("Ingrese el número");
+    num = int.Parse(Console.ReadLine());
+//    if (num > 0 && num < 12)
+//    {
+        for (int i = 1; i <= 10; ++i)
+        {
+            Console.WriteLine($"Esto es {num} * {i} = {num*i}");
+        }
+//        NumerosImposiblesAIngresar = false;
+//    } else
+//    {
+//        Console.WriteLine("Debe ingresar un número del 0 al 12");
+//    }
+//
+//}
+*/
+
+// SUma de numeros positivos
+/*int num;
+int sum;
+
+sum = 0;
+
+do
+{
+    Console.WriteLine("Ingrese un numero");
+    num = int.Parse(Console.ReadLine());
+
+    if (num < 0) break;
+
+    sum = sum + num;
+    Console.WriteLine($"La suma es: {sum}");
+} while (num >= 0);
+*/
+
+/*int num, pares, impares;
+
+num = 0;
+pares = 0;
+impares = 0;
+
+for (int i = 0; i < 10; ++i)
+{
+    Console.WriteLine("Ingrese numero");
+    num = int.Parse(Console.ReadLine());
+
+    if (num % 2 == 0)
+    {
+        ++pares;
+    }
+
+    if (num % 2 != 0)
+    {
+        ++impares;
+    }
+}
+
+Console.WriteLine($"La cantidad de numeros pares es de: {pares}");
+Console.WriteLine($"La cantidad de numeros impares es de: {impares}");
+*/
+
+/*int contador;
+int nota;
+int suma;
+int promedio;
+int cantidad_a_dividir;
+
+contador = 0;
+nota = 0;
+suma = 0;
+promedio = 0;
+cantidad_a_dividir = 5;
+
+while (contador < 5)
+{
+    Console.WriteLine("Ingrese la nota");
+    nota = int.Parse(Console.ReadLine());
+    suma = suma + nota;
+
+    contador++;
+}
+
+promedio = suma / cantidad_a_dividir;
+Console.WriteLine($"El promedio es de: {promedio}");
+*/
+
+//Factorial
+/*
+int num;
+int factorial;
+
+num = 0;
+factorial = 1;
+
+Console.WriteLine("Ingrese un número para hacer su factorial");
+num = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= num; ++i)
+{
+    factorial *= i;
+    Console.WriteLine(factorial);
+}
+
+Console.WriteLine($"El factorial de {num} es de: {factorial}");
+*/
+
+/*
+string pass;
+
+pass = "";
+
+do
+{
+    Console.WriteLine("Ingrese la contraseña");
+    pass = Console.ReadLine();
+} while (pass != "admin123");*/
+
+    /*
+int num;
+int mayor;
+int menor;
+
+num = 0;
+mayor = 0;
+menor = 0;
+
+for(int i = 0; i < 5; ++i)
+{
+    Console.WriteLine("Ingrese un numero");
+    num = int.Parse(Console.ReadLine());
+
+    if (num > mayor)
+    {
+        mayor = num;
+    } else
+    {
+        menor = num;
+    }
+}
+
+Console.WriteLine($"El numero mayor es {mayor}");
+Console.WriteLine($"El numero menor es {menor}");
+*/
+/*
+int cantidad_de_vendedores;
+int sueldo_basico;
+int precio_comision;
+double porcentaje_comision;
+double sueldo_a_pagar;
+double total_a_pagar;
+
+sueldo_basico = 0;
+porcentaje_comision = 0.1;
+total_a_pagar = 0;
+precio_comision = 0;
+sueldo_a_pagar = 0;
+
+Console.WriteLine("Ingrese la cantidad de vendedores: ");
+cantidad_de_vendedores = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < cantidad_de_vendedores; ++i)
+{
+    Console.WriteLine("Ingrese el total del precio de la comision: ");
+    precio_comision = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Ingrese elsueldo básico: ");
+    sueldo_basico = int.Parse(Console.ReadLine());
+
+    sueldo_a_pagar = sueldo_basico + (precio_comision * porcentaje_comision);
+    Console.WriteLine($"El sueldo para este vendedor será de: {sueldo_a_pagar}");
+
+    total_a_pagar = total_a_pagar + sueldo_a_pagar;
+}
+
+Console.WriteLine($"El total a pagar será de: {total_a_pagar}");
+*/
+/*
+int num = 0;
+int positivos = 0;
+int cantidad_positivos = 0;
+int cantidad_negativos = 0;
+int negativos = 0;
+
+do
+{
+    Console.WriteLine("Ingrese un numero. Para salir tipee '0'.");
+    num = int.Parse(Console.ReadLine());
+
+    if (num > 0)
+    {
+        cantidad_positivos++;
+        positivos = positivos + num;
+    }
+    if (num < 0)
+    {
+        cantidad_negativos++;
+        negativos = negativos + num;
+    }
+} while (num != 0);
+
+Console.WriteLine($"""
+                  La cantidad de numeros positivos es de: {cantidad_positivos}
+                  La cantidad de numeros negativos es de: {cantidad_negativos}
+                  La suma de numeros positivos es de: {positivos}
+                  La suma de numeros negativos es de: {negativos}
+                  """);
+*/
