@@ -585,25 +585,25 @@ Para promocionar:
 
 i)  $[\neg (p \rightarrow q) \rightarrow \neg (q \rightarrow p)] \land (p \lor q)$
 
-    $[(p \rightarrow \neg q) \rightarrow (q \rightarrow p)] \land (p \lor q)$ (negación de implicancia)
+$[(p \rightarrow \neg q) \rightarrow (q \rightarrow p)] \land (p \lor q)$ (negación de implicancia)
 
-    $\neg (p \land \neg q) \lor (q \land \neg p) \land (p \lor q)$ implicancia
+$\neg (p \land \neg q) \lor (q \land \neg p) \land (p \lor q)$ implicancia
 
-    $(\neg p \lor \neg \neg q) \lor (q \lan \neg p) \land (p \lor q)$
+$(\neg p \lor \neg \neg q) \lor (q \lan \neg p) \land (p \lor q)$
 
-    $[(\neg p \lor q) \lor (q \land \neg p)] \land (p \lor q)$
+$[(\neg p \lor q) \lor (q \land \neg p)] \land (p \lor q)$
 
-    $[\neg p \lor q \lor q (q \land \neg p)] \land (p \lor q)$
+$[\neg p \lor q \lor q (q \land \neg p)] \land (p \lor q)$
 
-    $[\neg p \lor (q \lor (q \land \neg p)) ] \land (p \lor q)$
+$[\neg p \lor (q \lor (q \land \neg p)) ] \land (p \lor q)$
 
-    $(\neg p \lor q) \land (p \lor q)$
+$(\neg p \lor q) \land (p \lor q)$
 
-    $q \lor (p \land \neg p)$
+$q \lor (p \land \neg p)$
 
-    $q \lor F$
+$q \lor F$
 
-    $q$
+$q$
 
 # 202605019
 ## Matrices
