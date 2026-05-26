@@ -561,3 +561,25 @@ Estos son los temas que se agregan al programa:
 **Unidad 4:**
   - Tipos de memoria
   - Diferencia entre los enfoques de cómo trabaja la memoria
+
+# 20260526
+
+Funciones del SO -> Gestión de procesos
+                 -> Gestión de memoria
+                 -> Gestión de archivos
+
+## Gestión de archivos
+### Sistema de archivos
+Un sistema de archivos es la etructura lógica que usan los sistemas operativos
+para organizar, almacenar, recuperar y administrar archivos en un dispositivo
+de almacenamiento:
+
+- Disco duro
+- SSD
+- Memoria USB
+- Entre otras
+
+### Gestión de archivos
+Servicio que brinda el SO en la cual es responsable de crear, eliminar, organizar,
+leer, escribir, modificar, mover y controlar el acceso a los archivos y de administrar
+los recursos físicos donde residen.

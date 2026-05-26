@@ -1199,6 +1199,72 @@ Console.WriteLine($"El número tiene {digit} dígitos. El número tiene {odd_cou
 // - conditionals
 // ======================================================
 
+int health = 100;
+int potion_quantity = 3;
+int fight = 0;
+const int potion_heal = 10;
+const int rest = 3;
+int option = 0;
+Random random_damage = new Random();
+
+Console.WriteLine($"""
+                  Bienvenido a la contienda.
+                  Tiene una vida de {health} puntos
+                 """);
+
+while (health > 0)
+{
+    Console.WriteLine($"""
+                     Tienes las siguientes opciones para adentrarte en la aventura:
+                     1 - Fight
+                     2 - Drink potion
+                     3 - Rest
+                     4 - Exit
+                     """);
+    option = int.Parse(Console.ReadLine());
+
+    switch (option)
+    {
+        case 1:
+            Console.WriteLine("Has decidido pelear");
+            fight = random_damage.Next(10, 100);
+            health -= fight;
+            Console.WriteLine($"Has recibido {fight} de daño");
+            Console.WriteLine($"Ahora tu vida es de {health}");
+        break;
+
+        case 2:
+            if (potion_quantity == 0)
+            {
+                Console.WriteLine("No tienes más pociones. Ya no puedes curarte con ellas");
+                break;
+            }
+
+            Console.WriteLine("Has decidido tomar una poción");
+            health += potion_heal;
+            potion_quantity--;
+            Console.WriteLine($"Has curado {potion_heal} puntos de vida. Tienes {potion_quantity} pociones. Ahora tienes {health} puntos de vida");
+        break;
+
+        case 3:
+            Console.WriteLine("Has decidido descansar");
+            health += rest;
+            Console.WriteLine($"Has curado {rest} puntos de vida. Ahora tienes {health} puntos de vida");
+        break;
+
+        case 4:
+            Environment.Exit(0);
+        break;
+
+        default:
+            Console.WriteLine("Ingresa un numero del 1 al 4");
+        break;
+    }
+}
+
+Console.WriteLine("Has perdido!");
+
+///////////////////////////////////////////////////////////////////////////////
 // Usando un for, mostrar por pantalla los números del 1 al 10.
 
 /*for (int i = 1; i < 11; ++i)
