@@ -497,8 +497,13 @@ Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio net
 - Documentos a cobrar
 - Deposito a plazo fijo
 - Inmuebles
+    - Edificio
+        - Esto se amortiza (2% anual)
+    - Terreno
+        - No se amortiza
 - Instalaciones
 - Muebles y útiles
+- Valores a depositar
 
 ### Cuentas pasivo:
 
@@ -518,28 +523,32 @@ Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio net
 ### Cuentas patrimonio neto:
 
 - Capital social $\rightarrow$ Es igual al patrimonio neto en el inicio de la empresa, luego cambia
+    - Aportes de socios
+    - Retiro de socios
+        - Cuando hay aporte o retiro de los socios no modifica la ecuación de ingreso y egresos, sino el Patrimonio neto
 - Reserva legal
 - Reserva estatutaria
+- Reserva facultativa
 - Reserva para futuro aumento de capital
 - Estas reservas solo se pueden asignar si es que tengo ganancia en el ejercicio
 - Resultados acumulados (no asignados)
     - Los resultados de los años anteriores
       (saldo de los ejercicios anteriores,
       dependiendo de las ganancia y las perdidas de cada ejercicio)
-    - Resultado del ejercicio
+- Resultado del ejercicio
     - Se realiza a partir de los ingresos (I) y egresos (E)
-- Ingresos (saldo acreedor)
-    - Ventas
-    - Alquileres
-    - Intereses cobrados
-    - Descuentos obtenidos
-- Egresos (saldo deudor)
-    - Costo de mercaderia vendida
-    - Alquileres
-    - Luz y teléfono
-    - Agua
-    - Fletes
-    - Descuentos concedidos
+    - Ingresos (saldo acreedor)
+        - Ventas
+        - Alquileres
+        - Intereses cobrados
+        - Descuentos obtenidos
+    - Egresos (saldo deudor)
+        - Costo de mercaderia vendida
+        - Alquileres
+        - Luz y teléfono
+        - Agua
+        - Fletes
+        - Descuentos concedidos
 
 # 20260520
 **Segundo Parcial**: 24 de Junio
@@ -556,3 +565,30 @@ se genera el derecho por el mero paso del tiempo.
 El sistema de *devengado* es el que se usa en la contabilidad cotidiana
 
 En la contabilidad se utiliza el método de *partida doble*, no el simple.
+
+# 20260527
+Activo: Derechos de los propietarios
+Pasivos: Derechos de los terceros
+
+Operaciones permutativas: Son operaciones que no mueven el ingreso o el egreso (no mueven el patrimonio neto)
+
+Se leyó la página 57 hasta el final del dossier
+
+## Sistema de stock
+La ficha de stock va puedo lo que entra de mercaderia y su precio de compra,
+su salida y su precio correspondiente y el saldo de la entrada y salida
+
+PEPS: Primero entrado, primero salido
+    - Lo primero que entra, es lo primero que sale
+UEPS: Último entrado, primero salido
+    - Lo último que entra, es lo primero que sale
+PPP: Precio promedio ponderado
+
+Exponen los TPS 31 al 35
+
+Leer bien los TP 31 al 34
+Repasar como funcionan estas cuentas <!-- TODO(ivan) -->
+
+- Anticipo de clientes
+- Anticipo de proveerdores
+- Anticipo de sueldo

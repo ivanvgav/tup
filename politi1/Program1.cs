@@ -1198,7 +1198,7 @@ Console.WriteLine($"El número tiene {digit} dígitos. El número tiene {odd_cou
 // - random
 // - conditionals
 // ======================================================
-
+/*
 int health = 100;
 int potion_quantity = 3;
 int fight = 0;
@@ -1261,9 +1261,9 @@ while (health > 0)
         break;
     }
 }
-
-Console.WriteLine("Has perdido!");
-
+*/
+/*Console.WriteLine("Has perdido!");
+*/
 ///////////////////////////////////////////////////////////////////////////////
 // Usando un for, mostrar por pantalla los números del 1 al 10.
 
@@ -1506,4 +1506,61 @@ Console.WriteLine($"""
                   """);
 */
 
+// TODO(ivan): Pasar lo que se hizo de vectores (está en una foto que hay que pasar con gemini)
+//////////////////////////////////////////////////////////////////////////////
 
+// 2060527
+
+// Matrices
+// En las matrices los length son la cantidad de elementos totales de la matriz
+// Esto es una propiedad de la matriz
+// Para poder saber la cantidad de elementos de una fila de la matriz tengo un método (GetLength)
+// Un método es una función mientras que una propiedad es un valor
+// (que van a tener un tipo de dato [int, double, bool, char])
+
+// Para iniciializar una matriz
+// Las posiciones de las matrices también arrancan en 0
+/*int[,] numeros = new int[2,2]; //Matriz cuadrada de orden 2
+
+int[,] numeros2 = { {1, 2},  // Inicializo y defino a la vez
+                    {3, 4} };
+*/
+// Para saber como mostrar todos los elementos tenemos que hacer un for anidado
+// En los for anidados primero se tiene que resolver el for de adentro y luego el for de afuera
+// (0, 0) -> (0, 1) -> (1, 0) -> (1, 1) (Dada una matriz cuadrada de orden 2)
+
+/*// Primero va a recorrer las columnas y luego va a recorrer cada una de las filas
+for (int i = 0; i < numeros2.GetLength(0); ++i) // Me permite saber las filas
+{
+    for (int j = 0; j < numeros2.GetLength(1); ++j) // Me permite recorrer las columnas
+    {
+        Console.Write(numeros2[i, j]);
+    }
+    Console.WriteLine();
+}
+*/
+
+// Como se rellenar una matriz
+int[,] numeros3 = new int[2, 2];
+
+for (int i = 0; i < numeros3.GetLength(0); ++i) // Me permite saber las filas
+{
+    for (int j = 0; j < numeros3.GetLength(1); ++j) // Me permite recorrer las columnas
+    {
+        Console.WriteLine("Ingrese un número para la matriz de orden 2.");
+        numeros3[i,j] = int.Parse(Console.ReadLine());
+    }
+
+}
+
+// Ahora que mostrar con un nuevo barrido
+for (int i = 0; i < numeros3.GetLength(0); ++i) // Me permite saber las filas
+{
+    for (int j = 0; j < numeros3.GetLength(1); ++j) // Me permite recorrer las columnas
+    {
+        Console.Write(" " + numeros3[i, j]);
+    }
+    Console.WriteLine();
+}
+
+// TODO(ivan): Hacer un ta te ti con esto, usando matrices
