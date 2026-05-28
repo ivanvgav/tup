@@ -499,7 +499,7 @@ Fin
       Fin
       ```
    C. Esta bien
-       ```
+      ```
       Inicio
         definir numero como entero;
 
@@ -510,6 +510,63 @@ Fin
         FinMientras
       Fin
       ```
-   D. Para que quede más claro deberia tener una variable promedio para guardar la operación de la suma yla división en 3
-   E. El problema está en la variable factorial. Como inicializa en 0 toda multiplicación dentro del para va a ser 0 .
+   D. Para que quede más claro deberia tener una variable promedio para guardar la operación de la suma yla división en $3$
+   E. El problema está en la variable factorial. Como inicializa en 0 toda multiplicación dentro del para va a ser $0$.
       Dentro del para tendria que tener una operacion que al numero le reste el i y luego lo multiplique al factorial.
+
+# 20260528
+## Estructuras de datos
+Pueden ser de datos simples (entero, real, caracter, lógico) o también los
+definidos por el programador (subrango, enumetarivos [días de la semana])
+
+Luego los datos estrcuturados tenemos datos estáticos o dinámicos.
+Entre los *estáticos* tenemos a los arrays, registros, ficheros, conjuntos (Sets), cadenas (strings).
+Entre los *dinámicos* Listas (Pilas/Colas), Listas enlazadas, Árboles y Gráfos
+
+## Vectores
+Para poder determinar la posición de un elemento se pone `A[i]`
+donde `i` es la posición del elemento `A` hace mención al nombre del vector.
+
+### Operación con vectores
+- Asignaciones
+- Lectura/escritura
+    - En C# tenemos que usar Console.WriteLine() para escritura y
+      Console.ReadLine() para la lectura de agregar elementos al array
+- Recorrido
+    - Se realiza con los ciclos `for`
+- Actualizar (añadir, borrar, reemplazar)
+- Ordenar
+- Búsqueda
+
+## TP Vectores
+1. ¿Qué significa acceso secuencial al vector?
+    - Quiere decir que para acceder a los datos de un vector se tiene que acceder de uno a uno.
+      Por medio de una secuencia, por ello es que para recorrerlo se necesita de una estructura de bucles
+1. Explique las diferencias entre un vector y una matriz
+    - Un vector puede ser entendido por una matriz con una sola fila y sin columnas.7
+      La matriz si o si tiene filas y columnas, es decir que guarda elementos entre filas y columnas
+1. Grafique cómo sería un vector y una matriz
+    - Vector:
+      ```
+        | a | b | c | d | e | f | g | <- letras
+        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | (Posiciones)
+      ```
+    - Matrices:
+      ```
+        1 2 3
+        4 5 6 <- Fila
+        7 8 9
+        ^ Columna
+      ```
+      Para poder determina la posición tendría que ser `a[i][j]` donde `i` son las filas y `j` las columnas
+1. ¿Qué tipo de estructuras se utiliza para las distintas operaciones en un vector?
+    - Para las operaciones de recorrido se hace uso de estructuras repetitivas.
+      Para las operaciones de orden y de busqueda se hacen uso de estructuras de repetición y estructuras de control para comporar
+      a la hora de ordenar los elementos, o para la busqueda de algún elemento.
+      Para las operaciones de actualización también tienen que usarse estructuras de repetición y de control
+1. ¿Cuál es la principal ventaja de utilizar un vector frente a declarar variables independientes?
+    - Permite agrupar datos del mismo tipo en vez de tener que declararlos uno por uno.
+      También permite que se puedan hacer operaciones en conjunto evitando operaciones repetitivas.
+1. ¿Qué tipo de datos se pueden almacenar dentro de un vector?
+    - Pueden ser almacenados cualquier tipo de dato simple, solo con la condición de que tienen que ser el mismo tipo de dato.
+      Al menos C# no permite hacer mezcla de tipos de datos.

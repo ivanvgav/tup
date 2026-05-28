@@ -583,3 +583,24 @@ de almacenamiento:
 Servicio que brinda el SO en la cual es responsable de crear, eliminar, organizar,
 leer, escribir, modificar, mover y controlar el acceso a los archivos y de administrar
 los recursos físicos donde residen.
+
+# 20260528
+## TP Gestión de archivos
+
+1. Un sistema de archivos es la etructura lógica que usan los sistemas operativos
+  para organizar, almacenar, recuperar y administrar archivos en un dispositivo
+  de almacenamiento
+  
+  Su utilidad es que permite poder manejar los archivos que son necesarios para
+  que los programas puedan funcionar acordemente con el usuario
+1. Tipos de sistemas de archivos:
+        1. FAT (FAT16, FAT36)
+        2. exFAT
+        3. NFTS
+        4. APFS
+        5. HFS, HFS+
+        6. Ext4
+        7. ReFS
+<C-{>
+
+<C-{>:w

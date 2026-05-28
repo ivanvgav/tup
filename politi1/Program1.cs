@@ -1540,6 +1540,7 @@ for (int i = 0; i < numeros2.GetLength(0); ++i) // Me permite saber las filas
 }
 */
 
+/*
 // Como se rellenar una matriz
 int[,] numeros3 = new int[2, 2];
 
@@ -1562,5 +1563,36 @@ for (int i = 0; i < numeros3.GetLength(0); ++i) // Me permite saber las filas
     }
     Console.WriteLine();
 }
+*/
 
 // TODO(ivan): Hacer un ta te ti con esto, usando matrices
+// TATETI con matrices
+
+string[,] table = new string[3,3];
+bool winning = false;
+bool isX = true;
+
+//while (!winning)
+//{
+    // Mostrar todo el tablero
+    for (int i = 0; i < table.GetLength(0); ++i)
+    {
+        for (int j = 0; j < table.GetLength(1); ++j)
+        {
+            table[i,j] = "|_|";
+            Console.Write(table[i,j]);
+        }
+        Console.WriteLine();
+    }
+    // Pedir la posición de la marca
+/*    for (int i = 0; i < table.GetLength(0); ++i)
+    {
+        for (int j = 0; j < table.GetLength(1); ++i)
+        {
+            Console.WriteLine("Ingrese la posición de un marca");
+        }
+    }
+    // Chequear posiciones
+
+    // Ver si hay algún ganador
+*///}
