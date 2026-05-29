@@ -540,11 +540,13 @@ donde `i` es la posición del elemento `A` hace mención al nombre del vector.
 
 ## TP Vectores
 1. ¿Qué significa acceso secuencial al vector?
-    - Quiere decir que para acceder a los datos de un vector se tiene que acceder de uno a uno.
-      Por medio de una secuencia, por ello es que para recorrerlo se necesita de una estructura de bucles
+    - Quiere decir que para acceder a los datos de un vector se tiene que
+      acceder de uno a uno. Por medio de una secuencia, por ello es que para
+      recorrerlo se necesita de una estructura de bucles
 1. Explique las diferencias entre un vector y una matriz
-    - Un vector puede ser entendido por una matriz con una sola fila y sin columnas.7
-      La matriz si o si tiene filas y columnas, es decir que guarda elementos entre filas y columnas
+    - Un vector puede ser entendido por una matriz con una sola fila y sin
+      columnas.7 La matriz si o si tiene filas y columnas, es decir que guarda
+      elementos entre filas y columnas
 1. Grafique cómo sería un vector y una matriz
     - Vector:
       ```
@@ -558,15 +560,24 @@ donde `i` es la posición del elemento `A` hace mención al nombre del vector.
         7 8 9
         ^ Columna
       ```
-      Para poder determina la posición tendría que ser `a[i][j]` donde `i` son las filas y `j` las columnas
+      Para poder determina la posición tendría que ser `a[i][j]` donde `i` son
+      las filas y `j` las columnas
 1. ¿Qué tipo de estructuras se utiliza para las distintas operaciones en un vector?
     - Para las operaciones de recorrido se hace uso de estructuras repetitivas.
-      Para las operaciones de orden y de busqueda se hacen uso de estructuras de repetición y estructuras de control para comporar
-      a la hora de ordenar los elementos, o para la busqueda de algún elemento.
-      Para las operaciones de actualización también tienen que usarse estructuras de repetición y de control
+      Para las operaciones de orden y de busqueda se hacen uso de estructuras
+      de repetición y estructuras de control para comporar a la hora de ordenar
+      los elementos, o para la busqueda de algún elemento. Para las operaciones
+      de actualización también tienen que usarse estructuras de repetición y de
+      control
 1. ¿Cuál es la principal ventaja de utilizar un vector frente a declarar variables independientes?
     - Permite agrupar datos del mismo tipo en vez de tener que declararlos uno por uno.
-      También permite que se puedan hacer operaciones en conjunto evitando operaciones repetitivas.
+      También permite que se puedan hacer operaciones en conjunto evitando
+      operaciones repetitivas.
 1. ¿Qué tipo de datos se pueden almacenar dentro de un vector?
-    - Pueden ser almacenados cualquier tipo de dato simple, solo con la condición de que tienen que ser el mismo tipo de dato.
-      Al menos C# no permite hacer mezcla de tipos de datos.
+    - Pueden ser almacenados cualquier tipo de dato simple, solo con la
+      condición de que tienen que ser el mismo tipo de dato. Al menos C# no
+      permite hacer mezcla de tipos de datos.
+
+# 20260529
+Los vectores se almacena en la memoria de la computadora.
+Se representa en la cantidad de elementos en los lugares adyacentes en la memoria
