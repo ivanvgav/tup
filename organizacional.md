@@ -592,3 +592,34 @@ Repasar como funcionan estas cuentas <!-- TODO(ivan) -->
 - Anticipo de clientes
 - Anticipo de proveerdores
 - Anticipo de sueldo
+
+# 20260529
+
+<!-- TODO: Ver bien los prácticos 31 al 39 para el parcial -->
+
+Activo como conjunto de bienes que están destinadas al desarrollo de las actividades.
+Son los recursos
+
+- Los resultados de los ejercios se hacen cada 12 meses, por ser el periodo del
+  ejercicio económico (no siempre debe de coincidir con el año calendario)
+
+## Variaciones patrimoniales
+Cambio que producen variación del patrimonio
+
+### Causas de las variaciones
+- Transaccion entre propietarios y terceros
+  - Causas transaccionales: Operaciones que realiza el ente con sus propietarios y terceros
+      - Aportes de capital (con socios)
+      - Retiros de capital (con socios)
+      - Compras de bienes o servicios (con terceros)
+      - Venta de bienes o servicio (con terceros)
+      - Cobro, pago (con terceros)
+      - Movimiento de fondos (con terceros)
+  - Causas no transaccionales: variaciones que *no* se producen por operaciones
+    realizadas por la empresa
+    - Acontecimientos eventuales: accidentales (incendio de un rodado no
+      asegurado)
+    - Circunstancias del medio ecónomico: originadas por el entorno
+      (perdida de poder adquisitivo de la moneda)
+    - Consumo de bienes con motivo de su uso: desgate de activos (bienes de uso)
+      que se van *amortizando* por el uso mismo de dicho bien a lo largo del ejercicio.
