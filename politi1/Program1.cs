@@ -1415,7 +1415,7 @@ do
     pass = Console.ReadLine();
 } while (pass != "admin123");*/
 
-    /*
+/*
 int num;
 int mayor;
 int menor;
@@ -1426,16 +1426,16 @@ menor = 0;
 
 for(int i = 0; i < 5; ++i)
 {
-    Console.WriteLine("Ingrese un numero");
-    num = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese un numero");
+num = int.Parse(Console.ReadLine());
 
-    if (num > mayor)
-    {
-        mayor = num;
-    } else
-    {
-        menor = num;
-    }
+if (num > mayor)
+{
+    mayor = num;
+} else
+{
+    menor = num;
+}
 }
 
 Console.WriteLine($"El numero mayor es {mayor}");
@@ -1568,6 +1568,7 @@ for (int i = 0; i < numeros3.GetLength(0); ++i) // Me permite saber las filas
 // TODO(ivan): Hacer un ta te ti con esto, usando matrices
 // TATETI con matrices
 
+/*
 string[,] table = new string[3,3];
 bool winning = false;
 bool isX = true;
@@ -1595,4 +1596,140 @@ bool isX = true;
     // Chequear posiciones
 
     // Ver si hay algún ganador
-*///}
+}
+*/
+////////////////////////////////////////////////////////////////////////////
+// Bubble sort y Funciones - 20200601
+// Recuperación del primer parcial 10/06
+
+// Método burbuja (Bubble sort)
+
+// Método de ordenamiento de arrays
+// Dado un vector = {4,7,3,2,8,9} desordenados
+//                  {2,3,4,7,8,9} ordenados
+// Para ordenarlos hay que usar el método burbuja
+// Se compara un numero con el numero de al lado
+// Dependiendo si es mayor se lo empuja hacia adelante
+// Otra manera puede ser que si es menor se lo tendría que empujar atras
+// Se necesita dos for
+// El primero recorre todo el array
+// El segundo es el que permite la comparación
+// En el segundo tiene que ser hasta el length menos 1.
+// Porque se va a comparar
+
+/// Inicializo el vector
+//int[] numeros = { 4, 3, 2, 6, 9, 7, 8 };
+
+///Mostrar array desordenado
+//for (int i = 0; i < numeros.Length; i++)
+//{
+//    Console.Write(" " + numeros[i]);
+//}
+//Console.WriteLine();
+
+/// Esto es el algoritmo del bubble sort
+//for (int i = 0; i < numeros.Length; i++) // Permite recorrer cada uno de los elementos
+//{
+//    for (int j = 0; j < numeros.Length - 1; j++) // Dentro de este for se realiza el ordenamiento, permite las comparaciones
+//    {
+//        if (numeros[j] > numeros[j+1]) // Si se pone menor, ordena de mayor a menor, si se pone mayor es de menor a mayor
+//        {
+//            int auxiliar = numeros[j]; // Es necesaria una variable auxiliar para que no pise los elementos del array
+//            numeros[j] = numeros[j+1];
+//            numeros[j+1] = auxiliar;
+//        }
+//    }
+//}
+
+///Ahora hay que mostrar el array ordenados
+//for (int i = 0; i < numeros.Length; i++)
+//{
+//    Console.Write(" " + numeros[i]);
+//}
+
+//Console.WriteLine();
+//Console.WriteLine("Usando el método Sort propio de c#");
+
+//int[] num2 = { 10, 32, 26, 84, 31, 47, 71 };
+
+//for (int i = 0; i < num2.Length; i++)
+//{
+//    Console.Write(" " + num2[i]);
+//}
+
+///Metodo propio de bubble sort
+//num2.Sort();
+//Console.WriteLine();
+
+///Recorrer ordenado
+//for (int i = 0; i < num2.Length; i++)
+//{
+//    Console.Write(" " + num2[i]);
+//}
+
+
+// Funciones
+
+// Bloque de código que realice una determinada tarea
+// Es bueno que las funciones solo tengan una tarea a realizar
+// función(parámetros) { bloque de lo que quiere realizar la tarea }
+// Hay dos tipos de funciones: con retorno y sin retorno (return)
+// Las primeras devuelven un tipo de dato
+// Las segundas también son llamadas procedimiento. Su retorno es void
+// Se tiene que poner un nombre de la variable de acuerdo a la tarea que va a realizar
+
+// Inicializamos la función. Se coloca void porque no retorna ningún tipo de dato
+// Queda solo guardada en memoria
+// void Saludar()
+// {
+//     Console.WriteLine("Hola Com 3");
+// }
+
+// Usamos la función para que haga el código
+// Llamamos la función para que se use
+// Saludar();
+// Saludar();
+// Saludar();
+// Saludar();
+// Se invoca a la función 4 veces
+
+// void SaludarAlumno(string nombre) // Tiene un parámetro de tipo string que se lo denomina nombre
+// {
+//     Console.WriteLine($"Hola {nombre}");
+// }
+//
+// SaludarAlumno("Ivan");   // Se invoca con una string particular
+// SaludarAlumno("Hugo");   // Se invoca con una string particular
+// SaludarAlumno("Pedro");  // Se invoca con una string particular
+// SaludarAlumno("Alicia"); // Se invoca con una string particular
+
+// Puede verse a la funciones como que tiene dos lados
+// Un lado donde la definimos y otro lado donde la invoco
+// Del lado de la definición la función tiene parámetros
+// Del lado de la invocación la función tiene argumentos
+// Los argumentos "viajan" a la función
+
+//Funciones con retorno
+
+// int suma(int num1, int num2) //Tengo que poner el tipo de lo que va a retornar. Los parametros tienen que especificar su tipo
+// {
+//     // Se puede crear variables dentro de las funciones
+//     // Estas variables van a tener un scope (alcance) local
+//     int resultado = 0; // Esta variable tiene scope local, solo vive dentro de esta función
+//
+//     resultado = num1 + num2;
+//
+//     return resultado;
+// }
+
+// Alcance (scope) de las funciones
+// Puede ser local o global
+// Si es local solo tiene que darse dentro de la función o sección de código
+// La global tiene que estar en todo el programa
+
+// int numero1 = int.Parse(Console.ReadLine());
+// int numero2 = int.Parse(Console.ReadLine());
+//
+// int resultado = suma(numero1, numero2);
+//
+// Console.WriteLine($"El resultado de la suma es: {resultado}");
