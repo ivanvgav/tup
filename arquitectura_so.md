@@ -601,6 +601,23 @@ los recursos físicos donde residen.
         5. HFS, HFS+
         6. Ext4
         7. ReFS
-<C-{>
 
-<C-{>:w
+# 20260602
+
+FAT32 se sigue utilizando aunque es antiguo. Es el más compatible con la mayoría de los sistemas
+  - Solo tiene capacidad max de 4 gb por archivo y 8 teras de disco
+
+EL almacenamiento de objetos se usa en la nube, a partir de los metadatos de los archivos
+El almacenamiento de bloques es para un sistema de red entre computadoras
+
+## Estructuras de datos para la gestión de archivos
+La estructura de almacenamiento de archivos es en forma de *árbol*. EJ: UNIX
+
+Una *lista enlazada* se puede usar para mantener distintas partes de los archivos en el disco.
+Se usan punteros para permitir unir distintas partes del disco para conformar el archivo completo
+para que el usuario pueda entrar
+
+*Hash table* -> Permite una búsqueda rápida de archivos a partir de los metadatos de los archivos
+
+## Seguridad en la gestión de archivos
+EL FAT32 no maneja permisos
