@@ -1733,3 +1733,91 @@ bool isX = true;
 // int resultado = suma(numero1, numero2);
 
 // Console.WriteLine($"El resultado de la suma es: {resultado}");
+/////////////////////////////////////////////////////////////////////////////////////
+
+// 20260603
+// Funciones
+// Hay que tener en cuenta cuantos parámetros le damos a cada una de las funciones
+// Una buena práctica son máximo 6 parámetros
+// Más de eso se necesita crear una clase
+
+// Los retornos pueden ser usados para trabajar en otras cosas
+// Se puede retornar cualquier estructura de datos (array, matriz, etc)
+// Tipos de funciones
+
+// Funciones sin parámetro y sin retorno
+// void Saludar()
+// {
+//     Console.WriteLine("Hola mundo");
+// }
+
+// // Funciones con parámetros y sin retorno
+// void Saludar2(string nombre) // Los parámetros pueden ser de distintos tipos y todos lo que se desee
+// {
+//     Console.WriteLine($"Hola {nombre}");
+// }
+
+// // Funciones sin parámetros y con retorno
+// int Sumar()
+// {
+//     return 2 + 2;
+// }
+
+// string Saludar3()
+// {
+//     return "Hola comisión 3";
+// }
+
+// // Funciones con parámetros y con retorno
+// double Dividir(int num1, int num2)
+// {
+//     return num1 / num2;
+//     // return (double)num1 / num2; // Casteo (parse) para que sea un double num1
+// }
+
+// // Ejemplo de cómo se tendría que usar la última función
+// Console.WriteLine("Ingresa el primer número");
+// int numero1 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Ingresa el segundo número");
+// int numero2 = int.Parse(Console.ReadLine());
+// Dividir(numero1, numero2);
+
+// double resultado = Dividir(numero1, numero2);
+// Console.WriteLine($"El resultado de la división de {numero1} y {numero2} es de {resultado}");
+
+// // Funciones Lambda
+// double Producto(int num1, int num2) => num1 * num2;
+// // La flecha tiene implícita el return
+
+// // Sobrecarga
+// double multiplicar_por_si_mismo(int num1)
+// {
+//     return num1 * num1;
+// }
+// // Si llamamos a la función tenemos que pasar uno de los valores, si o si necesita de un número
+// // Function overloading is a programming feature that allows you to create
+// // multiple functions with the exact same name, provided they have different
+// // parameter lists.
+// double multiplicar_por_si_mismo(int num1, int num2) // Tendría que estar en una clase
+// {
+//     return num1 * num1 * num2;
+// }
+
+// // Funciones con valor por defecto
+// // Sirve para poder
+// double Restar(int num1 = 0, int num2 = 0)
+// {
+//     return num1 - num2;
+// }
+
+// void BuscarNombre(string[] nombres)
+// {
+//     foreach (var nombre in nombres) // No se tiene acceso al iterador. Se usa para recorrer y mostrar
+//     {
+//         Console.WriteLine(nombre);
+//     }
+// }
+
+// string[] nombres = ["Juan", "María", "Pedro"];
+
+// BuscarNombre(nombres);
