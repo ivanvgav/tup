@@ -1610,7 +1610,7 @@ bool isX = true;
 // Para ordenarlos hay que usar el método burbuja
 // Se compara un numero con el numero de al lado
 // Dependiendo si es mayor se lo empuja hacia adelante
-// Otra manera puede ser que si es menor se lo tendría que empujar atras
+// Otra manera puede ser que si es menor se lo tendría que empujar atrás
 // Se necesita dos for
 // El primero recorre todo el array
 // El segundo es el que permite la comparación
@@ -1618,7 +1618,7 @@ bool isX = true;
 // Porque se va a comparar
 
 /// Inicializo el vector
-//int[] numeros = { 4, 3, 2, 6, 9, 7, 8 };
+// int[] numeros = { 4, 3, 2, 6, 9, 7, 8 };
 
 ///Mostrar array desordenado
 //for (int i = 0; i < numeros.Length; i++)
@@ -1628,8 +1628,8 @@ bool isX = true;
 //Console.WriteLine();
 
 /// Esto es el algoritmo del bubble sort
-//for (int i = 0; i < numeros.Length; i++) // Permite recorrer cada uno de los elementos
-//{
+// for (int i = 0; i < numeros.Length; i++) // Permite recorrer cada uno de los elementos
+// {
 //    for (int j = 0; j < numeros.Length - 1; j++) // Dentro de este for se realiza el ordenamiento, permite las comparaciones
 //    {
 //        if (numeros[j] > numeros[j+1]) // Si se pone menor, ordena de mayor a menor, si se pone mayor es de menor a mayor
@@ -1639,7 +1639,7 @@ bool isX = true;
 //            numeros[j+1] = auxiliar;
 //        }
 //    }
-//}
+// }
 
 ///Ahora hay que mostrar el array ordenados
 //for (int i = 0; i < numeros.Length; i++)
@@ -1711,14 +1711,14 @@ bool isX = true;
 
 //Funciones con retorno
 
-// int suma(int num1, int num2) //Tengo que poner el tipo de lo que va a retornar. Los parametros tienen que especificar su tipo
+// int suma(int num1, int num2) //Tengo que poner el tipo de lo que va a retornar. Los parámetros tienen que especificar su tipo
 // {
 //     // Se puede crear variables dentro de las funciones
 //     // Estas variables van a tener un scope (alcance) local
 //     int resultado = 0; // Esta variable tiene scope local, solo vive dentro de esta función
-//
+
 //     resultado = num1 + num2;
-//
+
 //     return resultado;
 // }
 
@@ -1729,7 +1729,7 @@ bool isX = true;
 
 // int numero1 = int.Parse(Console.ReadLine());
 // int numero2 = int.Parse(Console.ReadLine());
-//
+
 // int resultado = suma(numero1, numero2);
-//
+
 // Console.WriteLine($"El resultado de la suma es: {resultado}");

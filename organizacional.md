@@ -600,14 +600,15 @@ Repasar como funcionan estas cuentas <!-- TODO(ivan) -->
 Activo como conjunto de bienes que están destinadas al desarrollo de las actividades.
 Son los recursos
 
-- Los resultados de los ejercios se hacen cada 12 meses, por ser el periodo del
+- Los resultados de los ejercicios se hacen cada 12 meses, por ser el periodo del
   ejercicio económico (no siempre debe de coincidir con el año calendario)
 
 ## Variaciones patrimoniales
-Cambio que producen variación del patrimonio
+Cambio que producen variación del patrimonio.
+Estas pueden ser en el activo, pasivo y/o en el patrimonio neto
 
 ### Causas de las variaciones
-- Transaccion entre propietarios y terceros
+- Transacción entre propietarios y terceros
   - Causas transaccionales: Operaciones que realiza el ente con sus propietarios y terceros
       - Aportes de capital (con socios)
       - Retiros de capital (con socios)
@@ -619,7 +620,55 @@ Cambio que producen variación del patrimonio
     realizadas por la empresa
     - Acontecimientos eventuales: accidentales (incendio de un rodado no
       asegurado)
-    - Circunstancias del medio ecónomico: originadas por el entorno
+      - Se tiene una perdida porque el rodado no estaba asegurado
+      - Asiento: Perdida por destrucción a rodado
+    - Circunstancias del medio económico: originadas por el entorno
       (perdida de poder adquisitivo de la moneda)
     - Consumo de bienes con motivo de su uso: desgate de activos (bienes de uso)
       que se van *amortizando* por el uso mismo de dicho bien a lo largo del ejercicio.
+
+# 20260603
+## Clases de variaciones patrimoniales
+
+- Variación cualitativa: Operaciones que modifican la estructura sin que afecten el patrimonio neto
+  - Operaciones que varían el activo y/o pasivo
+  - Operaciones con terceros únicamente
+    - **Casos**:
+      - Aumento de un activo o disminución de otro activo por el mismo valor
+        - **Ej:** Entrada de mercadería por pago en efectivo. Mercadería a caja.
+          Ambas son del activo, una aumenta (mercadería) y la otra disminuye (caja)
+      - Aumento de un Activo igual al aumento de un Pasivo por el mismo valor
+        - **Ej:** Compra de mercadería por cuenta corriente
+          - Mercadería a proveedores. La primera es del activo, el segundo es del pasivo
+            Aumenta los bienes fiscos y la deuda por el mismo monto
+        - Obtención de un préstamo bancario: Caja sube y sube Deudas a pagar.
+          La primera es del activo, la segunda del pasivo por el mismo monto.
+      - Disminución de un Activo y disminución de un Pasivo por el mismo valor
+        - **Ej:** Cancelación de efectivo adeudado a un proveedor.
+          Esto sería Proveedores a Caja.
+          Disminuye el pasivo y disminuye la cuenta del activo por el mismo monto.
+        - **Ej:** Pago de cuota de préstamo bancario en efectivo.
+          Entonces disminuye documentos a pagar bancarios y disminuye caja por el mismo valor.
+      - Aumento de un Pasivo y disminución de otro Pasivo por el mismo valor
+        - **Ej:** Tenemos una deuda corriente que no pagamos.
+          EL asiento es Proveedores a Documentos a pagar.
+          Proveedores disminuye y aumenta documentos a pagar.
+          Cambio de una cuenta del pasivo a otra
+- Variaciones Cuantitativas o modificativas: Operaciones que modifican el Patrimonio Neto
+  - Operaciones con los propietarios:
+    - Incremento de Capital
+      - Caja a Aporte del Socio A. Hay modificación del capital
+        Aumento del capital social (PN) y hay un aumento de la cuenta caja
+    - Retiro de capital o de utilidades
+      - Retiro de los propietarios a Caja.
+        Disminuye el PN y disminuye la cuenta Caja.
+    - Operaciones con terceros que generan resultado: Hay movimiento en la cuenta de Ingreso o de Egreso
+      - Ingresos: Valor efectuado por ventas
+        - **Ej:** Deudores por ventas a Ventas. Aumenta el activo y aumenta la cuenta de ingreso
+      - Gastos: Consumo de recursos necesarios para la obtención de ingresos (directa o indirecta)
+      - Acontecimientos eventuales: Perdidas o ganancias según el PN
+      - Circunstancias del medio económico: Inflación
+      - Consumo de bienes con motivo de su uso: Amortizaciones de bienes de uso
+        - **Ej:** Amortización de bienes de uso (perdida) a Amortizaciones acumuladas
+
+17 de Junio - Inicio de las presentaciones del TP 1
