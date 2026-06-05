@@ -1810,9 +1810,10 @@ bool isX = true;
 //     return num1 - num2;
 // }
 
-// void BuscarNombre(string[] nombres)
+// void
+// BuscarNombre(string[] nombres)
 // {
-//     foreach (var nombre in nombres) // No se tiene acceso al iterador. Se usa para recorrer y mostrar
+//     foreach (var nombre in nombres) // No se tiene acceso al iterador. Se usa para recorrer y mostrar Se usa en arrays frecuentemente
 //     {
 //         Console.WriteLine(nombre);
 //     }

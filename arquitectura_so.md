@@ -587,7 +587,7 @@ los recursos físicos donde residen.
 # 20260528
 ## TP Gestión de archivos
 
-1. Un sistema de archivos es la etructura lógica que usan los sistemas operativos
+1. Un sistema de archivos es la estructura lógica que usan los sistemas operativos
   para organizar, almacenar, recuperar y administrar archivos en un dispositivo
   de almacenamiento
   

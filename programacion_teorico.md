@@ -564,9 +564,9 @@ donde `i` es la posición del elemento `A` hace mención al nombre del vector.
       las filas y `j` las columnas
 1. ¿Qué tipo de estructuras se utiliza para las distintas operaciones en un vector?
     - Para las operaciones de recorrido se hace uso de estructuras repetitivas.
-      Para las operaciones de orden y de busqueda se hacen uso de estructuras
-      de repetición y estructuras de control para comporar a la hora de ordenar
-      los elementos, o para la busqueda de algún elemento. Para las operaciones
+      Para las operaciones de orden y de búsqueda se hacen uso de estructuras
+      de repetición y estructuras de control para comparar a la hora de ordenar
+      los elementos, o para la búsqueda de algún elemento. Para las operaciones
       de actualización también tienen que usarse estructuras de repetición y de
       control
 1. ¿Cuál es la principal ventaja de utilizar un vector frente a declarar variables independientes?
@@ -581,3 +581,9 @@ donde `i` es la posición del elemento `A` hace mención al nombre del vector.
 # 20260529
 Los vectores se almacena en la memoria de la computadora.
 Se representa en la cantidad de elementos en los lugares adyacentes en la memoria
+
+# 20260406
+## Matrices
+Son arrays bidimensionales. Por lo que se va a tener dos índices.
+Uno que se identifica con las filas de las matrices y otro que se identifica con las columnas.
+Tienen que ser distintos índices.
