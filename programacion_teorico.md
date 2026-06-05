@@ -587,3 +587,42 @@ Se representa en la cantidad de elementos en los lugares adyacentes en la memori
 Son arrays bidimensionales. Por lo que se va a tener dos índices.
 Uno que se identifica con las filas de las matrices y otro que se identifica con las columnas.
 Tienen que ser distintos índices.
+
+### TP Matrices
+1. Las matrices bidimensionales se almacenan en la memoria de la computadora
+   (que es lineal o unidimensional) guardando todas sus filas una detrás de
+   otra. Para organizar el salto entre filas, existen dos métodos principales:
+   Row-major order (por filas) y Column-major order (por columnas). Row-major
+   order (Almacenamiento por filas): Este método guarda toda la primera fila,
+   luego toda la segunda fila, y así sucesivamente. Column-major order
+   (Almacenamiento por columnas): Este método guarda toda la primera columna,
+   luego toda la segunda columna, y así sucesivamente.
+1. Una matriz es un array bidimensional. Sus elementos tienen que ser
+   almacenados en filas y en columnas. Por lo que cada elemento dentro de una
+   matriz tiene una posición para la fila y otra para la columna.
+1. Se puede hacer una analogía con un edificio donde las filas serían los pisos
+   del edificio mientras que las columnas son los números de los departamentos
+1. 
+  - Puede almacenar 12 elementos
+  - Las cordenadas son (0, 0)
+  - Las cordenadas son (3, 4)
+1. Se tiene que usar dos bucles para poder realizar una matriz porque un bucle
+   realiza el recorrido de los bucles por parte de las filas por un lado y de
+   las columnas, por parte de otro bucle. El primer bucle es el que permite
+   recorrer las filas, mientras que el segundo bucle es el que recorre las
+   columnas. Las operaciones sobre los elementos de la que se quieran realizar
+   tienen que hacerse dentro del bucle de las columnas ya que con el bucle de
+   las filas permite moverse entre los elementos mientras que en el segundo
+   permite hacer operaciones sobre los elementos.
+1. 
+   ```
+   Definir matriz, i, j como Entero;
+   matriz <- [6, 6];
+
+   Para i = 0 hasta i = 5
+    Para j = 0 hasta j = 5
+      Escribir "Escribir un número para la posición [", i, "][", j,"]: ";
+      Leer matriz[i,j];
+    FinPara
+   FinPara
+   ```
