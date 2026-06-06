@@ -1822,3 +1822,191 @@ bool isX = true;
 // string[] nombres = ["Juan", "María", "Pedro"];
 
 // BuscarNombre(nombres);
+
+//////////////////////////
+// TP Funciones
+
+// 1
+//
+void Saludar()
+{
+    Console.WriteLine("Bienvenidos a Programación I");
+}
+
+Saludar();
+
+//2
+//
+void MostrarNombre(string nombre)
+{
+    Console.WriteLine("Ingresa el nombre deseado:");
+    Console.WriteLine($"El nombre ingresado es {nombre}");
+}
+
+MostrarNombre("Ivan");
+
+// 3
+//
+int ObtenerNumero()
+{
+    return 100;
+}
+
+ObtenerNumero();
+
+// 4
+//
+Console.WriteLine("Ingrese dos números:");
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+
+int Sumar(int a, int b)
+{
+    return a + b;
+}
+
+Sumar(a, b);
+
+// 5
+//
+bool EsPar(int numero)
+{
+    return numero % 2 == 0;
+}
+
+EsPar(5);
+EsPar(20);
+EsPar(0);
+
+// 6
+//
+
+double CalcularDescuento(double precio, double porcentaje = 10)
+{
+    if (porcentaje > 1)
+    {
+        porcentaje /= 100;
+    }
+
+    return precio * porcentaje;
+}
+
+CalcularDescuento(1000);
+CalcularDescuento(50000, 50);
+
+// 7
+//
+bool BuscarNombre(string[] nombres, string buscado)
+{
+    foreach (string nombre in nombres)
+    {
+        if (nombre == buscado)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+// 8
+//
+int Mayor(int a, int b, int c)
+{
+    int mayor = a;
+    if (mayor > b)
+    {
+        return mayor;
+    }
+    else
+    {
+        mayor = b;
+    }
+
+    if (mayor > c)
+    {
+        return mayor;
+    }
+    else
+    {
+        mayor = c;
+    }
+    return mayor;
+}
+
+// 9
+//
+int LambdaSumar(int a, int b) => a + b;
+
+// 10
+//
+double CalcularPromedio(double[] notas)
+{
+    double suma = 0;
+    foreach (double nota in notas)
+    {
+        suma += nota;
+    }
+
+    return suma / notas.Length;
+}
+CalcularPromedio([1, 2, 3, 4, 5, 6]);
+
+// 11
+//
+double SumarMenu(double num1, double num2)
+{
+    return num1 + num2;
+}
+
+double RestarMenu(double num1, double num2)
+{
+    return num1 - num2;
+}
+
+double MultiplicarMenu(double num1, double num2)
+{
+    return num1 * num2;
+}
+
+double DividirMenu(double num1, double num2)
+{
+    return num1 / num2;
+}
+
+int operacion = 0;
+
+while (operacion != 0)
+{
+    Console.WriteLine("""
+                        Bienvenido a la calculadora.
+                        Tiene distintas operaciones para realizar.
+                        Ingrese un número dependiendo de las operaciones que desee realizar.
+                        1. Suma
+                        2. Resta
+                        3. Multiplicación
+                        4. División
+                        0. Para salir
+                        A continuación ingrese los dos números a operar.
+                     """);
+    operacion = int.Parse(Console.ReadLine());
+    int num1 = int.Parse(Console.ReadLine());
+    int num2 = int.Parse(Console.ReadLine());
+
+    switch (operacion)
+    {
+        case 1:
+            SumarMenu(num1, num2);
+            break;
+        case 2:
+            RestarMenu(num1, num2);
+            break;
+        case 3:
+            MultiplicarMenu(num1, num2);
+            break;
+        case 4:
+            DividirMenu(num1, num2);
+            break;
+        default:
+            break;
+    }
+}
