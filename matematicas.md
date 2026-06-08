@@ -666,3 +666,16 @@ Se pasa de $a_{ij}$ a $a_{ji}$ cada uno de los elementos de la matriz
 > **Traza de la matriz**: Suma de los elementos de la diagonal principal
 
 ## Matriz simétrica
+
+# 20260608
+## TP Matrices
+1. La multiplicación se tiene que hacer de multiplicar cada elemento con el escalar
+
+> [!NOTE]
+> La suma y la resta tienen que hacerse entre matrices y tiene que tener el mismo orden
+
+La suma es sumar cada uno de los elementos correspondientes de ambas matrices
+
+La matriz nula se llama $N$.
+
+Las matrices transpuestas se pasan las columnas por filas o, de la misma manera, las filas por columnas.

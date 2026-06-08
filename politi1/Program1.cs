@@ -2010,3 +2010,98 @@ while (operacion != 0)
             break;
     }
 }
+
+/////////////////////////////////////////////////////////////
+// Listas Dinamicas (Dinamic arrays)
+//Arrays
+int[] numeros = new int[5];
+numeros = [1, 2, 3, 4, 5];
+// Cantidad de elementos fijas
+// No se puede agregar más elementos
+// El espacio continuo de
+
+//Las litas dinamicas permite agregar o quitar elementos de un array
+//Sin que por ello se rompa el array
+//Es lo mismo que un array pero que no tiene ni inicio ni fin
+//List<T> numeros = new List<T>();
+// ^ tipo ^ nombre       ^ llamamos a la clase Lista
+//    etiqueta <>
+List<int> num = new List<int>(); // Inicializamos la una lista de numeros
+List<int> num2 = new List<int>() { 1, 2, 3, 4, 5 };
+
+num.Add(5); // Agregar elementos al final de la lista
+num.Add(10); // Solo se puede agregar el mismo tipo de dato
+
+num2.Add(432);
+num2.Add(625);
+num2.Add(525);
+
+// Para saber el total de elementos de una list se tiene que usar la propiedad count
+for (int i = 0; i < num.Count; i++)
+{
+    Console.WriteLine(num[i]);
+}
+
+for (int i = 0; i < num2.Count; i++)
+{
+    Console.WriteLine(num2[i]);
+}
+
+num.RemoveAt(0); // Remueve un elemento por medio del índice
+num2.Remove(432); // Se puede remover el dato que quiero eliminar
+num2.Remove(999); // No pasa nada si intenta eliminar un elemento que no esta en la list
+foreach (var numero in num)
+{
+    Console.WriteLine(numero);
+}
+
+
+foreach (var numero in num2)
+{
+    Console.WriteLine(numero);
+}
+
+//Foreach lambda. Metodo para hacer lambda expression en recorrer la lista
+num.ForEach(numero => Console.WriteLine(" " + numero)); // Recorrer solo con expresión lambda
+// ^ tiene que ser con punto
+//                  ^ lo que muestra la expresión lambda
+//Recordar usar los parentesis entre el método ForEach para que no error
+
+List<string> Alumnos = new List<string>();
+
+Alumnos.Add("Juan Guzman");
+Alumnos.Add("Aldana Coronel");
+Alumnos.Add("Benjamin Geller");
+Alumnos.Add("Pedro");
+
+foreach (var Alumno in Alumnos) // var infiere el tipo de la variable Alumno
+{
+    //Console.WriteLine($"Los alumnos son {Alumno}"); //Muestra los alumnos
+
+    // Quiero saber si está un alumno en la lista
+    if (Alumno == "Pedro")
+    {
+        Console.WriteLine("Se encuentra el alumno que queremos");
+    }
+    else
+    {
+        Console.WriteLine("No está el alumno buscado");
+    }
+}
+
+Console.WriteLine(Alumnos.Contains("Pedro")); // Devuelve un booleano si tiene dicho elemento en la lista
+// Permite hacer lo mismo que hemos hecho con el foreach
+
+bool encontrado = Alumnos.Contains("Juan Guzman");
+if (encontrado)
+{
+    Console.WriteLine("Alumno encontrado");
+}
+else
+{
+    Console.WriteLine("Alumno no encontrado");
+}
+
+string AlumnoEncontrado = Alumnos.Contains("Juan Guzman") ? "Alumno encontrado" : "Alumno no encontrado"; // En formato ternario
+
+// Averiguar diferencias entre find y contains
