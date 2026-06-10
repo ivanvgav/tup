@@ -678,4 +678,47 @@ La suma es sumar cada uno de los elementos correspondientes de ambas matrices
 
 La matriz nula se llama $N$.
 
-Las matrices transpuestas se pasan las columnas por filas o, de la misma manera, las filas por columnas.
+Las matrices transpuestas se pasan las columnas por filas o,
+de la misma manera, las filas por columnas.
+
+# 20260609
+
+Matriz simetrica: Aquella matriz que es identica a su transpuesta
+
+Condiciones de simetria:
+  - Debe ser cuadrada
+  - Los elementos de la diagonal principal permanecen fijos
+  - $\forall i,j a_{ijd} = a_{ji}$
+
+Los elementos que estan abajo de la diagonal principal van a estar en espejo con
+los elementos que estan arriba de la diagonal principal
+
+### TP Matrices
+
+8.
+
+$$
+x + y = -3
+x + (-1) = -3
+x = -2
+
+
+x^2 + z = 5
+(-2)^2 + z = 5
+4 + z = 5
+z = 1
+
+
+3y = -3
+y = -1
+$$
+
+### Producto de matrices
+
+Se multiplica fila de una matriz por columnas de otras.
+Se tiene que tener la misma cantidad de columnas de una matriz que de filas de la otra. 
+El resultado va a ser del mismo orden que la primera matriz
+
+Se multiplica la fila de la primera por la columna de la segunda y lo sumamos.
+Luego hacemos lo mismo con la primera fila y segunda columna.
+Así sucesivamente hasta que lleguemos al final de todo

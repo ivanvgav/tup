@@ -621,3 +621,63 @@ para que el usuario pueda entrar
 
 ## Seguridad en la gestión de archivos
 EL FAT32 no maneja permisos
+
+# 20260609
+
+## Unidad 7: Redes
+
+Una red es un conjunto de redes. Se conectan para poder compartir software, datos y hardware
+
+### Tipos de red
+
+Según su área de cobertura:
+
+- WAN: Red de cables extendida
+- MAN: Red Metropolitan. Redes que pueden cubrir un área
+- LAN: Red Local. Cobertura para cubrir un edificio
+- PAN: Red de área personal
+
+### Red LAN
+
+- Nodos
+- Dispositivos de interconexión
+  - Modem
+  - Switch
+  - Puentes
+  - Hub
+  - Repetidores
+  - Router
+
+| Dispositivo | Función | Como trabaja | Ventaja | Desventaja |
+| ----------- | ------- | ------------ | ------- | ---------- |
+| **Modem**   | Se conecta con el proveedor (ISP) | Valida user y pass para conectarse | 
+| **Router**  | Interconecta redes diferentes entre sí | Utiliza direcciones IP para determinar la mejor ruta que deben seguir los paquetes | 
+| Repetidor   | Amplifica la señal | Recibe señal debilitada y la retrasmite con más intensidad | Sencillo | No modifica la red ni la administra | 
+| Hub         | Conecta los nodos y envia la señal a ellos | Recibe los datos y los retransmite a todos los dispositivos conectados | Economico y Sencillo | Genera colisiones de información, no reduce el tráfico |  
+| Puente      | Interconecta diferentes partes de la red | Analiza las direcciones MAC y decide si debe reenviar la información | Reduce tráfico innecesario | Uso limitado |
+| Switch      | Conecta los nodos dentro de una red LAN de manera eficiente | Recibe las datos y los retransmite solo al dispotivo destinatario usando las direcciones MAC | Reduce las colisiones, mejora la seguridad | Más caro que el hub, requiere configuración |
+
+Dentro de la red LAN tenemos computadoras que funcionan como clientes o como servidores
+
+EL servidor es una maquina que provee algún tipo de servicio (mail, base de datos). Los clientes son los nodos que utilizan dichos servicios
+
+NIC: Placa de red que tiene la computadora para conectarse a redes
+
+COmando para windows: `ipconfig`
+
+Cable para conectar:
+  - Cable de cobre: hasta de 5 mbs
+  - Fibra óptica: compuesto de vidrio
+    - Permite una mayor velocidad
+  - Conexión inalambrica
+    - El Wi-fi es interno
+
+## TP Redes 1
+1. 
+  - WAN: Distancias de contienentes y entre paises. Maxima velocidad 900 mbs
+  - MAN: Distancias entre ciudades. Maxima velocidad de 300 mbs
+  - LAN: Distancias entre edificios mismo. Máxima velocidad 100 mbs
+2. Depende del tipo de cable que use la conexión. No son los mismos materiales para cada una de ellas y de la conexión de red que se utilice.
+3. Speedtest, iperf/iperf3, Wrireshrak, nPerf, NetSpeedMonitor
+4. Ethernet 10/100/1000 mbps (gigabit) PCIe, Ethernet 2.5 Gbps, Ethernet 10 Gbps PCIe
+  - Ejemplo: TP-Link TG-3468, Intel 1225-V 2.5GbE, Asus XG-C100C, TP-link UE 300
