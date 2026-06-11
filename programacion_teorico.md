@@ -620,9 +620,177 @@ Tienen que ser distintos índices.
    matriz <- [6, 6];
 
    Para i = 0 hasta i = 5
-    Para j = 0 hasta j = 5
-      Escribir "Escribir un número para la posición [", i, "][", j,"]: ";
-      Leer matriz[i,j];
-    FinPara
+     Para j = 0 hasta j = 5
+       Escribir "Escribir un número para la posición [", i, "][", j,"]: ";
+       Leer matriz[i,j];
+     FinPara
    FinPara
    ```
+
+# 20260611
+
+## Colecciones
+### TP Colecciones
+1. ¿Cuál es la diferencia fundamental entre un array tradicional y una colección como `List<T>`?
+2. ¿Qué ventaja principal ofrecen las colecciones genéricas (espacio de nombres `System.collection.Generic`) frente a las no genéricas?
+3. Explica que es una colección de tipo clave-valor y menciona dos clases en C# que implementan este modelo
+4. ¿Qué es un `HashSet<T>` y en que casos de uso preferirías utilizarlo en lugar de una `List<T>`
+5. Nombra las diferencias entre una Cola (Queue<T>) y una Pila (Stack<T>) en cuanto al orden en que procesan los elementos
+6. ¿Para qué sirve la interfaz `IEnumerable<T>` y qué permite hacer en conjunto con un bucle `foreach`?
+7. Explica la diferencia entre las estructuras `Dictionary<They, TValue>` y `SortedDictionary<TKey, TValue>`
+8. ¿Podría decir si existen varios tipos de colecciones? De ser así, explique detalladamente
+
+#### Desarrollo
+
+1. 
+  * **Array tradicional:** Tiene un **tamaño fijo e inmutable** desde el
+    momento de su creación. Si necesitas agregar más elementos de los que
+    inicialmente reservaste, estás obligado a instanciar un nuevo array de
+    mayor tamaño y copiar los elementos de forma manual.
+  * **List<T>:** Es una colección **dinámica**. Modifica su tamaño de manera
+    automática bajo el capó (reestructurando su array interno) a medida que
+    agregas (`Add`) o eliminas (`Remove`) elementos.
+2.
+  Las colecciones genéricas ofrecen dos ventajas críticas para el desarrollo de software moderno:
+
+  1. **Seguridad de tipos (Type Safety):** Al declarar un `List<int>`, el
+  compilador garantiza que solo se puedan insertar enteros. Con las colecciones
+  no genéricas (como `ArrayList`), todo se almacena como object, lo que eleva el
+  riesgo de lanzar un `InvalidCastException` en tiempo de ejecución si se
+  introduce un tipo incorrecto.
+  
+  2. **Rendimiento optimizado:** Evitan los procesos de **Boxing y
+  Unboxing** al trabajar con tipos de valor (`int, double, bool, structs`). No es
+  necesario transformar el dato a object para guardarlo, ni desempaquetarlo para
+  leerlo, lo que ahorra ciclos de CPU y reduce el trabajo del Garbage Collector.
+3. 
+  Una colección de clave-valor es una estructura asociativa donde cada elemento
+  guardado está compuesto por una **clave única** (que actúa como identificador
+  o índice personalizado) y un **valor asociado** a dicha clave. No se accede a
+  los datos por un índice numérico secuencial, sino mediante su clave.
+
+  Dos clases nativas en C# que implementan este modelo son:
+    * Dictionary<TKey, TValue>
+    * SortedDictionary<TKey, TValue>
+4. 
+  Un `HashSet<T>` es una colección matemática de elementos **únicos** que **no
+  garantiza un orden** específico.
+
+  **¿Cuándo es preferible usarlo sobre una `List<T>`?**
+
+  * **Para asegurar la unicidad:** Si necesitas evitar duplicados de forma
+    nativa. `HashSet<T>` ignora automáticamente cualquier elemento repetido sin
+    lanzar errores.
+  * **Por rendimiento extremo en búsquedas:** Verificar si un elemento existe
+    con `.Contains()` en una `List<T>` requiere recorrer la lista elemento por
+    elemento (complejidad lineal `O(n)`). En un `HashSet<T>`, gracias a su algoritmo
+    de hashing, la búsqueda, inserción y eliminación toman un tiempo constante
+    promedio de O(1), haciéndolo ideal para procesar grandes volúmenes de datos.
+5.
+| Colección | Principio de Ordenamiento | Comportamiento Interno | Caso de Uso Típico |
+| --------- | ------------------------- | ---------------------  | ------------------ |
+| **Queue<T> (Cola)** | **FIFO** (*First-In, First-Out*) | El primer elemento en ingresar es el primero en salir. | Colas de impresión, procesamiento de tareas en segundo plano. |
+| **Stack<T> (Pila)** | **LIFO** (*Last-In, First-Out*) | El último elemento en ingresar es el primero en salir. | Mecanismo de "Deshacer" (Ctrl+Z), historial de navegación. |
+
+6.
+  La interfaz `IEnumerable<T>` es el contrato base de lectura para todas las
+  colecciones fuertemente tipadas en .NET. Su único propósito es exponer un
+  enumerador (`IEnumerator<T>`), el cual permite recorrer la estructura de datos
+  secuencialmente hacia adelante.
+
+  **El secreto del bucle foreach:** foreach es azúcar sintáctico. El compilador
+  de C# transforma el bucle en llamadas al método `.GetEnumerator()` de la
+  interfaz. Esto te permite iterar cualquier colección (sea una lista, un array
+  o un árbol) de forma unificada y segura sin preocuparte por índices o punteros
+  internos.
+
+
+```csharp
+List<string> nombres = new List<string> { "Ana", "Beto", "Carlos" };
+
+foreach (string nombre in nombres)
+{
+    Console.WriteLine(nombre);
+}
+
+Lo que hace el compilador por dentro:
+
+```csharp
+List<string> nombres = new List<string> { "Ana", "Beto", "Carlos" };
+
+// 1. Se obtiene el enumerador gracias a que List<T> implementa IEnumerable<T>
+IEnumerator<string> enumerador = nombres.GetEnumerator();
+
+try
+{
+    // 2. MoveNext() avanza al siguiente elemento. Devuelve 'false' cuando ya no hay más.
+    while (enumerador.MoveNext())
+    {
+        // 3. Current obtiene el valor del elemento actual
+        string nombre = enumerador.Current;
+        
+        Console.WriteLine(nombre);
+    }
+}
+finally
+{
+    // 4. IEnumerator implementa IDisposable. 
+    // Esto asegura que, incluso si hay un error, los recursos se liberen.
+    if (enumerador != null)
+    {
+        enumerador.Dispose();
+    }
+}
+``` 
+
+* Abstracción total: Al foreach no le importa si estás recorriendo una List<T>,
+  un Array, un `HashSet<T>` o una fila de una base de datos. Mientras la
+  estructura tenga un método `GetEnumerator()`, el bucle funcionará exactamente
+  igual.
+
+* Seguridad: No hay peligro de equivocarse con el clásico error de índice fuera
+  de rango (IndexOutOfRangeException) que suele pasar con los bucles for
+  tradicionales (como poner `i <= nombres.Count` por error).
+
+* Solo lectura y hacia adelante: El enumerador solo sabe ir hacia el frente y
+  leer (Current). No puedes modificar la estructura de la colección (añadir o
+  quitar elementos) mientras la recorres, lo que previene errores catastróficos
+  en tiempo de ejecución
+
+7. 
+  Aunque ambas resuelven el almacenamiento de pares clave-valor, difieren
+  drásticamente en su arquitectura interna y su rendimiento:
+  
+  * **Dictionary<TKey, TValue>:** Utiliza una **tabla hash** internamente. No
+    mantiene ningún orden en las claves. Sus operaciones fundamentales
+    (búsqueda, inserción, borrado) son extremadamente rápidas, operando en un
+    tiempo constante de $O(1)$.
+  * **SortedDictionary<TKey, TValue>:** Utiliza una estructura de **árbol
+     binario de búsqueda balanceado** (árbol rojinegro). Mantiene las claves
+     ordenadas automáticamente según su criterio de comparación. Debido al costo
+     de mantener el árbol en equilibrio, sus operaciones son ligeramente más
+     lentas, con una complejidad logarítmica de $O(\log n)$.
+8.
+   Sí, en el ecosistema de .NET las colecciones se categorizan en varias
+   familias especializadas según el escenario arquitectónico donde se utilicen:
+  
+  * **Colecciones Genéricas (System.Collections.Generic):** Son el estándar
+    moderno de la industria (`List<T>`, `Dictionary<TKey, TValue>`). Garantizan
+    seguridad de tipos y alto rendimiento.
+  
+  * **Colecciones Concurrentes (System.Collections.Concurrent):** Diseñadas
+    específicamente para entornos multihilo (*multithreading*). Clases como
+    `ConcurrentDictionary<TKey, TValue>` son *thread-safe*, lo que significa que
+    múltiples hilos pueden leer y escribir en ellas simultáneamente sin
+    corromper los datos y sin necesidad de usar bloqueos manuales (lock).
+  
+  * **Colecciones Inmutables (System.Collections.Immutable):** Son estructuras
+    que no pueden ser alteradas una vez creadas. Cualquier operación que intente
+    modificarlas devuelve una nueva instancia modificada, dejando la original
+    intacta. Son muy utilizadas en arquitectura de software funcional y estados
+    compartidos.
+  
+  * **Colecciones No Genéricas (System.Collections):** Son las colecciones
+    originales de C# 1.0 (ArrayList, Hashtable). Operan únicamente con el tipo
+    base `object`. Actualmente están **en desuso** y solo se preservan en el
+    framework por motivos de compatibilidad hacia atrás.

@@ -639,6 +639,9 @@ Según su área de cobertura:
 
 ### Red LAN
 
+- PC Clientes
+- PC Servidores:
+  - Brinda algún servicio a la red
 - Nodos
 - Dispositivos de interconexión
   - Modem
@@ -661,9 +664,18 @@ Dentro de la red LAN tenemos computadoras que funcionan como clientes o como ser
 
 EL servidor es una maquina que provee algún tipo de servicio (mail, base de datos). Los clientes son los nodos que utilizan dichos servicios
 
-NIC: Placa de red que tiene la computadora para conectarse a redes
+NIC (Network Interface Conection): Placa de red que tiene la computadora para conectarse a redes
+  - Las más usadas son la de ethernet y las de wi-fi
+  - Hay de bluetooth y cable coaxil
+  - Ejecuta el protocolo de acceso al medio (TCP/IP)
+    -
 
-COmando para windows: `ipconfig`
+Comando para windows: `ipconfig`
+IPv6 - aparece porque IPv4 está quedando corta
+IPv4 - Esta dividia en 4 partes. Identifica a la red como al host dentro de la red
+  - Se la puede configurar para determinar cuantas redes se conectan y cuantos dispositivos
+  - Las dos primeras partes identifican a la red, las otras dos identifican al dispositivo
+Puerta de enlace - DIrección del router
 
 Cable para conectar:
   - Cable de cobre: hasta de 5 mbs
@@ -671,13 +683,102 @@ Cable para conectar:
     - Permite una mayor velocidad
   - Conexión inalambrica
     - El Wi-fi es interno
+    - Infrarojo
+    - Bluettoth
 
 ## TP Redes 1
 1. 
   - WAN: Distancias de contienentes y entre paises. Maxima velocidad 900 mbs
-  - MAN: Distancias entre ciudades. Maxima velocidad de 300 mbs
-  - LAN: Distancias entre edificios mismo. Máxima velocidad 100 mbs
+  - MAN: Distancias entre ciudades (100 km). Maxima velocidad de 300 mbs
+  - LAN: Distancias entre edificios mismo (1km). Máxima velocidad 100 mbs
+  - PAN: Redes personales. Por ejemplo redes realizadas con el celular
 2. Depende del tipo de cable que use la conexión. No son los mismos materiales para cada una de ellas y de la conexión de red que se utilice.
 3. Speedtest, iperf/iperf3, Wrireshrak, nPerf, NetSpeedMonitor
 4. Ethernet 10/100/1000 mbps (gigabit) PCIe, Ethernet 2.5 Gbps, Ethernet 10 Gbps PCIe
   - Ejemplo: TP-Link TG-3468, Intel 1225-V 2.5GbE, Asus XG-C100C, TP-link UE 300
+5.
+  | Tipo de servidor | Funcion | Componentes | Software |
+  | ---------------- | ------- | ----------- | -------- |
+  | Servidor de archivos | Almacenar y compartir archivos | CPU 4 nucleos, 8 - 32 GB RAM, discos redundantes | SO |
+  | Servidor de base de datos | Gestionar y almacenar base de datos | CPU 4 nucleos, 8 - 32 GB RAM, discos redundantes | SO, motor de base de datos |
+  | Servidor Web | Alojar sitios y aplicaciones web | CPU 4 nucleos, 8 - 32 GB RAM, discos redundantes | SO, Apache, SSL |
+  | Servidor de correo | Enviar/recibir correos | CPU 4 nucleos, 8 - 32 GB RAM, discos redundantes | SO, antivirus, antispam |
+  | Servidor DNS/DHCP | Resolver nombres y asignar IPs | CPU 4 nucleos, 8 - 32 GB RAM, discos redundantes | SO, BIND (DNS), ISC |
+  | Servidor de impresión | Administrar impresoras | CPU 4 nucleos, 8 - 32 GB RAM, discos redundantes | SO, Cups, controladores |
+
+
+# 20260611
+
+Las redes permiten compartir recursos
+
+En cada placa de red hay una Dirección MAC (es como la patente de un auto)
+Los switchs y los puentes trabajan con estas direcciones,
+haciendo posible la transmisión de info solo dentro de la red
+
+El router es quien maneja otra dirección, la dirección IP.
+Es una dirección lógica, identifica al dispositivo y a la red misma.
+El router permite ser el enlace entre otras redes
+
+Puerta de enlance: lo que permite la salida al exterior a la red
+
+Mascara de subred:
+
+```
+255.255.255.0
+___________ _
+   Red      ^ Host
+```
+
+Va a tener que tener las tres primeras partes iguales para que se sepa que estan en la misma red
+
+Hay direcciones prohibidas para su uso. Ej: `0.0.0.0`
+
+La dirección de ip que aparece en `ipconfig` es la local que nos asigna el router
+EL proveedor es quien va a determinar la ip cuando se conecta con internet
+
+Aqui hay un ejemplo de dirección MAC:
+`   Physical Address. . . . . . . . . : C8-F7-33-30-AC-32`
+
+SI aparece DHCP habilitado permite que el router asigne las direcciones
+
+DNS - Servidor de nombre de dominio
+  - el servidor traduce el ip de una pagina en la url para determinada página donde se encuentra alojada
+
+# TOpologia
+## Topología física
+Estructura física de la red
+  - Bus
+    - Ya no se usa tanto
+    - Consiste en un cable (segmento) la que se conectan todas las PC de la red
+    - Baja confiabilidad
+    - Dificil detección de fallas
+    - Para agregar nodos se tiene apagar toda la red
+  - Estrella
+    - Se conectan los nodos a través de un switch y no un solo segmento
+    - Tiene un componente central, un switch
+    - Tiene un punto central de falla (el copomente central)
+    - Instalación más limpia
+    - Fácil expansión de la red (se agrega al componente central)
+  - Anillo
+    - Cada dispositivo está conectado con otros dos dispositivos.
+    - Se conectan entre computadoras
+    - Cada dispositivo actúa como repetidor
+  
+Puede haber combinación híbridas entre las topologías físicas
+
+## Topología lógica
+Como fluye la info en la red
+  - Bus
+  - Anillo
+
+## Tipos de redes LAN
+
+Peer-to-peer -> Red en la cual todas las computadoras tienen similares caracteristicas, cada pc es cliente y servidor a la vez
+  - Cantidad de usuarios menor a 10, misma area geografica, limitaciones de crecimiento
+
+Servidor dedicado -> Hay un PC que funciona como servidor y las otras PCs como
+clientes, tienen un sistema operativo especial para servidor, son más seguros
+
+<!-- TODO: Hacer TP parte 2 -->
+
+Parcial: 25/06 UNIDAD 5, 7, 8

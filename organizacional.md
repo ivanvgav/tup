@@ -530,13 +530,13 @@ Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio net
 - Reserva estatutaria
 - Reserva facultativa
 - Reserva para futuro aumento de capital
-- Estas reservas solo se pueden asignar si es que tengo ganancia en el ejercicio
+  - Estas reservas solo se pueden asignar si es que tengo ganancia en el ejercicio
 - Resultados acumulados (no asignados)
     - Los resultados de los años anteriores
       (saldo de los ejercicios anteriores,
       dependiendo de las ganancia y las perdidas de cada ejercicio)
 - Resultado del ejercicio
-    - Se realiza a partir de los ingresos (I) y egresos (E)
+    - Se realiza a partir de la diferencia de los ingresos (I) y egresos (E)
     - Ingresos (saldo acreedor)
         - Ventas
         - Alquileres
@@ -551,7 +551,6 @@ Los contenidos de las cuentas son los rubros del activo, pasivo y patrimonio net
         - Descuentos concedidos
 
 # 20260520
-**Segundo Parcial**: 24 de Junio
 
 Ingreso *siempre* va a ir al haber
 Egreso *siempre* va a ir al debe
@@ -610,8 +609,8 @@ Estas pueden ser en el activo, pasivo y/o en el patrimonio neto
 ### Causas de las variaciones
 - Transacción entre propietarios y terceros
   - Causas transaccionales: Operaciones que realiza el ente con sus propietarios y terceros
-      - Aportes de capital (con socios)
-      - Retiros de capital (con socios)
+      - Aportes de capital (entre propietarios)
+      - Retiros de capital (entre propietarios)
       - Compras de bienes o servicios (con terceros)
       - Venta de bienes o servicio (con terceros)
       - Cobro, pago (con terceros)
@@ -623,16 +622,20 @@ Estas pueden ser en el activo, pasivo y/o en el patrimonio neto
       - Se tiene una perdida porque el rodado no estaba asegurado
       - Asiento: Perdida por destrucción a rodado
     - Circunstancias del medio económico: originadas por el entorno
-      (perdida de poder adquisitivo de la moneda)
+      (perdida de poder adquisitivo de la moneda [inflación])
     - Consumo de bienes con motivo de su uso: desgate de activos (bienes de uso)
       que se van *amortizando* por el uso mismo de dicho bien a lo largo del ejercicio.
+      - Amortización es una cuenta de perdida
+      - Asiento: Amortización Rodado Amortización Rodado (Cuenta de perdida) Acumulado
+        (Cuenta reguladora de activo)
 
 # 20260603
 ## Clases de variaciones patrimoniales
 
-- Variación cualitativa: Operaciones que modifican la estructura sin que afecten el patrimonio neto
+- Variación cualitativa: Operaciones que modifican la estructura sin que afecten
+  el patrimonio neto
   - Operaciones que varían el activo y/o pasivo
-  - Operaciones con terceros únicamente
+  - Operaciones con terceros *únicamente*
     - **Casos**:
       - Aumento de un activo o disminución de otro activo por el mismo valor
         - **Ej:** Entrada de mercadería por pago en efectivo. Mercadería a caja.
@@ -653,7 +656,7 @@ Estas pueden ser en el activo, pasivo y/o en el patrimonio neto
         - **Ej:** Tenemos una deuda corriente que no pagamos.
           EL asiento es Proveedores a Documentos a pagar.
           Proveedores disminuye y aumenta documentos a pagar.
-          Cambio de una cuenta del pasivo a otra
+          Cambio de una cuenta del pasivo a otra. Cambio en la calidad de la cuenta del pasivo.
 - Variaciones Cuantitativas o modificativas: Operaciones que modifican el Patrimonio Neto
   - Operaciones con los propietarios:
     - Incremento de Capital
@@ -662,7 +665,7 @@ Estas pueden ser en el activo, pasivo y/o en el patrimonio neto
     - Retiro de capital o de utilidades
       - Retiro de los propietarios a Caja.
         Disminuye el PN y disminuye la cuenta Caja.
-    - Operaciones con terceros que generan resultado: Hay movimiento en la cuenta de Ingreso o de Egreso
+    - Operaciones con terceros que generan resultados: Hay movimiento en la cuenta de Ingreso o de Egreso
       - Ingresos: Valor efectuado por ventas
         - **Ej:** Deudores por ventas a Ventas. Aumenta el activo y aumenta la cuenta de ingreso
       - Gastos: Consumo de recursos necesarios para la obtención de ingresos (directa o indirecta)
@@ -672,3 +675,14 @@ Estas pueden ser en el activo, pasivo y/o en el patrimonio neto
         - **Ej:** Amortización de bienes de uso (perdida) a Amortizaciones acumuladas
 
 17 de Junio - Inicio de las presentaciones del TP 1
+
+# 20260610
+
+Viernes 26 de Junio - Fecha parcial
+
+El resulado del ejercicio se obtiene solo por diferencia de ingreso y egreso
+
+REVISAR TP 34 PARA PARCIAL
+
+Todas las cuentas que tienen "a pagar" son pasivo.
+  Todas las cuentas que tienen "a cobrar" tienen saldo deudor
