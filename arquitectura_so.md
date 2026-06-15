@@ -668,7 +668,6 @@ NIC (Network Interface Conection): Placa de red que tiene la computadora para co
   - Las más usadas son la de ethernet y las de wi-fi
   - Hay de bluetooth y cable coaxil
   - Ejecuta el protocolo de acceso al medio (TCP/IP)
-    -
 
 Comando para windows: `ipconfig`
 IPv6 - aparece porque IPv4 está quedando corta
@@ -737,14 +736,14 @@ La dirección de ip que aparece en `ipconfig` es la local que nos asigna el rout
 EL proveedor es quien va a determinar la ip cuando se conecta con internet
 
 Aqui hay un ejemplo de dirección MAC:
-`   Physical Address. . . . . . . . . : C8-F7-33-30-AC-32`
+`Physical Address. . . . . . . . . : C8-F7-33-30-AC-32`
 
 SI aparece DHCP habilitado permite que el router asigne las direcciones
 
 DNS - Servidor de nombre de dominio
   - el servidor traduce el ip de una pagina en la url para determinada página donde se encuentra alojada
 
-# TOpologia
+# Topologia
 ## Topología física
 Estructura física de la red
   - Bus

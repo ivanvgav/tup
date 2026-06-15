@@ -2027,14 +2027,14 @@ numeros = [1, 2, 3, 4, 5];
 // ^ tipo ^ nombre       ^ llamamos a la clase Lista
 //    etiqueta <>
 List<int> num = new List<int>(); // Inicializamos la una lista de numeros
-List<int> num2 = new List<int>() { 1, 2, 3, 4, 5 };
+List<int> numeros2 = new List<int>() { 1, 2, 3, 4, 5 };
 
 num.Add(5); // Agregar elementos al final de la lista
 num.Add(10); // Solo se puede agregar el mismo tipo de dato
 
-num2.Add(432);
-num2.Add(625);
-num2.Add(525);
+numeros2.Add(432);
+numeros2.Add(625);
+numeros2.Add(525);
 
 // Para saber el total de elementos de una list se tiene que usar la propiedad count
 for (int i = 0; i < num.Count; i++)
@@ -2042,21 +2042,21 @@ for (int i = 0; i < num.Count; i++)
     Console.WriteLine(num[i]);
 }
 
-for (int i = 0; i < num2.Count; i++)
+for (int i = 0; i < numeros2.Count; i++)
 {
-    Console.WriteLine(num2[i]);
+    Console.WriteLine(numeros2[i]);
 }
 
 num.RemoveAt(0); // Remueve un elemento por medio del índice
-num2.Remove(432); // Se puede remover el dato que quiero eliminar
-num2.Remove(999); // No pasa nada si intenta eliminar un elemento que no esta en la list
+numeros2.Remove(432); // Se puede remover el dato que quiero eliminar
+numeros2.Remove(999); // No pasa nada si intenta eliminar un elemento que no esta en la list
 foreach (var numero in num)
 {
     Console.WriteLine(numero);
 }
 
 
-foreach (var numero in num2)
+foreach (var numero in numeros2)
 {
     Console.WriteLine(numero);
 }
