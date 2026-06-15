@@ -791,6 +791,6 @@ finally
     compartidos.
   
   * **Colecciones No Genéricas (System.Collections):** Son las colecciones
-    originales de C# 1.0 (ArrayList, Hashtable). Operan únicamente con el tipo
+    originales de C# 1.0 (`ArrayList`, `Hashtable`). Operan únicamente con el tipo
     base `object`. Actualmente están **en desuso** y solo se preservan en el
     framework por motivos de compatibilidad hacia atrás.
