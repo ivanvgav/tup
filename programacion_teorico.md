@@ -662,7 +662,7 @@ Tienen que ser distintos índices.
   2. **Rendimiento optimizado:** Evitan los procesos de **Boxing y
   Unboxing** al trabajar con tipos de valor (`int, double, bool, structs`). No es
   necesario transformar el dato a object para guardarlo, ni desempaquetarlo para
-  leerlo, lo que ahorra ciclos de CPU y reduce el trabajo del Garbage Collector.
+  leerlo, lo que ahorra ciclos de CPU y reduce el trabajo del `Garbage Collector`.
 3. 
   Una colección de clave-valor es una estructura asociativa donde cada elemento
   guardado está compuesto por una **clave única** (que actúa como identificador
@@ -794,3 +794,80 @@ finally
     originales de C# 1.0 (`ArrayList`, `Hashtable`). Operan únicamente con el tipo
     base `object`. Actualmente están **en desuso** y solo se preservan en el
     framework por motivos de compatibilidad hacia atrás.
+
+# 20260618
+Hay distintos tipos de colecciones:
+
+* Listas
+  * Listas dinámicas
+  * Enlazadas (Linked List)
+    * Permite acceso aleatorio
+  * Pilas (Stack)
+    * LIFO Ultima entrada primera salida
+  * Colas (Queue)
+    * Primera entrada primera salida (FIFO)
+* Diccionarios
+  * Almacena elementos con estructura de clave-valor
+* SortedList
+  * Igual que los diccionarios pero que están ordenados
+* Conjuntos
+  * Listas de valores pero sin ordenar
+* HashTable
+<!--TODO: Buscar Lo que establece un diccionario, un conjunto y una hash table-->
+
+`namespace System.Collections` forma parte de lo que se tiene que poner para que se pueda acceder a las colecciones.
+
+### TP
+1. Defina que es una lista.
+2. Cual es son las caracetrísticas de una lista
+3. Mencione los distintos tipos de listas
+4. Cómo se declara una lista en C#. Explique cada uno de sus elementos.
+5. Cómo se añade elementos a la lista en C#
+6. Explique que función cumple:
+    - Add()
+    - Count()
+    - Remove() / RemoveAt()
+    - Sort()
+
+#### Desarrollo
+1. Una lista es una clase de colección genérica dinámica en la que se guardan
+   elementos fuertemente tipado que ofrece expasión automática de tamaño.
+2. Tiene seguridad de tipo, tiene indexación en 0 y posee una serie de métodos
+   varios para poder trabjar sobre ellos.
+3. Hay `LinkedList<T>`, `SortedList<T>`
+4. ```csharp
+   List<T> NombreDeLaLista = new List<T>();
+   ```
+
+   Se tiene que inicializar con la lista, el tag del tipo de dato, el nombre
+   que se le asigna a la variable, la asignación, y la creación de un nuevo
+   objeto List con el tipo de dato.
+5. Se utiliza el método Add().
+   Ej:
+   ```csharp
+   List<int> numeros = new List<int>();
+   numeros.Add(5);
+   ```
+6.
+    * Add(): Agrega un elemento a la lista
+    * Count(): Permite saber cuantos elementos tiene una lista
+    * Remove(): Permite remover el elemento indicando el elemento de la lista a
+      ser removido
+    * RemoveAt(): Permite remover el elmento por su índice
+    * Sort(): Ordena los elementos de la lista
+
+# 20260619
+
+1. Ventajas, desventajas lista
+2. ```
+   | |-> | |->| |-> | |->| |-> | |
+   ```
+3. Una lista de inventario de objetos del mismo tipo,
+   un listado de números de identificación,
+   una lista de precios
+4. Un nodo contiene dos componentes:
+   - El dato: información que se desea guardar
+   - Puntero: Apunta al siguiente nodo de la secuencia
+5. Se da cuenta que se ha llegado al final porque el último nodo apunta a un puntero nulo
+6. Es de comportamiento LIFO (Last In, First Out). Es decir que todo elemento que sale es el primero de la estructura
+   mientras que para entrar entra al final de la estructura.

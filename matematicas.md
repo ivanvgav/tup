@@ -722,3 +722,87 @@ El resultado va a ser del mismo orden que la primera matriz
 Se multiplica la fila de la primera por la columna de la segunda y lo sumamos.
 Luego hacemos lo mismo con la primera fila y segunda columna.
 Así sucesivamente hasta que lleguemos al final de todo
+
+# 20260616
+
+La potencia de matrices es el producto de la base la cantidad de veces que este el exponentes
+
+## Matriz inversa
+
+La inversa es tal que: $A \bullet A^{-1} = I$
+
+Recordemos que la identidad es la que tiene la diagonal principal con $1$ y el resto con $0$
+
+Las condiciones tienen que ser cuadrada y su determinante tiene que ser distinto de $0$.
+Si el determinante es 0, significa que no tiene inversa
+
+### Determinante
+Para calcular el determinante de la matriz hay varios métodos.
+
+Tenemos que saber las diagonales principales y la secundaria (espejo de la principal)
+
+El determinante de una matriz de orden 2 tiene que ser la multiplicación de cada elemento de la diagonal
+principal menos la multiplicación de los elementos de la diagonal secundaria
+
+Para las matrices de orden 3 se emplea la regla de Sarrus
+
+Lo que se hace es tomar la diagonal principal y las diagonales subsiguientes
+superiores, para ello se tiene que agregar dos columnas más que serían las
+primeras y segunda columnas de las matrices. Tenemos que tomar dichas diagonales
+y sus diagonales secundarias. Se suman todas las mutiplicaciones los elementos
+de cada una de diagonales principales y luego restado la suma de la
+multiplicación de cada una de las diagoneles secundarias.
+
+# 20260622
+
+Tipos de matrices:
+
+- De información: contiene información. Caso de precios de ciertos elementos
+- De relación: Solo va a tener 0 y 1 en cualquier posición. Lo que indica son relaciones entre lo que puede haber entre los nodos de un grafo.
+  - Estas dependen del grafo de lo que está representando
+  - Una matriz de adyacencia es una matriz de relación
+
+## Grafos
+
+Un grafo es una representación gráfica de cualquier estructura que esté compuesta por nodos(vertices) y aristas (arcos)
+
+Ej:
+
+- Una red de computadoras, donde los nodos serían las computadoras y las aristas serían la información que va entre las computadoras
+- Las rutas y las ciudades, los nodos serían las ciudades y las rutas son las aristas
+- Un diagrama de flujo también se podría considerar un grafo, las flechas serían las aristas y los nodos los pasos del diagrama
+
+### Tipos de grafos
+
+- Simples: De nodo a nodo solo hay *una* arista
+- Multigrafo: Entre nodo y nodo hay más de *una* arista
+- No dirigido: No tienen una flecha en sus aristas entre nodo y nodo
+  - En realidad las aristas van en ambos sentidos
+  - Un grafo o es no dirigido o dirigido, no ambas
+- Ponderado: Cada arista tiene asociada un valor
+  - Se pueden usar en proceso de distribución por cuestiones de prioridad
+- Lineal: Los nodos son dirigidos y conforman una linea
+- Circular: Los nodos conforman ciclos, es no dirigido
+- Completo: No dirigido, cada nodo se encuentra conectado con cada nodo
+
+## Def formal
+
+$G = (N, R)$ donde $N$ son los nodos y las $R$ son las relaciones entre los nodos
+
+$N$ es el conjunto de los nodos
+$R$ es el conjuto de las relaciones, dadas a partir de pares ordenados
+
+
+## TP Grafos
+
+1. a. A = { {A, B}, {(A, B); (B, A)}}
+   b. B = { {A, B, C}, {(A, B), (B, A), (A, C), (C, A), (B,C), (C,B)} }
+   c. C = { {1, 2, 3, 4}, {(1, 2), (2, 4), (3, 2), (4,1), (4,4)} }
+   d. D = {{1,2,3,4,5} {(1,3), (1,1), (2,1), (2,4), (2,5), (2,2), (3, 5), (3,4), (3,3), (4,5), (4,1), (5,1)}}
+   e. E = {{A, B, C, D}, {(A,B), (B,C), (A, D), (B, D), (C, D), (D,D)}}
+   f. F = {{A,B,C,D}, {r1,r2,r3,r4,r5,r6,r7,r8}} y *luego marcar cada una de las relaciones*
+   
+   > Para la matriz de adyacencia se tienen que poner los nombres de los nodos por fuera de la matriz (en las columnas y filas).
+   > Relaciona los nodos, donde hay relacion entre los nodos se ponen un 1 donde no la hay se pone un 0.
+
+2. 

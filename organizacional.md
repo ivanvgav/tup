@@ -682,7 +682,20 @@ Viernes 26 de Junio - Fecha parcial
 
 El resulado del ejercicio se obtiene solo por diferencia de ingreso y egreso
 
-REVISAR TP 34 PARA PARCIAL
+TODO: REVISAR TP 34 PARA PARCIAL
 
 Todas las cuentas que tienen "a pagar" son pasivo.
-  Todas las cuentas que tienen "a cobrar" tienen saldo deudor
+Todas las cuentas que tienen "a cobrar" tienen saldo deudor
+
+# 20260617
+## Repaso
+Cuenta:
+
+Anticipo de clientes - Pasivo
+Anticipo a proveedores - Activo
+
+El activo *nunca* puede tener saldo acreedor en el transcurso del ejercicio
+El pasivo *nunca* puede tener saldo deudor en el transcurso del ejercicio
+El patrimonio neto *nunca* puede tener saldo deudor en el transcurso del ejercicio
+*Nunca* puedo tener una cuenta de Egreso al haber
+*Nunca* puedo tener una cuenta de Ingreso al debe

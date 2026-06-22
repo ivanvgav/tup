@@ -781,3 +781,74 @@ clientes, tienen un sistema operativo especial para servidor, son más seguros
 <!-- TODO: Hacer TP parte 2 -->
 
 Parcial: 25/06 UNIDAD 5, 7, 8
+
+# 20260616
+## Unidad 8 - Virtualización
+
+- Tecnica que permite utilizar multiples SO en un mismo hardware usando software intermedios
+- Se puede virtualizar redes y espacios de almacenamiento
+- Reduce costo, aumenta flexibilidad y posible aumento de seguridad
+
+El host alberca el hipervisor (software intermedio donde se ejecuta el so) y las maquinas virtuales
+Los guests son los sistemas operativos dentro de la maquina virtual, usa recursos compartidos como si fuesen propios
+La maquina virtual es el entorno informatico que funciona como una computadora independiente
+
+### Tipos de hipervisor:
+
+- T1: Sevidores empresariales, se instala directo del hardware físico
+  - VMware, PROMOX, ESXi, Hyper-V
+- T2 Hosted:
+  - En entornos educativos
+  - VirtualBox, WMware workstation
+
+### Recursos
+Los recursos se comparten entre el host y vm
+- CPU: se crean núcleos virtuales basados en los núcleos físicos de la maquina
+- RAM: La memoria va a depender del total de la memoria física
+- Almacenamiento: Se pueden generar varios discos virtuales para que haya un solo disco capaz de tenerlo en la vm
+
+Se pueden generar varios servidores dentro de una sola maquina física
+
+Se pueden hacer escritorios virtuales permitiendo el acceso remoto para distintos usuarios
+
+Cloud computing - Permite la virtualización de servidores por parte de ciertas empresas
+  - La virtualización es la base del cloud computing
+
+### TP
+1. La virtualización es la tecnica que permite utilizar multiples SO en un mismo hardware usando software intermedios
+2. Es la emulación de un sistema completo informático, tiene su propio vm, su
+   propia configuración. Tiene su propia memoria, nucleos y almacenamiento
+3.
+  - T1: Sevidores empresariales, se instala directo del hardware físico
+    - VMware, PROMOX, ESXi, Hyper-V
+  - T2 Hosted:
+    - En entornos educativos
+    - VirtualBox, WMware workstation
+4. El hipervisor es el software intermedio que permite virtualizar las vm en base al hardware
+5. El aislamiento de una vm quiere decir que si hay alguna falla en la vm esta
+   no rompe o perjudica a todo el sistema completo o físico
+6. Se pueden virtualizar la memoria y los núcleos. La virtualización es el
+   proceso por el cual se genera los recursos físicos de un sistema informatico de
+   manera virtual, actua *como si* tuvieramos dicho hardware en la maquina virtual
+7. Se produce un ahorro de costos. Se pueden tener distintos servidores dentro
+   de una misma computadora fisica, por lo que no es necesario muchas
+   computadoras para proveer distintos servicios (ej: servidor de
+   almacenamiento, de mail en una misma computadora) 8.
+8. Un snapshot es una fotografia del estado de la maquina virtual que permite
+   restaturarla rápidamente en ese momento específico. Permite una recuperación
+   rápida, pruebas seguras, actualizaciones y desarrollo y capacitación.
+9. Se usa virtualización en los ámbitos educativos para que los estudiantes
+   puedan aprender a usar distintos software o sistemas operativos sin el
+   peligro de que se rompan los equipos mientras se los testea. Además permite
+   un ahorro de costo para la institución porque pueden albergar distintos
+   servicios en pocas computadoras físicas
+10. Al tener 4 servidores se puede hacer que uno de ellos sea específico para
+    almacenamiento de distintas cosas (archivos y mails) por lo que se tendría
+    que virtualizar en el dos vm que tengan cada una dicho servicio. Luego
+    también es posible que uno de los servidores se emulen todo lo necesairio
+    para la seguridad de todas las redes de la empresa (como ser VPN entre otros
+    servicios de seguridad) por lo que la virtualización también sería necesaria
+    allí. Los dos restantes podrían ser para virtualizar todo el software
+    necesario para la empresa que necesita para su desarrollo (base de datos,
+    contabilidad) por lo que sería necesario que se virtualice dichos servicios
+    en los restasntes servidores.

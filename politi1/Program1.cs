@@ -2020,7 +2020,7 @@ numeros = [1, 2, 3, 4, 5];
 // No se puede agregar más elementos
 // El espacio continuo de
 
-//Las litas dinamicas permite agregar o quitar elementos de un array
+//Las listas dinámicas permite agregar o quitar elementos de un array
 //Sin que por ello se rompa el array
 //Es lo mismo que un array pero que no tiene ni inicio ni fin
 //List<T> numeros = new List<T>();
@@ -2065,7 +2065,7 @@ foreach (var numero in numeros2)
 num.ForEach(numero => Console.WriteLine(" " + numero)); // Recorrer solo con expresión lambda
 // ^ tiene que ser con punto
 //                  ^ lo que muestra la expresión lambda
-//Recordar usar los parentesis entre el método ForEach para que no error
+//Recordar usar los paréntesis entre el método ForEach para que no error
 
 List<string> Alumnos = new List<string>();
 
@@ -2103,5 +2103,18 @@ else
 }
 
 string AlumnoEncontrado = Alumnos.Contains("Juan Guzman") ? "Alumno encontrado" : "Alumno no encontrado"; // En formato ternario
+// string AlumnoEncontrado = Alumnos.Contains(string nombre = Console.ReadLine()) ? "Alumno encontrado" : "Alumno no encontrado"; // En formato ternario
 
 // Averiguar diferencias entre find y contains
+
+//////////////////////////////////////////////////////////////////////////
+// 20260617
+// Listas dinámicas
+// Parcial 25 de Junio
+//
+// Linked List
+// Es una lista que tiene nodos que se comunican entre si
+// Cada nodo tiene un conocimiento del elemento que tiene al lado
+// LinkedList<T> lista = new LinkedList<T>();
+// Las LinkedList sirven para paginación, historial o breadcrumbs
+LinkedList<string> nombres = new LinkedList<string>();
