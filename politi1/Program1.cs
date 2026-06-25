@@ -1823,298 +1823,609 @@ bool isX = true;
 
 // BuscarNombre(nombres);
 
-//////////////////////////
-// TP Funciones
+// //////////////////////////
+// // TP Funciones
 
-// 1
+// // 1
+// //
+// void Saludar()
+// {
+//     Console.WriteLine("Bienvenidos a Programación I");
+// }
+
+// Saludar();
+
+// //2
+// //
+// void MostrarNombre(string nombre)
+// {
+//     Console.WriteLine("Ingresa el nombre deseado:");
+//     Console.WriteLine($"El nombre ingresado es {nombre}");
+// }
+
+// MostrarNombre("Ivan");
+
+// // 3
+// //
+// int ObtenerNumero()
+// {
+//     return 100;
+// }
+
+// ObtenerNumero();
+
+// // 4
+// //
+// Console.WriteLine("Ingrese dos números:");
+// int a = int.Parse(Console.ReadLine());
+// int b = int.Parse(Console.ReadLine());
+
+// int Sumar(int a, int b)
+// {
+//     return a + b;
+// }
+
+// Sumar(a, b);
+
+// // 5
+// //
+// bool EsPar(int numero)
+// {
+//     return numero % 2 == 0;
+// }
+
+// EsPar(5);
+// EsPar(20);
+// EsPar(0);
+
+// // 6
+// //
+
+// double CalcularDescuento(double precio, double porcentaje = 10)
+// {
+//     if (porcentaje > 1)
+//     {
+//         porcentaje /= 100;
+//     }
+
+//     return precio * porcentaje;
+// }
+
+// CalcularDescuento(1000);
+// CalcularDescuento(50000, 50);
+
+// // 7
+// //
+// bool BuscarNombre(string[] nombres, string buscado)
+// {
+//     foreach (string nombre in nombres)
+//     {
+//         if (nombre == buscado)
+//         {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// // 8
+// //
+// int Mayor(int a, int b, int c)
+// {
+//     int mayor = a;
+//     if (mayor > b)
+//     {
+//         return mayor;
+//     }
+//     else
+//     {
+//         mayor = b;
+//     }
+
+//     if (mayor > c)
+//     {
+//         return mayor;
+//     }
+//     else
+//     {
+//         mayor = c;
+//     }
+//     return mayor;
+// }
+
+// // 9
+// //
+// int LambdaSumar(int a, int b) => a + b;
+
+// // 10
+// //
+// double CalcularPromedio(double[] notas)
+// {
+//     double suma = 0;
+//     foreach (double nota in notas)
+//     {
+//         suma += nota;
+//     }
+
+//     return suma / notas.Length;
+// }
+// CalcularPromedio([1, 2, 3, 4, 5, 6]);
+
+// // 11
+// //
+// double SumarMenu(double num1, double num2)
+// {
+//     return num1 + num2;
+// }
+
+// double RestarMenu(double num1, double num2)
+// {
+//     return num1 - num2;
+// }
+
+// double MultiplicarMenu(double num1, double num2)
+// {
+//     return num1 * num2;
+// }
+
+// double DividirMenu(double num1, double num2)
+// {
+//     return num1 / num2;
+// }
+
+// int operacion = 0;
+
+// while (operacion != 0)
+// {
+//     Console.WriteLine("""
+//                         Bienvenido a la calculadora.
+//                         Tiene distintas operaciones para realizar.
+//                         Ingrese un número dependiendo de las operaciones que desee realizar.
+//                         1. Suma
+//                         2. Resta
+//                         3. Multiplicación
+//                         4. División
+//                         0. Para salir
+//                         A continuación ingrese los dos números a operar.
+//                      """);
+//     operacion = int.Parse(Console.ReadLine());
+//     int num1 = int.Parse(Console.ReadLine());
+//     int num2 = int.Parse(Console.ReadLine());
+
+//     switch (operacion)
+//     {
+//         case 1:
+//             SumarMenu(num1, num2);
+//             break;
+//         case 2:
+//             RestarMenu(num1, num2);
+//             break;
+//         case 3:
+//             MultiplicarMenu(num1, num2);
+//             break;
+//         case 4:
+//             DividirMenu(num1, num2);
+//             break;
+//         default:
+//             break;
+//     }
+// }
+
+// /////////////////////////////////////////////////////////////
+// // Listas Dinamicas (Dinamic arrays)
+// //Arrays
+// int[] numeros = new int[5];
+// numeros = [1, 2, 3, 4, 5];
+// // Cantidad de elementos fijas
+// // No se puede agregar más elementos
+// // El espacio continuo de
+
+// //Las listas dinámicas permite agregar o quitar elementos de un array
+// //Sin que por ello se rompa el array
+// //Es lo mismo que un array pero que no tiene ni inicio ni fin
+// //List<T> numeros = new List<T>();
+// // ^ tipo ^ nombre       ^ llamamos a la clase Lista
+// //    etiqueta <>
+// List<int> num = new List<int>(); // Inicializamos la una lista de numeros
+// List<int> numeros2 = new List<int>() { 1, 2, 3, 4, 5 };
+
+// num.Add(5); // Agregar elementos al final de la lista
+// num.Add(10); // Solo se puede agregar el mismo tipo de dato
+
+// numeros2.Add(432);
+// numeros2.Add(625);
+// numeros2.Add(525);
+
+// // Para saber el total de elementos de una list se tiene que usar la propiedad count
+// for (int i = 0; i < num.Count; i++)
+// {
+//     Console.WriteLine(num[i]);
+// }
+
+// for (int i = 0; i < numeros2.Count; i++)
+// {
+//     Console.WriteLine(numeros2[i]);
+// }
+
+// num.RemoveAt(0); // Remueve un elemento por medio del índice
+// numeros2.Remove(432); // Se puede remover el dato que quiero eliminar
+// numeros2.Remove(999); // No pasa nada si intenta eliminar un elemento que no esta en la list
+// foreach (var numero in num)
+// {
+//     Console.WriteLine(numero);
+// }
+
+
+// foreach (var numero in numeros2)
+// {
+//     Console.WriteLine(numero);
+// }
+
+// //Foreach lambda. Metodo para hacer lambda expression en recorrer la lista
+// num.ForEach(numero => Console.WriteLine(" " + numero)); // Recorrer solo con expresión lambda
+// // ^ tiene que ser con punto
+// //                  ^ lo que muestra la expresión lambda
+// //Recordar usar los paréntesis entre el método ForEach para que no error
+
+// List<string> Alumnos = new List<string>();
+
+// Alumnos.Add("Juan Guzman");
+// Alumnos.Add("Aldana Coronel");
+// Alumnos.Add("Benjamin Geller");
+// Alumnos.Add("Pedro");
+
+// foreach (var Alumno in Alumnos) // var infiere el tipo de la variable Alumno
+// {
+//     //Console.WriteLine($"Los alumnos son {Alumno}"); //Muestra los alumnos
+
+//     // Quiero saber si está un alumno en la lista
+//     if (Alumno == "Pedro")
+//     {
+//         Console.WriteLine("Se encuentra el alumno que queremos");
+//     }
+//     else
+//     {
+//         Console.WriteLine("No está el alumno buscado");
+//     }
+// }
+
+// Console.WriteLine(Alumnos.Contains("Pedro")); // Devuelve un booleano si tiene dicho elemento en la lista
+// // Permite hacer lo mismo que hemos hecho con el foreach
+
+// bool encontrado = Alumnos.Contains("Juan Guzman");
+// if (encontrado)
+// {
+//     Console.WriteLine("Alumno encontrado");
+// }
+// else
+// {
+//     Console.WriteLine("Alumno no encontrado");
+// }
+
+// string AlumnoEncontrado = Alumnos.Contains("Juan Guzman") ? "Alumno encontrado" : "Alumno no encontrado"; // En formato ternario
+// // string AlumnoEncontrado = Alumnos.Contains(string nombre = Console.ReadLine()) ? "Alumno encontrado" : "Alumno no encontrado"; // En formato ternario
+
+// // Averiguar diferencias entre find y contains
+
+// //////////////////////////////////////////////////////////////////////////
+// // 20260617
+// // Listas dinámicas
+// // Parcial 25 de Junio
+// //
+// // Linked List
+// // Es una lista que tiene nodos que se comunican entre si
+// // Cada nodo tiene un conocimiento del elemento que tiene al lado
+// // LinkedList<T> lista = new LinkedList<T>();
+// // Las LinkedList sirven para paginación, historial o breadcrumbs
+// LinkedList<string> nombres = new LinkedList<string>();
+
+// // listas enlazadas(LinkedList)
+// // Tiene nodos. Por lo que permite se sepa que elemento está al lado
+// // Cada uno de los nodos sabe a quien tiene al lado.
+// // Se tiene valores y nodos. Hay dos elementos en la LinkedList
+// // Se puede usar para paginación, historial, breadcrumbs
+// //
+
+// List<int> numeros = new List<int>();
+
+// // Agregar elementos
+// numeros.Add(2);
+// numeros.Add(7);
+// numeros.Add(8);
+
+// // Mostrar
+// //foreach (int numero in numeros)
+// //{
+// //    Console.WriteLine(numero);
+// //}
+
+// // LinkedList
+
+// LinkedList<int> numeros_linkeados = new LinkedList<int>();
+
+// // Todavia no se tienen los nodos
+// // Se debe asignar un nodo a cada uno de los elementos
+// numeros_linkeados.AddFirst(4); // Si o si se pone primero
+// numeros_linkeados.AddLast(3);
+// numeros_linkeados.AddLast(7);
+// numeros_linkeados.AddFirst(2); // [2, 4, 3, 7]
+
+// // Crear lista de 5 nombres
+
+// List<string> nombres = new List<string>();
+
+// nombres.Add("Matias");
+// nombres.Add("Joel");
+// nombres.Add("Ivan");
+// nombres.Add("Pablo");
+// nombres.Add("Jairo");
+
+// foreach (var nombre in nombres)
+// {
+//     Console.WriteLine($"El nombre es: {nombre}");
+// }
+
+// //LinkedListNode<int> numeros_linkeados_con_nodos = new LinkedListNode<int>();
+
+// LinkedList<string> nombres2 = new LinkedList<string>();
+
+// //nombres2.AddLast("Leonel");
+// //nombres2.AddFirst("Pablito");
+// //nombres2.AddLast("Samuel");
+
+// foreach (var nombre in nombres2)
+// {
+//     Console.WriteLine($"Los nombres de la linked list son: {nombre}");
+// }
+
+// // Dada un LinkedList necesitamos linkear cada elemento en los nodos
+// // Representamos un nodo dado por lo que hemos dado en los elementos de la LinkedList
+// LinkedListNode<string> leonel = nombres2.AddLast("Leonel"); // guardo el nodo de leonel como un nodo
+// LinkedListNode<string> samuel = nombres2.AddLast("Samuel");
+// LinkedListNode<string> pablito = nombres2.AddFirst("Pablito");
+// // [Pablito <-> Leonel <-> Samuel]
+
+// //Se puede agregar el nodo con var
+// // var solana = nombres2.AddLast("Solana");
+// // var pedro = nombres2.AddLast("Pedro");
+// // var jose = nombres2.AddLast("José");
+
+// Console.WriteLine(leonel.Value); // Para mostrar el valor del nodo, sino muestra el objeto
+
+// Console.WriteLine(pablito.Next.Next.Value);
+// Console.WriteLine(leonel.Next?.Next?.Value); // Para que no se rompa con la excepción
+
+// foreach (var item in nombres2)
+// {
+//     Console.WriteLine("Valor " + item);
+// }
+
+// // Funcion que usa una linkedlist y que muestre el 3er nodo
+// void BuscarTercerNodo(LinkedList<string> nombres)
+// {
+//     int contador = 0; // Se necesita un contador para ver cual es la vuelta en la tercera. No es necesario
+//     foreach (var item in nombres)
+//     {
+//         contador++;
+//         if (contador == 3)
+//         {
+//             Console.WriteLine(item); // No es necesario colocar el metodo value de la linked list
+//         }
+//     }
+// }
+
+// BuscarTercerNodo(nombres2);
+
+// void BuscarPares(List<int> numeros)
+// {
+//     foreach (var numero in numeros)
+//     {
+//         if (numero % 2 == 0)
+//         {
+//             Console.WriteLine($"El número par es: {numero}");
+//         }
+//     }
+// }
+
+// BuscarPares(numeros);
+// // Para el foreach recordar que se tiene que poner var o el tipo de dato
+
+
+// // Matrices
+// int[,] numeros = new int[4,5];
+
+// int filas = numeros.GetLength(0);
+// int columnas = numeros.GetLength(1);
+
+// int acum;
+
+// for (int i = 0; i < filas; i++)
+// {
+//     for (int j = 0; j < columnas, j++)
+//     {
+// 	Console.WriteLine(numeros[i, j]);
+//     }
+// }
+
+// for (int i = 0; i < filas; i++)
+// {
+//     for (int j = 0; j < columnas, j++)
+//     {
+//         acum += numeros[i,j];
+//     }
+// }
+
+// int numero_a_promediar = numeros.length;
+
+// double promedio = acum/numero_a;
+//////////////////////////////////////////////////////
+//Lista de estudiantes usando listas enlazadas
+
+// int CantidadDeEstudiantes()
+// {
+//     Console.WriteLine("Ingrese la cantidad de estudiantes que quiera ingresar");
+//     int vueltas = int.Parse(Console.ReadLine());
+//     return vueltas;
+// }
+
+
+// void AgregarEstudiantes(LinkedList<string> ListaDeEstudiantesAprobados, int vueltas)
+// {
+//     for (int i = 0; i < vueltas; ++i)
+//     {
+//         Console.WriteLine("Ingrese el estudiante a ingresar");
+//         string estudiante = Console.ReadLine();
+//         LinkedListNode<string> EstudianteAprobado = ListaDeEstudiantesAprobados.AddLast(estudiante);
+//     }
+// }
+
+// void MostrarEstudiantes(LinkedList<string> ListaDeEstudiantesAprobados)
+// {
+//     foreach (var estudiante in ListaDeEstudiantesAprobados)
+//     {
+//         Console.WriteLine($"El estudiante aprobado es: {estudiante}");
+//     }
+// }
+
+// void RemoverUltimoEstudiante(LinkedList<string> ListaDeEstudiantesAprobados)
+// {
+//     Console.WriteLine($"El ultimo estudiante de la lista es: {ListaDeEstudiantesAprobados.Last.Value}");
+//     ListaDeEstudiantesAprobados.RemoveLast();
+//     Console.WriteLine("Se ha removido exitosamente el ultimo estudiante de la lista.");
+// }
+
+// int opcion;
+// bool finished = true;
+
+// LinkedList<string> ListaDeEstudiantesAprobados = new LinkedList<string>();
+
+// LinkedListNode<string> aprobado = ListaDeEstudiantesAprobados.AddFirst("Aprobado");
+// LinkedListNode<string> juan = ListaDeEstudiantesAprobados.AddLast("Juan");
+// LinkedListNode<string> pedro = ListaDeEstudiantesAprobados.AddLast("Pedro");
+
+// do
+// {
+//     Console.WriteLine("""
+//                         Bienvenido. Qué es lo que desea hacer:
+//                         1. Agregar estudiante aprobado
+//                         2. Mostrar estudiantes aprobados
+//                         3. Remover último estudiante aprobado
+//                         4. Salir
+//                      """);
+//     opcion = int.Parse(Console.ReadLine());
+
+//     switch (opcion)
+//     {
+//         case 1:
+//             int Cantidad = CantidadDeEstudiantes();
+//             AgregarEstudiantes(ListaDeEstudiantesAprobados, Cantidad);
+//             break;
+
+//         case 2:
+//             MostrarEstudiantes(ListaDeEstudiantesAprobados);
+//             break;
+
+//         case 3:
+//             RemoverUltimoEstudiante(ListaDeEstudiantesAprobados);
+//             break;
+//         default:
+//             finished = false;
+//             break;
+//     }
+// } while (finished);
+////////////////////////////////////////////////////////////////////
+// Verduras
 //
-void Saludar()
+
+int opcion;
+bool finished = true;
+
+List<string> Verduras = new List<string>();
+
+int CantidadDeVerduras()
 {
-    Console.WriteLine("Bienvenidos a Programación I");
+    Console.WriteLine("Ingrese cuantas verduras desea agregar");
+    int cantidad = int.Parse(Console.ReadLine());
+    return cantidad;
 }
 
-Saludar();
-
-//2
-//
-void MostrarNombre(string nombre)
+void AgregarVerduras(List<string> Verduras, int cantidad)
 {
-    Console.WriteLine("Ingresa el nombre deseado:");
-    Console.WriteLine($"El nombre ingresado es {nombre}");
-}
-
-MostrarNombre("Ivan");
-
-// 3
-//
-int ObtenerNumero()
-{
-    return 100;
-}
-
-ObtenerNumero();
-
-// 4
-//
-Console.WriteLine("Ingrese dos números:");
-int a = int.Parse(Console.ReadLine());
-int b = int.Parse(Console.ReadLine());
-
-int Sumar(int a, int b)
-{
-    return a + b;
-}
-
-Sumar(a, b);
-
-// 5
-//
-bool EsPar(int numero)
-{
-    return numero % 2 == 0;
-}
-
-EsPar(5);
-EsPar(20);
-EsPar(0);
-
-// 6
-//
-
-double CalcularDescuento(double precio, double porcentaje = 10)
-{
-    if (porcentaje > 1)
+    for (int i = 0; i < cantidad; ++i)
     {
-        porcentaje /= 100;
+        Console.WriteLine("Ingrese que verdura desea agregar");
+        string verdura = Console.ReadLine();
+        Verduras.Add(verdura);
     }
-
-    return precio * porcentaje;
 }
 
-CalcularDescuento(1000);
-CalcularDescuento(50000, 50);
-
-// 7
-//
-bool BuscarNombre(string[] nombres, string buscado)
+void MostrarVerduras(List<string> Verduras)
 {
-    foreach (string nombre in nombres)
+    Console.WriteLine($"Tenemos las siguientes verduras:");
+    foreach (var verdura in Verduras)
     {
-        if (nombre == buscado)
-        {
-            return true;
-        }
+        Console.WriteLine($"{verdura}");
     }
-    return false;
 }
 
-// 8
-//
-int Mayor(int a, int b, int c)
+void RemoverVerdura(List<string> Verduras)
 {
-    int mayor = a;
-    if (mayor > b)
+    Console.WriteLine("Ingrese el nombre de la verdura que quiere sacar:");
+    string verdura = Console.ReadLine();
+    Verduras.Remove(verdura);
+    Console.WriteLine($"Se ha removido {verdura}");
+}
+
+void BuscarVerduras(List<string> Verduras)
+{
+    Console.WriteLine("Ingrese la verdura que quiere buscar");
+    string verdura = Console.ReadLine();
+    if (Verduras.Contains(verdura))
     {
-        return mayor;
+        Console.WriteLine($"{verdura} si se encuentra en la lista");
     }
     else
     {
-        mayor = b;
+        Console.WriteLine($"{verdura} no se encuentra en la lista");
     }
-
-    if (mayor > c)
-    {
-        return mayor;
-    }
-    else
-    {
-        mayor = c;
-    }
-    return mayor;
 }
 
-// 9
-//
-int LambdaSumar(int a, int b) => a + b;
 
-// 10
-//
-double CalcularPromedio(double[] notas)
-{
-    double suma = 0;
-    foreach (double nota in notas)
-    {
-        suma += nota;
-    }
-
-    return suma / notas.Length;
-}
-CalcularPromedio([1, 2, 3, 4, 5, 6]);
-
-// 11
-//
-double SumarMenu(double num1, double num2)
-{
-    return num1 + num2;
-}
-
-double RestarMenu(double num1, double num2)
-{
-    return num1 - num2;
-}
-
-double MultiplicarMenu(double num1, double num2)
-{
-    return num1 * num2;
-}
-
-double DividirMenu(double num1, double num2)
-{
-    return num1 / num2;
-}
-
-int operacion = 0;
-
-while (operacion != 0)
+do
 {
     Console.WriteLine("""
-                        Bienvenido a la calculadora.
-                        Tiene distintas operaciones para realizar.
-                        Ingrese un número dependiendo de las operaciones que desee realizar.
-                        1. Suma
-                        2. Resta
-                        3. Multiplicación
-                        4. División
-                        0. Para salir
-                        A continuación ingrese los dos números a operar.
-                     """);
-    operacion = int.Parse(Console.ReadLine());
-    int num1 = int.Parse(Console.ReadLine());
-    int num2 = int.Parse(Console.ReadLine());
-
-    switch (operacion)
+                        Buenas. Espero que tenga trabajo por hacer:
+                        1. Agregar Verdura
+                        2. Mostrar verduras disponibles
+                        3, Buscar Verdura disponible
+                        4. Sacar Verdura del listado
+                        5. Salir
+                    """);
+    opcion = int.Parse(Console.ReadLine());
+    switch (opcion)
     {
         case 1:
-            SumarMenu(num1, num2);
+            Console.Clear();
+            int cantidad = CantidadDeVerduras();
+            AgregarVerduras(Verduras, cantidad);
+            Console.Clear();
             break;
         case 2:
-            RestarMenu(num1, num2);
+            Console.Clear();
+            MostrarVerduras(Verduras);
             break;
         case 3:
-            MultiplicarMenu(num1, num2);
+            Console.Clear();
+            BuscarVerduras(Verduras);
+            Console.Clear();
             break;
         case 4:
-            DividirMenu(num1, num2);
+            Console.Clear();
+            RemoverVerdura(Verduras);
+            Console.Clear();
             break;
         default:
+            finished = false;
             break;
     }
-}
-
-/////////////////////////////////////////////////////////////
-// Listas Dinamicas (Dinamic arrays)
-//Arrays
-int[] numeros = new int[5];
-numeros = [1, 2, 3, 4, 5];
-// Cantidad de elementos fijas
-// No se puede agregar más elementos
-// El espacio continuo de
-
-//Las listas dinámicas permite agregar o quitar elementos de un array
-//Sin que por ello se rompa el array
-//Es lo mismo que un array pero que no tiene ni inicio ni fin
-//List<T> numeros = new List<T>();
-// ^ tipo ^ nombre       ^ llamamos a la clase Lista
-//    etiqueta <>
-List<int> num = new List<int>(); // Inicializamos la una lista de numeros
-List<int> numeros2 = new List<int>() { 1, 2, 3, 4, 5 };
-
-num.Add(5); // Agregar elementos al final de la lista
-num.Add(10); // Solo se puede agregar el mismo tipo de dato
-
-numeros2.Add(432);
-numeros2.Add(625);
-numeros2.Add(525);
-
-// Para saber el total de elementos de una list se tiene que usar la propiedad count
-for (int i = 0; i < num.Count; i++)
-{
-    Console.WriteLine(num[i]);
-}
-
-for (int i = 0; i < numeros2.Count; i++)
-{
-    Console.WriteLine(numeros2[i]);
-}
-
-num.RemoveAt(0); // Remueve un elemento por medio del índice
-numeros2.Remove(432); // Se puede remover el dato que quiero eliminar
-numeros2.Remove(999); // No pasa nada si intenta eliminar un elemento que no esta en la list
-foreach (var numero in num)
-{
-    Console.WriteLine(numero);
-}
-
-
-foreach (var numero in numeros2)
-{
-    Console.WriteLine(numero);
-}
-
-//Foreach lambda. Metodo para hacer lambda expression en recorrer la lista
-num.ForEach(numero => Console.WriteLine(" " + numero)); // Recorrer solo con expresión lambda
-// ^ tiene que ser con punto
-//                  ^ lo que muestra la expresión lambda
-//Recordar usar los paréntesis entre el método ForEach para que no error
-
-List<string> Alumnos = new List<string>();
-
-Alumnos.Add("Juan Guzman");
-Alumnos.Add("Aldana Coronel");
-Alumnos.Add("Benjamin Geller");
-Alumnos.Add("Pedro");
-
-foreach (var Alumno in Alumnos) // var infiere el tipo de la variable Alumno
-{
-    //Console.WriteLine($"Los alumnos son {Alumno}"); //Muestra los alumnos
-
-    // Quiero saber si está un alumno en la lista
-    if (Alumno == "Pedro")
-    {
-        Console.WriteLine("Se encuentra el alumno que queremos");
-    }
-    else
-    {
-        Console.WriteLine("No está el alumno buscado");
-    }
-}
-
-Console.WriteLine(Alumnos.Contains("Pedro")); // Devuelve un booleano si tiene dicho elemento en la lista
-// Permite hacer lo mismo que hemos hecho con el foreach
-
-bool encontrado = Alumnos.Contains("Juan Guzman");
-if (encontrado)
-{
-    Console.WriteLine("Alumno encontrado");
-}
-else
-{
-    Console.WriteLine("Alumno no encontrado");
-}
-
-string AlumnoEncontrado = Alumnos.Contains("Juan Guzman") ? "Alumno encontrado" : "Alumno no encontrado"; // En formato ternario
-// string AlumnoEncontrado = Alumnos.Contains(string nombre = Console.ReadLine()) ? "Alumno encontrado" : "Alumno no encontrado"; // En formato ternario
-
-// Averiguar diferencias entre find y contains
-
-//////////////////////////////////////////////////////////////////////////
-// 20260617
-// Listas dinámicas
-// Parcial 25 de Junio
-//
-// Linked List
-// Es una lista que tiene nodos que se comunican entre si
-// Cada nodo tiene un conocimiento del elemento que tiene al lado
-// LinkedList<T> lista = new LinkedList<T>();
-// Las LinkedList sirven para paginación, historial o breadcrumbs
-LinkedList<string> nombres = new LinkedList<string>();
+} while (finished);

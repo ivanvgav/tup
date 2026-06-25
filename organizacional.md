@@ -699,3 +699,16 @@ El pasivo *nunca* puede tener saldo deudor en el transcurso del ejercicio
 El patrimonio neto *nunca* puede tener saldo deudor en el transcurso del ejercicio
 *Nunca* puedo tener una cuenta de Egreso al haber
 *Nunca* puedo tener una cuenta de Ingreso al debe
+
+# 20260624
+
+## Posibles preguntas para el parcial
+1. Dar una cuenta y cuando cuando aumenta cuando disminuye y cual es su saldo
+2. Nos puede dar un tipo de cuenta y que nosotros digamos que nombre de cuenta es y que saldo tiene
+3. Nos va a dar un hecho economico y cuales son las posiblidades que da entre el el activo y las cuentas acreedoras
+4. Ver tema del pdf de analisis de cuenta (5 cuentas particulares)
+5. Ejercicios de cuanto aporta cada uno de lo socios inician con aportes y se van poniendo dentro de la formula de Patrimonio y luego ir viendo que operaciones se hacen
+6. Ver Causas de las variaciones patrimoniales (transaccionales y no transaccionales)
+7. Estudiar el listado de cuentas
+
+Remarcar en el ejercios tipo 5 al final cual es el resultado del ejercio (la diferencia entre ingreso y egreso)

@@ -712,6 +712,7 @@ foreach (string nombre in nombres)
 {
     Console.WriteLine(nombre);
 }
+```
 
 Lo que hace el compilador por dentro:
 
@@ -835,19 +836,22 @@ Hay distintos tipos de colecciones:
 2. Tiene seguridad de tipo, tiene indexación en 0 y posee una serie de métodos
    varios para poder trabjar sobre ellos.
 3. Hay `LinkedList<T>`, `SortedList<T>`
-4. ```csharp
+4. 
    List<T> NombreDeLaLista = new List<T>();
-   ```
+   
 
    Se tiene que inicializar con la lista, el tag del tipo de dato, el nombre
    que se le asigna a la variable, la asignación, y la creación de un nuevo
    objeto List con el tipo de dato.
 5. Se utiliza el método Add().
+   
    Ej:
-   ```csharp
+
+   
    List<int> numeros = new List<int>();
    numeros.Add(5);
-   ```
+   
+   
 6.
     * Add(): Agrega un elemento a la lista
     * Count(): Permite saber cuantos elementos tiene una lista
@@ -869,5 +873,6 @@ Hay distintos tipos de colecciones:
    - El dato: información que se desea guardar
    - Puntero: Apunta al siguiente nodo de la secuencia
 5. Se da cuenta que se ha llegado al final porque el último nodo apunta a un puntero nulo
-6. Es de comportamiento LIFO (Last In, First Out). Es decir que todo elemento que sale es el primero de la estructura
+6. Es de comportamiento LIFO (Last In, First Out). Es decir que todo elemento que sale es el último
+de la estructura
    mientras que para entrar entra al final de la estructura.
